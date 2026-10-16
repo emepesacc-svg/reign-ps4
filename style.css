@@ -53,3 +53,63 @@ footer,.site-footer{background:#f8fbff;color:#64748b;border-color:#e0ebf4}.foote
 .reign-cloud-panel{margin:0 0 24px;padding:22px;border:1px solid #d8eaf7;border-radius:22px;background:linear-gradient(120deg,#fff 0%,#fff5fa 52%,#eef9ff 100%);box-shadow:0 12px 34px rgba(95,155,190,.08)}
 .cloud-brand{display:flex;align-items:flex-start;gap:14px}.google-g{flex:0 0 44px;width:44px;height:44px;display:grid;place-items:center;border-radius:14px;background:#fff;color:#4285f4;font:bold 27px Arial;border:1px solid #e2eaf2;box-shadow:0 3px 10px #1e5c8010}.cloud-brand b{display:block;font-size:1.08rem;color:#172b42}.cloud-brand p{margin:5px 0 0;color:#61758a;line-height:1.8}.cloud-account-row,.cloud-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:16px}.cloud-status{font-size:.88rem;color:#536b7e;line-height:1.6}.cloud-status[data-state="ok"]{color:#13815d}.cloud-status[data-state="error"]{color:#b42345}.cloud-user{display:flex;align-items:center;gap:11px;margin-top:16px;padding:12px;background:#ffffffc9;border:1px solid #e3edf5;border-radius:14px}.cloud-user img{width:42px;height:42px;border-radius:50%;object-fit:cover;background:#edf5fa}.cloud-user b,.cloud-user small{display:block}.cloud-user small{color:#6a7f92;margin-top:3px}.cloud-actions[hidden],.cloud-user[hidden],#googleSignOut[hidden],.cloud-actions button[hidden]{display:none!important}.reign-cloud-panel .micro-note{margin:15px 0 0;color:#6d8090;line-height:1.7;font-size:.78rem}.reign-cloud-panel .btn{cursor:pointer}
 @media(max-width:640px){.reign-cloud-panel{padding:16px}.cloud-account-row .btn,.cloud-actions .btn{width:100%}.cloud-status{width:100%}}
+
+/* REIGN LUXE PALETTE — ivory, champagne, soft rose & airy sky */
+:root{
+  --bg:#FFFCF8;--bg2:#FFF8F5;--panel:#FFFFFF;--panel2:#FFF2F5;
+  --text:#55464D;--muted:#84757C;--muted2:#A2949A;
+  --accent:#D58BA6;--accent2:#F1C6D5;--line:#F0E1E6;
+  --warm:#C7A66A;--shadow:0 18px 48px rgba(171,127,145,.13);
+  --reign-sky:#A9E2F4;--reign-rose:#FCEAF0;--reign-ink:#55464D;
+}
+html,body{background:#FFFCF8!important;color:#55464D!important}
+body:before{background:radial-gradient(ellipse at 88% 8%,rgba(169,226,244,.42),transparent 32%),radial-gradient(ellipse at 5% 35%,rgba(252,234,240,.78),transparent 36%),linear-gradient(180deg,#FFFCF8 0%,#FFF9F7 52%,#F8FCFD 100%)!important}
+.site-header{background:rgba(255,252,248,.91)!important;border-color:#F0E1E6!important;box-shadow:0 5px 22px rgba(171,127,145,.07)}
+.site-header nav{color:#79666F!important}.site-header nav a:hover,.footer-links a:hover{color:#C77996!important}
+.logo-icon{border-color:#D58BA6!important;color:#C77996!important}.logo-word,.site-header .logo-word{color:#55464D!important}.logo-word small{color:#70BCD7!important}
+.mobile-menu{color:#7C6871!important}
+.header-cta,.btn-primary,.search-submit{background:#D58BA6!important;color:#fff!important;border-color:#D58BA6!important;box-shadow:0 6px 18px rgba(213,139,166,.18)}
+.header-cta:hover,.search-submit:hover,.btn-primary:hover{background:#C77996!important;color:#fff!important}
+.icon-button{color:#64B8D5!important;border-color:#D8EDF4!important;background:#fff!important}
+.hero h1,.section-head h2,.closing-cta h2{color:#55464D!important}.hero h1 span,.section-head h2 em,.closing-cta h2 em,.hero-proof b,.result-counter b{color:#C77996!important}
+.overline,.kicker,.hero-art-caption span,.hero-chip strong,.hero-stamp small{color:#65B8D6!important}
+.pulse{background:#8BD5EB!important;box-shadow:0 0 12px rgba(139,213,235,.7)!important}
+.hero-copy>p,.section-head p,.hero-proof small{color:#84757C!important}
+.hero-art-card{border-color:#EAC6D4!important;box-shadow:20px 28px 65px rgba(171,127,145,.18)!important}
+.hero-art-card img{filter:saturate(.82) contrast(1.02)!important}.hero-art-overlay{background:linear-gradient(180deg,rgba(255,252,248,0) 28%,rgba(85,70,77,.66)),linear-gradient(120deg,rgba(252,234,240,.3),transparent 60%)!important}
+.hero-orbit{border-color:rgba(213,139,166,.30)!important}.orbit-b{border-color:rgba(139,213,235,.34)!important}
+.hero-chip,.hero-stamp{background:rgba(255,255,255,.95)!important;color:#6A5660!important;border-color:#EFDCE4!important;box-shadow:var(--shadow)!important}.hero-chip span{color:#84757C!important}.hero-stamp{border-right-color:#8BD5EB!important}
+.quick-search{background:rgba(255,255,255,.93)!important;border-color:#F0E1E6!important;box-shadow:var(--shadow)!important}
+.search-title b{color:#55464D!important}.search-title small{color:#84757C!important}.search-symbol{color:#67BCD9!important}
+.search-input-wrap{background:#FFFEFD!important;border-color:#EADDE2!important}.search-input-wrap input{color:#55464D!important}.search-input-wrap input::placeholder{color:#A2949A!important}.search-input-wrap button{color:#9B8790!important}
+.section,.collections-section,.guides-section,.updates-section,.favorites-section,.faq-section,.reign-plus-section{color:#55464D!important}
+.reign-plus-section,.playtime-section{background:linear-gradient(135deg,rgba(252,234,240,.72),rgba(238,249,253,.86))!important;border-color:#F0E1E6!important}
+.game-card{background:linear-gradient(145deg,#FFFFFF,#FFF8FA)!important;border-color:#F0E1E6!important;box-shadow:0 8px 25px rgba(171,127,145,.08)!important}
+.game-card:hover{border-color:#DDB0C2!important;box-shadow:0 16px 34px rgba(171,127,145,.16)!important}
+.cover-wrap{background:linear-gradient(145deg,#EAF8FC,#FCECF2)!important}.cover-wrap:after{background:linear-gradient(transparent,rgba(85,70,77,.65))!important}
+.cover-label{background:rgba(255,255,255,.94)!important;border-color:#E6C5D2!important;color:#B96F8C!important}
+.favorite-btn{background:rgba(255,255,255,.86)!important;border-color:rgba(255,255,255,.8)!important;color:#9D7182!important}.favorite-btn:hover,.favorite-btn.is-favorite{color:#C77996!important;border-color:#D58BA6!important;background:#FFF5F8!important}
+.game-eyebrow{color:#68B8D3!important}.game-info h3{color:#55464D!important}.game-info p,.game-meta{color:#84757C!important}.game-meta{border-color:#F0E1E6!important}.game-meta span:last-child{color:#65B8D6!important}
+.filter-pill{background:#fff!important;border-color:#EADDE3!important;color:#84757C!important}.filter-pill:hover,.filter-pill.active{background:#D58BA6!important;border-color:#D58BA6!important;color:#fff!important}
+.sort-wrap,.active-filters{color:#84757C!important}.sort-wrap select{background:#fff!important;border-color:#EADDE3!important;color:#66545D!important}.active-filters button{color:#65B8D6!important}
+.no-results{color:#84757C!important}.no-results h3{color:#55464D!important}.no-results>div{color:#65B8D6!important}
+.btn-outline{background:#fff!important;border-color:#E5D6DD!important;color:#75616B!important}.btn-outline:hover{border-color:#8BD5EB!important;color:#55AFCF!important}
+input,select,textarea{color:#55464D!important;accent-color:#D58BA6!important}input::placeholder,textarea::placeholder{color:#A2949A!important}
+.modal,.modal-content,.modal-dialog{background:#FFFEFD!important;color:#55464D!important;border-color:#F0E1E6!important}.modal-backdrop{background:rgba(105,78,91,.28)!important}.modal h2,.modal h3,.modal h4{color:#55464D!important}.modal p,.modal small{color:#84757C!important}.modal-close{color:#806B75!important}
+.modal-tracker,.modal-gallery a,.gallery-strip a,.trophy-details,.tracked-row,.recommend-card,.custom-collection,.challenge-item,.badge-tile,.progress-stats div,.ultra-stats div,.ultra-bottom-note{background:#FFFEFD!important;border-color:#F0E1E6!important;color:#66545D!important}
+.modal-tracker select,.profile-form input,.profile-form select,.discovery-controls select,.compare-selects select,.trophy-search select,.collection-form input,.collection-form select,.ultra-log-form input,.playtime-control select,.playtime-control input{background:#fff!important;color:#55464D!important;border-color:#E8D9E0!important}
+.profile-form label,.discovery-controls label,.compare-selects label,.trophy-search label,.ultra-log-form>label,.playtime-control{color:#79666F!important}
+.reign-panel,.playtime-panel{background:rgba(255,255,255,.95)!important;border-color:#EFDCE4!important;box-shadow:0 10px 30px rgba(171,127,145,.08)!important}
+.reign-cloud-panel{background:linear-gradient(120deg,#fff 0%,#FFF3F7 52%,#EFFAFF 100%)!important;border-color:#EADDE5!important}
+.cloud-brand b{color:#55464D!important}.cloud-brand p,.cloud-status,.cloud-user small,.reign-cloud-panel .micro-note{color:#84757C!important}.cloud-user{background:#fff!important;border-color:#EADDE5!important}
+.profile-avatar,.ultra-avatar{background:linear-gradient(135deg,#A9E2F4,#F7D6E2)!important;color:#65505B!important;border-color:#D9EDF4!important;box-shadow:0 10px 24px rgba(171,127,145,.12)!important}
+.profile-level{color:#C77996!important;border-color:#EBC9D6!important}.progress-percent,.ultra-stats b{color:#65B8D6!important}.progress-track{background:#F2E7EB!important}.progress-track span{background:linear-gradient(90deg,#A9E2F4,#E9B7CB)!important}.progress-stats div{background:#FFF8FA!important}.progress-stats small,.tracked-row small,.recommend-card p,.trophy-details p,.micro-note,.empty-note{color:#8B7B83!important}
+.tracked-row button,.recommend-card button,.custom-collection-head button,.custom-collection-games button,.gallery-source{color:#C77996!important;border-color:#E7C7D3!important}.recommend-placeholder{border-color:#D8EAF0!important;color:#8B7B83!important}.recommend-placeholder>span,.compare-table th,.versus,.gallery-strip span{color:#65B8D6!important}.recommend-placeholder b{color:#55464D!important}
+.compare-table th,.compare-table td{border-color:#F0E1E6!important}.compare-table td{color:#79666F!important}.compare-table td:first-child{color:#A2949A!important}
+.trophy-emblem{color:#D58BA6!important}.trophy-checklist label{background:#FFF5F8!important;color:#79666F!important}.trophy-checklist input{accent-color:#D58BA6!important}
+.challenge-symbol{color:#65B8D6!important;background:#EFFAFF!important}.challenge-item button.done{background:#D58BA6!important;color:#fff!important}.badge-tile.unlocked{background:linear-gradient(145deg,#FFF2F6,#F0FAFD)!important;border-color:#E9CBD7!important}.badge-tile span,.ultra-bottom-note span{color:#65B8D6!important}
+.playtime-result{background:#F0FAFD!important;border-color:#D7EDF5!important}.playtime-result span,.playtime-result small{color:#718A95!important}.playtime-result strong{color:#55AFCF!important}.playtime-control input{accent-color:#D58BA6!important}
+.ultra-section{background:radial-gradient(ellipse at 90% 5%,rgba(169,226,244,.35),transparent 38%),linear-gradient(180deg,#FFF9F7,#F5FBFD)!important}.ultra-hero-panel{background:linear-gradient(145deg,#FFF0F5,#EFFAFF 68%)!important;border-color:#E7D6E2!important}.ultra-hero-top p,.daily-mark{color:#65B8D6!important}.daily-mark{border-color:#D6EAF1!important}.ultra-stats small,.challenge-item small{color:#84757C!important}.ultra-bottom-note{color:#84757C!important}
+footer,.site-footer,.footer{background:#F8FCFD!important;color:#84757C!important;border-color:#E7EFF1!important}.footer-links a:hover{color:#C77996!important}
+:focus-visible{outline:3px solid #8BD5EB!important;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
