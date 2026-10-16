@@ -1,5 +1,5 @@
-const CACHE_NAME = 'reign-ultra-shell-v2-light';
-const SHELL = ['./', './index.html', './style.css', './script.js', './reign-plus.js', './reign-ultra.js', './manifest.webmanifest', './reign-icon.svg'];
+const CACHE_NAME = 'reign-ultra-shell-v3-google-cloud';
+const SHELL = ['./', './index.html', './style.css', './script.js', './reign-plus.js', './reign-ultra.js', './manifest.webmanifest', './reign-icon.svg', './firebase-config.js', './cloud-auth.js'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
 });
