@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="description" content="REIGN — مكتبة ألعاب PlayStation 4 وأدلة التوافق والشروحات.">
+  <title>REIGN | Rule Your Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="REIGN الصفحة الرئيسية">
+      <span class="brand-mark">♛</span><span>REIGN</span><small>RULE YOUR GAME</small>
+    </a>
+    <nav class="nav-links">
+      <a href="#games">مكتبة الألعاب</a><a href="#guides">الأدلة</a><a href="#about">عن REIGN</a>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-label="فتح القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> عالم PlayStation 4 بين يديك</div>
+        <h1>تجاوز الحدود.<br><em>امتلك اللعبة.</em></h1>
+        <p>اكتشف ألعابك المفضلة، تصفّح تفاصيلها، وتعرّف على أدلة التوافق والشروحات في مكتبة واحدة بتصميم صُنع للاعبين.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#games">استكشف المكتبة <span>←</span></a>
+          <a class="button button-ghost" href="#guides">اكتشف الأدلة</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>PS4</strong><span>منصة التركيز</span></div>
+          <i></i><div><strong>GAMES</strong><span>اكتشف عناوينك</span></div><i></i>
+          <div><strong>GUIDES</strong><span>معلومات وتوافق</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="تصميم فني لألعاب الفيديو">
+        <div class="hero-ring"></div>
+        <div class="hero-console"></div>
+        <div class="hero-controller">✦</div>
+        <div class="floating-tag tag-top"><span>♛</span> REIGN ARCHIVE</div>
+        <div class="floating-tag tag-bottom"><b>01</b><span>PLAY YOUR WAY</span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="مميزات الموقع">
+      <span>GAME LIBRARY</span><b>✦</b><span>COMPATIBILITY GUIDES</span><b>✦</b><span>PS4 KNOWLEDGE</span><b>✦</b><span>BUILT FOR PLAYERS</span>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE ARCHIVE</div><h2>مكتبة <em>الألعاب</em></h2><p>ابحث عن لعبة أو اختر تصنيفًا لاستكشاف المكتبة.</p></div>
+        <div class="library-count"><strong id="gameCount">08</strong><span>عنوانًا تجريبيًا</span></div>
+      </div>
+      <div class="tools">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن لعبة..." autocomplete="off"><kbd>⌕</kbd></label>
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="الكل">الكل</button>
+          <button class="filter" data-category="مغامرات">مغامرات</button>
+          <button class="filter" data-category="عالم مفتوح">عالم مفتوح</button>
+          <button class="filter" data-category="رياضة">رياضة</button>
+          <button class="filter" data-category="قتال">قتال</button>
+        </div>
+      </div>
+      <div class="games-grid" id="gamesGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>لم نعثر على نتائج</h3><p>جرّب اسمًا آخر أو اختر تصنيفًا مختلفًا.</p></div>
+      <p class="disclaimer">هذه المكتبة تعرض معلومات تعريفية فقط. تحقّق دائمًا من مصدر الملفات وحقوق استخدامها وسلامتها قبل تنزيل أي محتوى.</p>
+    </section>
+
+    <section class="guides-section" id="guides">
+      <div class="section-heading">
+        <div><div class="eyebrow">KNOW BEFORE YOU PLAY</div><h2>معرفة تصنع <em>الفرق</em></h2><p>معلومات أساسية تساعدك على فهم جهازك والتوافق قبل تثبيت أي شيء.</p></div>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card"><div class="guide-icon">⌘</div><div class="guide-number">GUIDE / 01</div><h3>اعرف إصدار النظام</h3><p>تعرّف على إصدار برنامج النظام من إعدادات جهاز PS4، وسجّل رقم الإصدار قبل اتباع أي دليل.</p><a href="#" class="guide-link" data-guide="firmware">اقرأ الدليل <span>←</span></a></article>
+        <article class="guide-card"><div class="guide-icon">◈</div><div class="guide-number">GUIDE / 02</div><h3>التوافق أولًا</h3><p>تأكد من توافق اللعبة والتحديث والمنطقة وإصدار النظام قبل تجربة أي حزمة أو إضافة.</p><a href="#" class="guide-link" data-guide="compatibility">اقرأ الدليل <span>←</span></a></article>
+        <article class="guide-card"><div class="guide-icon">⛨</div><div class="guide-number">GUIDE / 03</div><h3>السلامة والنسخ الاحتياطي</h3><p>تجنّب الملفات المجهولة، ولا تشغّل ملفات تنفيذية من مصادر غير موثوقة، واحتفظ بنسخة من بياناتك.</p><a href="#" class="guide-link" data-guide="safety">اقرأ الدليل <span>←</span></a></article>
+      </div>
+    </section>
+
+    <section class="manifesto" id="about">
+      <div class="manifesto-symbol">♛</div><div class="eyebrow">THE REIGN MINDSET</div>
+      <h2>ليست مجرد لعبة.<br><em>إنها عالمك.</em></h2>
+      <p>REIGN مساحة لعشاق PS4 تجمع اكتشاف الألعاب مع معلومات واضحة وأدلة سهلة التصفح. هذه النسخة بداية قابلة للتطوير وإضافة محتوى جديد إليها.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">♛</span><span>REIGN</span></a><span>© <span id="year"></span> REIGN — مشروع مستقل من مجتمع اللاعبين.</span><a href="#top" id="backToTop">العودة للأعلى ↑</a></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+      <div class="modal-image" id="modalImage"></div>
+      <div class="modal-content"><div class="eyebrow" id="modalCategory">GAME DETAILS</div><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="detail-list" id="modalDetails"></div><p class="modal-note">ملاحظة: التفاصيل المعروضة تعريفية. راجع المصادر الرسمية أو الموثوقة للتحقق من معلومات الإصدار والتوافق.</p></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
