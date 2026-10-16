@@ -1,4 +1,4 @@
-const CACHE_NAME = 'reign-ultra-shell-v1';
+const CACHE_NAME = 'reign-ultra-shell-v2-light';
 const SHELL = ['./', './index.html', './style.css', './script.js', './reign-plus.js', './reign-ultra.js', './manifest.webmanifest', './reign-icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
