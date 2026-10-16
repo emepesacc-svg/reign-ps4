@@ -15,9 +15,9 @@
   <a class="logo" href="#home" aria-label="REIGN"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a>
   <button class="mobile-menu" id="mobileMenu" aria-label="القائمة">☰</button>
   <nav id="mainNav">
-    <a href="#games">الألعاب</a><a href="#collections">المجموعات</a><a href="#guides">الأدلة</a><a href="#news">آخر الإضافات</a><a href="#faq">الأسئلة</a>
+    <a href="#games">الألعاب</a><a href="#reignId">REIGN ID</a><a href="#discover">اكتشف</a><a href="#compare">مقارنة</a><a href="#collections">المجموعات</a><a href="#guides">الأدلة</a><a href="#faq">الأسئلة</a>
   </nav>
-  <div class="header-actions"><button class="icon-button" id="favoritesShortcut" title="المفضلة" aria-label="المفضلة">♡ <span id="favoriteCount">0</span></button><a class="header-cta" href="#games">اكتشف المكتبة <span>↙</span></a></div>
+  <div class="header-actions"><label class="language-picker" for="languageSelect" aria-label="Language">🌐 <select id="languageSelect"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select></label><button class="icon-button" id="favoritesShortcut" title="المفضلة" aria-label="المفضلة">♡ <span id="favoriteCount">0</span></button><a class="header-cta" href="#games">اكتشف المكتبة <span>↙</span></a></div>
 </header>
 
 <main id="home">
@@ -27,7 +27,7 @@
     <h1>اللعب له<br><span>مستوى آخر.</span></h1>
     <p>اكتشف عوالم PlayStation 4 من مكان واحد. معلومات واضحة، تصنيفات ذكية، قوائم مفضلة، وأدلة تساعدك على فهم الإصدارات والتوافق قبل اتخاذ أي خطوة.</p>
     <div class="hero-buttons"><a class="btn btn-primary" href="#games">استكشف الألعاب <span>←</span></a><a class="btn btn-outline" href="#guides">دليل اللاعب <span>↗</span></a></div>
-    <div class="hero-proof"><div><b>20+</b><small>لعبة في المكتبة</small></div><i></i><div><b>06</b><small>تصنيفات رئيسية</small></div><i></i><div><b>100%</b><small>واجهة عربية</small></div></div>
+    <div class="hero-proof"><div><b>130+</b><small>لعبة في المكتبة</small></div><i></i><div><b>06</b><small>تصنيفات رئيسية</small></div><i></i><div><b>100%</b><small>واجهة عربية</small></div></div>
   </div>
   <div class="hero-visual">
     <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
@@ -44,10 +44,10 @@
 </section>
 
 <section class="section games-section" id="games">
-  <div class="section-head"><div><div class="kicker">EXPLORE THE LIBRARY</div><h2>مكتبة <em>REIGN</em></h2><p>أكثر من 100 عنوان مع أوقات تقريبية للقصة والإضافات والإكمال الكامل، وفلاتر ومفضلة شخصية.</p></div><div class="result-counter"><b id="resultCount">130</b><span>عنوانًا</span></div></div>
+  <div class="section-head"><div><div class="kicker">EXPLORE THE LIBRARY</div><h2>مكتبة <em>REIGN</em></h2><p>أكثر من 100 عنوان مع أوقات تقريبية للقصة والإضافات والإكمال الكامل، وفلاتر ومفضلة شخصية.</p></div><div class="result-counter"><b id="resultCount">145</b><span>عنوانًا</span></div></div>
   <div class="library-toolbar">
     <div class="filter-row" id="categoryFilters">
-      <button class="filter-pill active" data-category="الكل">الكل <span>130</span></button>
+      <button class="filter-pill active" data-category="الكل">الكل <span>145</span></button>
       <button class="filter-pill" data-category="أكشن">أكشن</button><button class="filter-pill" data-category="مغامرات">مغامرات</button><button class="filter-pill" data-category="عالم مفتوح">عالم مفتوح</button><button class="filter-pill" data-category="رياضة">رياضة</button><button class="filter-pill" data-category="قتال">قتال</button><button class="filter-pill" data-category="سباقات">سباقات</button><button class="filter-pill" data-category="رعب">رعب</button><button class="filter-pill" data-category="RPG">RPG</button><button class="filter-pill" data-category="تصويب">تصويب</button><button class="filter-pill" data-category="محاكاة">محاكاة</button><button class="filter-pill" data-category="ألغاز">ألغاز</button><button class="filter-pill" data-category="متنوع">متنوع</button>
     </div>
     <div class="sort-wrap"><label for="sortSelect">ترتيب:</label><select id="sortSelect"><option value="featured">المقترحة</option><option value="az">الاسم أ–ي</option><option value="year-desc">الأحدث إصدارًا</option><option value="year-asc">الأقدم إصدارًا</option><option value="shortest">الأقصر قصة</option><option value="longest">الأطول قصة</option></select></div>
@@ -60,6 +60,27 @@
 </section>
 
 <section class="playtime-section" id="playtime"><div class="section-head"><div><div class="kicker">TIME PLANNER / REIGN LAB</div><h2>خطّط <em>لوقتك</em></h2><p>احسب المدة التقريبية التي تحتاجها لإنهاء لعبة بناءً على وقت لعبك اليومي.</p></div></div><div class="playtime-panel"><div class="playtime-control"><label for="timeGame">اختر اللعبة</label><select id="timeGame"></select></div><div class="playtime-control"><label for="dailyHours">ساعات اللعب يوميًا <b id="dailyHoursLabel">2</b></label><input id="dailyHours" type="range" min="0.5" max="8" step="0.5" value="2"></div><div class="playtime-control"><label for="playGoal">هدفك</label><select id="playGoal"><option value="main">القصة الرئيسية</option><option value="extra">القصة مع الإضافات</option><option value="complete">إكمال 100%</option></select></div><div class="playtime-result"><span>الوقت التقريبي لإنهاء اللعبة</span><strong id="timeResult">—</strong><small id="timeResultDetail">اختر لعبة لتقدير المدة</small></div></div><p class="small-note">الأوقات تقريبية مجمّعة من تقديرات شائعة للاعبين وليست بيانات رسمية؛ الألعاب التنافسية والمستمرة لا تملك نهاية ثابتة.</p></section>
+
+<section class="reign-plus-section" id="reignId">
+ <div class="section-head"><div><div class="kicker">YOUR PERSONAL GAMING PROFILE</div><h2>هويتك في <em>REIGN ID</em></h2><p>ملف لاعب محلي يحفظ اسمك وتقدمك على هذا المتصفح، من دون إنشاء حساب أو إرسال بياناتك إلى خادم.</p></div><div class="profile-level" id="profileLevel">LVL 01</div></div>
+ <div class="reign-profile-layout">
+  <form class="reign-panel profile-form" id="profileForm"><div class="profile-avatar" id="profileAvatar">R</div><label for="playerName">اسم اللاعب</label><input id="playerName" maxlength="24" placeholder="اكتب اسمك داخل REIGN" autocomplete="nickname"><label for="playerTag">لقبك</label><select id="playerTag"><option value="Explorer">Explorer / مستكشف</option><option value="Completionist">Completionist / جامع الإنجازات</option><option value="Speedrunner">Speedrunner / سريع الإنهاء</option><option value="Collector">Collector / جامع الألعاب</option></select><button class="btn btn-primary" type="submit">حفظ الملف <span>↙</span></button><p class="micro-note">ملاحظة: البيانات محفوظة محليًا على جهازك فقط؛ مسح بيانات المتصفح قد يحذفها.</p></form>
+  <div class="reign-panel progress-panel"><div class="panel-title-row"><div><span class="kicker">YOUR JOURNEY</span><h3>رحلة اللاعب</h3></div><span class="progress-percent" id="overallProgress">0%</span></div><div class="progress-track"><span id="overallProgressBar"></span></div><div class="progress-stats"><div><b id="statusPlaying">0</b><small>ألعبها الآن</small></div><div><b id="statusCompleted">0</b><small>أنهيتها</small></div><div><b id="statusPlatinum">0</b><small>بلاتينيوم / 100%</small></div><div><b id="statusWant">0</b><small>أريد لعبها</small></div></div><div class="tracked-games" id="trackedGames"><p class="empty-note">افتح تفاصيل أي لعبة وحدد حالتها لتظهر هنا.</p></div></div>
+ </div>
+</section>
+<section class="reign-plus-section" id="discover">
+ <div class="section-head"><div><div class="kicker">YOUR TASTE, YOUR NEXT GAME</div><h2>اكتشف لعبتك <em>التالية</em></h2><p>حدد نوع التجربة والوقت المتاح، وسيقترح REIGN ألعابًا من المكتبة تناسب اختياراتك.</p></div></div>
+ <div class="reign-panel discovery-panel"><div class="discovery-controls"><label>ما النوع الذي تفضله؟<select id="prefGenre"><option value="الكل">أي نوع</option><option>أكشن</option><option>مغامرات</option><option>عالم مفتوح</option><option>رياضة</option><option>قتال</option><option>سباقات</option><option>رعب</option><option>RPG</option><option>تصويب</option><option>محاكاة</option><option>ألغاز</option></select></label><label>كم لديك من الوقت؟<select id="prefTime"><option value="any">بلا حد</option><option value="5">أقل من 5 ساعات</option><option value="10">أقل من 10 ساعات</option><option value="20">أقل من 20 ساعة</option><option value="40">أقل من 40 ساعة</option></select></label><label>طريقة اللعب<select id="prefMode"><option value="any">أي تجربة</option><option value="short">قصة قصيرة</option><option value="long">مغامرة طويلة</option><option value="completion">إكمال وتحديات</option></select></label><button class="btn btn-primary" id="recommendButton">اقترح لي ألعابًا <span>✦</span></button></div><div class="recommend-results" id="recommendResults"><div class="recommend-placeholder"><span>✦</span><b>اكتشف مغامرتك التالية</b><small>اختر تفضيلاتك ثم اضغط على زر الاقتراح.</small></div></div></div>
+</section>
+<section class="reign-plus-section" id="compare">
+ <div class="section-head"><div><div class="kicker">HEAD-TO-HEAD</div><h2>قارن <em>لعبتين</em></h2><p>ضع لعبتين جنبًا إلى جنب وقارن النوع، وسنة الإصدار، ووقت القصة والإكمال.</p></div></div>
+ <div class="reign-panel compare-panel"><div class="compare-selects"><label>اللعبة الأولى<select id="compareA"></select></label><span class="versus">VS</span><label>اللعبة الثانية<select id="compareB"></select></label></div><div class="compare-result" id="compareResult"><p class="empty-note">اختر لعبتين لعرض المقارنة.</p></div></div>
+</section>
+<section class="reign-plus-section" id="trophies">
+ <div class="section-head"><div><div class="kicker">TROPHY HUNTER / PLATINUM ROADMAP</div><h2>دليل التروفي و<em>البلاتينيوم</em></h2><p>ابدأ بخطة منظمة للإنجازات. لا نعرض عددًا أو صعوبة غير موثّقين؛ استخدم رابط البحث عن دليل خاص باللعبة للتحقق من المتطلبات.</p></div></div>
+ <div class="reign-panel trophy-panel"><div class="trophy-search"><label for="trophyGame">اختر لعبة</label><select id="trophyGame"></select><button class="btn btn-primary" id="trophyLookup">اعثر على دليل التروفيات ↗</button></div><div id="trophyDetails" class="trophy-details"><div class="trophy-emblem">♛</div><div><h3>خطتك نحو البلاتينيوم</h3><p>اختر لعبة لمعرفة وقت الإكمال التقريبي، ثم افتح دليلًا متخصصًا للتأكد من التروفيات القابلة للفوات، ومستوى الصعوبة، ومتطلبات اللعب عبر الإنترنت.</p><p class="micro-note">أوقات الإكمال تقديرية من بيانات REIGN وليست وقت بلاتينيوم مؤكدًا.</p></div></div><div class="trophy-checklist" id="trophyChecklist"><label><input type="checkbox"> راجعت قائمة التروفيات قبل بدء اللعب</label><label><input type="checkbox"> تحققت من التروفيات القابلة للفوات</label><label><input type="checkbox"> أنهيت القصة والمهام الجانبية المطلوبة</label><label><input type="checkbox"> راجعت متطلبات الصعوبة أو اللعب الجماعي</label></div><p class="micro-note">قائمة التحقق تحفظ على هذا المتصفح. REIGN مستقل ولا يضمن دقة أدلة الجهات الخارجية.</p></div>
+</section>
+
 <section class="collections-section" id="collections">
  <div class="section-head"><div><div class="kicker">CURATED FOR YOU</div><h2>اختر <em>مزاجك</em></h2><p>مجموعات سريعة تساعدك على العثور على نوع التجربة التي تريدها.</p></div></div>
  <div class="collection-grid">
@@ -100,7 +121,7 @@
 <section class="faq-section" id="faq"><div class="section-head"><div><div class="kicker">GOOD TO KNOW</div><h2>أسئلة <em>شائعة</em></h2><p>إجابات سريعة عن المكتبة واستخدامها.</p></div></div>
  <div class="faq-list">
   <details><summary>هل REIGN موقع رسمي تابع لـ PlayStation؟ <span>＋</span></summary><p>لا. REIGN مشروع مستقل وغير تابع لشركة Sony أو PlayStation، ولا يستخدم الموقع أي ادعاء بالصفة الرسمية.</p></details>
-  <details><summary>هل صور الألعاب والأحجام دقيقة؟ <span>＋</span></summary><p>الصور في هذه النسخة توضيحية عامة وليست أغلفة رسمية، كما لم نضع أحجامًا أو أرقام إصدارات غير مؤكدة. ينبغي التحقق من بيانات النسخة المحددة من مصدر موثوق.</p></details>
+  <details><summary>هل صور الألعاب والأحجام دقيقة؟ <span>＋</span></summary><p>تُحمّل بعض الأغلفة من صفحات متجر Steam المرتبطة بعنوان اللعبة، وليست بالضرورة غلاف PS4 الأصلي. لقطات الشاشة التي يعرضها الموقع قد تكون من إصدار PC للعنوان نفسه؛ تحقق من المصدر ورابط المنصة قبل الاعتماد عليها.</p></details>
   <details><summary>هل يمكنني إضافة ألعاب أخرى؟ <span>＋</span></summary><p>نعم. افتح script.js وأضف عنصرًا جديدًا إلى مصفوفة games مع الاسم والتصنيف والوصف وسنة الإصدار ورابط الصورة. راعِ استخدام صور تملك حق استخدامها.</p></details>
   <details><summary>هل تعمل المفضلة بعد إغلاق الصفحة؟ <span>＋</span></summary><p>نعم، تحفظ المفضلة محليًا في المتصفح باستخدام localStorage. قد تختفي إذا حذفت بيانات الموقع أو استخدمت متصفحًا أو جهازًا آخر.</p></details>
   <details><summary>هل يوفّر الموقع تنزيل ألعاب مقرصنة؟ <span>＋</span></summary><p>لا يتضمن هذا القالب روابط تنزيل ألعاب محمية بحقوق النشر. يمكن استخدامه لعرض معلومات الألعاب وأدلة التوافق ومصادر قانونية أو محتوى تملك حق توزيعه.</p></details>
@@ -117,4 +138,5 @@
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="script.js"></script>
+<script src="reign-plus.js"></script>
 </body></html>
