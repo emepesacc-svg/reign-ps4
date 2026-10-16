@@ -1,104 +1,120 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0d">
-  <meta name="description" content="REIGN — مكتبة ألعاب PlayStation 4 وأدلة التوافق والشروحات.">
-  <title>REIGN | Rule Your Game</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10151d">
+<meta name="description" content="REIGN — مكتبة عربية لألعاب PlayStation 4، تفاصيل الألعاب، قوائم المفضلة، وأدلة الاستخدام والتوافق.">
+<title>REIGN — عالم ألعاب PS4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-  <header class="topbar">
-    <a class="brand" href="#" aria-label="REIGN الصفحة الرئيسية">
-      <span class="brand-mark">♛</span><span>REIGN</span><small>RULE YOUR GAME</small>
-    </a>
-    <nav class="nav-links">
-      <a href="#games">مكتبة الألعاب</a><a href="#guides">الأدلة</a><a href="#about">عن REIGN</a>
-    </nav>
-    <button class="menu-button" id="menuButton" aria-label="فتح القائمة">☰</button>
-  </header>
+<div class="grain"></div>
+<header class="site-header">
+  <a class="logo" href="#home" aria-label="REIGN"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a>
+  <button class="mobile-menu" id="mobileMenu" aria-label="القائمة">☰</button>
+  <nav id="mainNav">
+    <a href="#games">الألعاب</a><a href="#collections">المجموعات</a><a href="#guides">الأدلة</a><a href="#news">آخر الإضافات</a><a href="#faq">الأسئلة</a>
+  </nav>
+  <div class="header-actions"><button class="icon-button" id="favoritesShortcut" title="المفضلة" aria-label="المفضلة">♡ <span id="favoriteCount">0</span></button><a class="header-cta" href="#games">اكتشف المكتبة <span>↙</span></a></div>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="live-dot"></span> عالم PlayStation 4 بين يديك</div>
-        <h1>تجاوز الحدود.<br><em>امتلك اللعبة.</em></h1>
-        <p>اكتشف ألعابك المفضلة، تصفّح تفاصيلها، وتعرّف على أدلة التوافق والشروحات في مكتبة واحدة بتصميم صُنع للاعبين.</p>
-        <div class="hero-actions">
-          <a class="button button-gold" href="#games">استكشف المكتبة <span>←</span></a>
-          <a class="button button-ghost" href="#guides">اكتشف الأدلة</a>
-        </div>
-        <div class="hero-stats">
-          <div><strong>PS4</strong><span>منصة التركيز</span></div>
-          <i></i><div><strong>GAMES</strong><span>اكتشف عناوينك</span></div><i></i>
-          <div><strong>GUIDES</strong><span>معلومات وتوافق</span></div>
-        </div>
-      </div>
-      <div class="hero-art" aria-label="تصميم فني لألعاب الفيديو">
-        <div class="hero-ring"></div>
-        <div class="hero-console"></div>
-        <div class="hero-controller">✦</div>
-        <div class="floating-tag tag-top"><span>♛</span> REIGN ARCHIVE</div>
-        <div class="floating-tag tag-bottom"><b>01</b><span>PLAY YOUR WAY</span></div>
-      </div>
-    </section>
-
-    <section class="ticker" aria-label="مميزات الموقع">
-      <span>GAME LIBRARY</span><b>✦</b><span>COMPATIBILITY GUIDES</span><b>✦</b><span>PS4 KNOWLEDGE</span><b>✦</b><span>BUILT FOR PLAYERS</span>
-    </section>
-
-    <section class="section" id="games">
-      <div class="section-heading">
-        <div><div class="eyebrow">THE ARCHIVE</div><h2>مكتبة <em>الألعاب</em></h2><p>ابحث عن لعبة أو اختر تصنيفًا لاستكشاف المكتبة.</p></div>
-        <div class="library-count"><strong id="gameCount">08</strong><span>عنوانًا تجريبيًا</span></div>
-      </div>
-      <div class="tools">
-        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن لعبة..." autocomplete="off"><kbd>⌕</kbd></label>
-        <div class="filters" id="filters">
-          <button class="filter active" data-category="الكل">الكل</button>
-          <button class="filter" data-category="مغامرات">مغامرات</button>
-          <button class="filter" data-category="عالم مفتوح">عالم مفتوح</button>
-          <button class="filter" data-category="رياضة">رياضة</button>
-          <button class="filter" data-category="قتال">قتال</button>
-        </div>
-      </div>
-      <div class="games-grid" id="gamesGrid"></div>
-      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>لم نعثر على نتائج</h3><p>جرّب اسمًا آخر أو اختر تصنيفًا مختلفًا.</p></div>
-      <p class="disclaimer">هذه المكتبة تعرض معلومات تعريفية فقط. تحقّق دائمًا من مصدر الملفات وحقوق استخدامها وسلامتها قبل تنزيل أي محتوى.</p>
-    </section>
-
-    <section class="guides-section" id="guides">
-      <div class="section-heading">
-        <div><div class="eyebrow">KNOW BEFORE YOU PLAY</div><h2>معرفة تصنع <em>الفرق</em></h2><p>معلومات أساسية تساعدك على فهم جهازك والتوافق قبل تثبيت أي شيء.</p></div>
-      </div>
-      <div class="guide-grid">
-        <article class="guide-card"><div class="guide-icon">⌘</div><div class="guide-number">GUIDE / 01</div><h3>اعرف إصدار النظام</h3><p>تعرّف على إصدار برنامج النظام من إعدادات جهاز PS4، وسجّل رقم الإصدار قبل اتباع أي دليل.</p><a href="#" class="guide-link" data-guide="firmware">اقرأ الدليل <span>←</span></a></article>
-        <article class="guide-card"><div class="guide-icon">◈</div><div class="guide-number">GUIDE / 02</div><h3>التوافق أولًا</h3><p>تأكد من توافق اللعبة والتحديث والمنطقة وإصدار النظام قبل تجربة أي حزمة أو إضافة.</p><a href="#" class="guide-link" data-guide="compatibility">اقرأ الدليل <span>←</span></a></article>
-        <article class="guide-card"><div class="guide-icon">⛨</div><div class="guide-number">GUIDE / 03</div><h3>السلامة والنسخ الاحتياطي</h3><p>تجنّب الملفات المجهولة، ولا تشغّل ملفات تنفيذية من مصادر غير موثوقة، واحتفظ بنسخة من بياناتك.</p><a href="#" class="guide-link" data-guide="safety">اقرأ الدليل <span>←</span></a></article>
-      </div>
-    </section>
-
-    <section class="manifesto" id="about">
-      <div class="manifesto-symbol">♛</div><div class="eyebrow">THE REIGN MINDSET</div>
-      <h2>ليست مجرد لعبة.<br><em>إنها عالمك.</em></h2>
-      <p>REIGN مساحة لعشاق PS4 تجمع اكتشاف الألعاب مع معلومات واضحة وأدلة سهلة التصفح. هذه النسخة بداية قابلة للتطوير وإضافة محتوى جديد إليها.</p>
-    </section>
-  </main>
-
-  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">♛</span><span>REIGN</span></a><span>© <span id="year"></span> REIGN — مشروع مستقل من مجتمع اللاعبين.</span><a href="#top" id="backToTop">العودة للأعلى ↑</a></footer>
-
-  <div class="modal-backdrop" id="modalBackdrop" hidden>
-    <section class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
-      <div class="modal-image" id="modalImage"></div>
-      <div class="modal-content"><div class="eyebrow" id="modalCategory">GAME DETAILS</div><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="detail-list" id="modalDetails"></div><p class="modal-note">ملاحظة: التفاصيل المعروضة تعريفية. راجع المصادر الرسمية أو الموثوقة للتحقق من معلومات الإصدار والتوافق.</p></div>
-    </section>
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="overline"><span class="pulse"></span> THE PLAYSTATION ARCHIVE</div>
+    <h1>اللعب له<br><span>مستوى آخر.</span></h1>
+    <p>اكتشف عوالم PlayStation 4 من مكان واحد. معلومات واضحة، تصنيفات ذكية، قوائم مفضلة، وأدلة تساعدك على فهم الإصدارات والتوافق قبل اتخاذ أي خطوة.</p>
+    <div class="hero-buttons"><a class="btn btn-primary" href="#games">استكشف الألعاب <span>←</span></a><a class="btn btn-outline" href="#guides">دليل اللاعب <span>↗</span></a></div>
+    <div class="hero-proof"><div><b>20+</b><small>لعبة في المكتبة</small></div><i></i><div><b>06</b><small>تصنيفات رئيسية</small></div><i></i><div><b>100%</b><small>واجهة عربية</small></div></div>
   </div>
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="hero-visual">
+    <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+    <div class="hero-art-card"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1100&q=90" alt="أجواء ألعاب إلكترونية" fetchpriority="high"><div class="hero-art-overlay"></div><div class="hero-art-caption"><span>REIGN FEATURED</span><b>YOUR NEXT ADVENTURE</b></div></div>
+    <div class="hero-chip chip-top"><span class="chip-dot"></span> PLAYER'S CHOICE</div><div class="hero-chip chip-bottom"><strong>R / 01</strong><span>THE COLLECTION</span></div>
+    <div class="hero-stamp">REIGN<br><small>EST. FOR GAMERS</small></div>
+  </div>
+</section>
+
+<section class="quick-search">
+  <div class="search-title"><span class="search-symbol">⌕</span><div><b>ما اللعبة التي تبحث عنها؟</b><small>ابحث بالاسم أو النوع أو سنة الإصدار</small></div></div>
+  <label class="search-input-wrap"><input type="search" id="searchInput" placeholder="مثال: God of War، كرة قدم، عالم مفتوح..." autocomplete="off"><button id="clearSearch" aria-label="مسح البحث">×</button></label>
+  <button class="search-submit" id="searchSubmit">بحث <span>↙</span></button>
+</section>
+
+<section class="section games-section" id="games">
+  <div class="section-head"><div><div class="kicker">EXPLORE THE LIBRARY</div><h2>مكتبة <em>REIGN</em></h2><p>أكثر من 100 عنوان مع أوقات تقريبية للقصة والإضافات والإكمال الكامل، وفلاتر ومفضلة شخصية.</p></div><div class="result-counter"><b id="resultCount">130</b><span>عنوانًا</span></div></div>
+  <div class="library-toolbar">
+    <div class="filter-row" id="categoryFilters">
+      <button class="filter-pill active" data-category="الكل">الكل <span>130</span></button>
+      <button class="filter-pill" data-category="أكشن">أكشن</button><button class="filter-pill" data-category="مغامرات">مغامرات</button><button class="filter-pill" data-category="عالم مفتوح">عالم مفتوح</button><button class="filter-pill" data-category="رياضة">رياضة</button><button class="filter-pill" data-category="قتال">قتال</button><button class="filter-pill" data-category="سباقات">سباقات</button><button class="filter-pill" data-category="رعب">رعب</button><button class="filter-pill" data-category="RPG">RPG</button><button class="filter-pill" data-category="تصويب">تصويب</button><button class="filter-pill" data-category="محاكاة">محاكاة</button><button class="filter-pill" data-category="ألغاز">ألغاز</button><button class="filter-pill" data-category="متنوع">متنوع</button>
+    </div>
+    <div class="sort-wrap"><label for="sortSelect">ترتيب:</label><select id="sortSelect"><option value="featured">المقترحة</option><option value="az">الاسم أ–ي</option><option value="year-desc">الأحدث إصدارًا</option><option value="year-asc">الأقدم إصدارًا</option><option value="shortest">الأقصر قصة</option><option value="longest">الأطول قصة</option></select></div>
+  </div>
+  <div class="active-filters" id="activeFilters" hidden><span id="activeFilterText"></span><button id="resetFilters">مسح الفلاتر ×</button></div>
+  <div class="games-grid" id="gamesGrid" aria-live="polite"></div>
+  <div class="no-results" id="noResults" hidden><div>⌕</div><h3>لم نجد ما تبحث عنه</h3><p>جرّب كلمة أخرى أو أزل بعض الفلاتر.</p><button class="btn btn-primary" id="resetEmpty">عرض كل الألعاب</button></div>
+  <div class="load-more-wrap"><button class="btn btn-outline" id="showMore">عرض المزيد <span>↓</span></button></div>
+  <p class="small-note">أوقات اللعب تقديرية وليست ضمانًا؛ تختلف حسب مستوى الصعوبة وأسلوب اللعب. الصور تأتي من روابط صور الألعاب الخارجية، وقد تحتاج اتصالًا بالإنترنت وقد تتغير أو لا تتوفر لبعض العناوين. تحقق من توفر نسخة PS4 تحديدًا قبل الاعتماد على أي عنوان.</p>
+</section>
+
+<section class="playtime-section" id="playtime"><div class="section-head"><div><div class="kicker">TIME PLANNER / REIGN LAB</div><h2>خطّط <em>لوقتك</em></h2><p>احسب المدة التقريبية التي تحتاجها لإنهاء لعبة بناءً على وقت لعبك اليومي.</p></div></div><div class="playtime-panel"><div class="playtime-control"><label for="timeGame">اختر اللعبة</label><select id="timeGame"></select></div><div class="playtime-control"><label for="dailyHours">ساعات اللعب يوميًا <b id="dailyHoursLabel">2</b></label><input id="dailyHours" type="range" min="0.5" max="8" step="0.5" value="2"></div><div class="playtime-control"><label for="playGoal">هدفك</label><select id="playGoal"><option value="main">القصة الرئيسية</option><option value="extra">القصة مع الإضافات</option><option value="complete">إكمال 100%</option></select></div><div class="playtime-result"><span>الوقت التقريبي لإنهاء اللعبة</span><strong id="timeResult">—</strong><small id="timeResultDetail">اختر لعبة لتقدير المدة</small></div></div><p class="small-note">الأوقات تقريبية مجمّعة من تقديرات شائعة للاعبين وليست بيانات رسمية؛ الألعاب التنافسية والمستمرة لا تملك نهاية ثابتة.</p></section>
+<section class="collections-section" id="collections">
+ <div class="section-head"><div><div class="kicker">CURATED FOR YOU</div><h2>اختر <em>مزاجك</em></h2><p>مجموعات سريعة تساعدك على العثور على نوع التجربة التي تريدها.</p></div></div>
+ <div class="collection-grid">
+  <button class="collection-card collection-action" data-collection="عالم مفتوح"><div class="collection-bg bg-open"></div><span class="collection-index">01 / OPEN WORLD</span><b>عوالم بلا حدود</b><small>استكشف، اكتشف، واصنع قصتك.</small><span class="collection-arrow">↙</span></button>
+  <button class="collection-card collection-action" data-collection="مغامرات"><div class="collection-bg bg-adventure"></div><span class="collection-index">02 / ADVENTURE</span><b>رحلات لا تُنسى</b><small>قصص ومغامرات تبقى في الذاكرة.</small><span class="collection-arrow">↙</span></button>
+  <button class="collection-card collection-action" data-collection="رياضة"><div class="collection-bg bg-sport"></div><span class="collection-index">03 / SPORTS</span><b>المنافسة تبدأ هنا</b><small>مهارة، سرعة، وتحدٍّ.</small><span class="collection-arrow">↙</span></button>
+  <button class="collection-card collection-action" data-collection="رعب"><div class="collection-bg bg-horror"></div><span class="collection-index">04 / SURVIVAL</span><b>هل تجرؤ؟</b><small>تجارب تشد الأعصاب.</small><span class="collection-arrow">↙</span></button>
+ </div>
+</section>
+
+<section class="guides-section" id="guides">
+ <div class="section-head"><div><div class="kicker">PLAYER KNOWLEDGE</div><h2>دليل اللاعب <em>الذكي</em></h2><p>معلومات أساسية قبل التعديل أو تثبيت محتوى على جهازك.</p></div></div>
+ <div class="guide-layout">
+  <article class="guide-feature"><div class="guide-feature-art"><div class="shield">⬡</div><span>REIGN / FIELD NOTES</span></div><div class="guide-feature-copy"><div class="kicker">START HERE</div><h3>افهم جهازك قبل أي خطوة</h3><p>تحقق من إصدار النظام، وتوافق النسخة، ومصدر الملفات. لا توجد طريقة واحدة تناسب كل أجهزة PS4؛ التفاصيل تتغير حسب إصدار النظام ونوع المحتوى.</p><button class="text-link" data-guide="basics">افتح الدليل الكامل <span>←</span></button></div></article>
+  <div class="guide-list">
+   <article class="guide-row"><span class="guide-number">01</span><div><h3>كيف تعرف إصدار النظام؟</h3><p>خطوات سريعة لمعرفة رقم إصدار برنامج النظام.</p><button data-guide="firmware">اقرأ الدليل ↙</button></div><span class="guide-icon">⌘</span></article>
+   <article class="guide-row"><span class="guide-number">02</span><div><h3>فهم التوافق والإصدارات</h3><p>المنطقة، التحديث، ورقم النسخة أمور مهمة.</p><button data-guide="compatibility">اقرأ الدليل ↙</button></div><span class="guide-icon">◈</span></article>
+   <article class="guide-row"><span class="guide-number">03</span><div><h3>حماية بياناتك</h3><p>النسخ الاحتياطي ومصادر الملفات الموثوقة.</p><button data-guide="safety">اقرأ الدليل ↙</button></div><span class="guide-icon">⛨</span></article>
+   <article class="guide-row"><span class="guide-number">04</span><div><h3>مصطلحات شائعة</h3><p>تعرّف على Homebrew وGoldHEN وملفات التحديث.</p><button data-guide="terms">اقرأ الدليل ↙</button></div><span class="guide-icon">⌬</span></article>
+  </div>
+ </div>
+</section>
+
+<section class="updates-section" id="news">
+ <div class="section-head"><div><div class="kicker">FRESH FROM THE ARCHIVE</div><h2>محطات <em>مهمة</em></h2><p>ملاحظات مختصرة تساعدك على استخدام المكتبة بشكل أفضل.</p></div></div>
+ <div class="updates-grid">
+  <article class="update-card"><span class="update-label">LIBRARY</span><div class="update-icon">▦</div><h3>مكتبة قابلة للتوسع</h3><p>أضف ألعابًا جديدة بسهولة من ملف البيانات، مع التصنيف والوصف وسنة الإصدار.</p><span class="update-foot">REIGN ARCHIVE <b>01</b></span></article>
+  <article class="update-card"><span class="update-label">SMART SEARCH</span><div class="update-icon">⌕</div><h3>ابحث بطريقتك</h3><p>استخدم الاسم أو نوع اللعبة أو سنة الإصدار، ثم اجمع البحث مع التصنيفات والترتيب.</p><span class="update-foot">PLAYER TOOLS <b>02</b></span></article>
+  <article class="update-card"><span class="update-label">SAFETY FIRST</span><div class="update-icon">⛨</div><h3>تحقّق قبل التنزيل</h3><p>استخدم مصادر موثوقة وتجنب الملفات المجهولة. لا تدخل بيانات حسابك في مواقع غير موثوقة.</p><span class="update-foot">FIELD NOTES <b>03</b></span></article>
+ </div>
+</section>
+
+<section class="favorites-section" id="favorites">
+ <div class="section-head"><div><div class="kicker">YOUR PERSONAL LIST</div><h2>قائمة <em>المفضلة</em></h2><p>الألعاب التي تحفظها ستظهر هنا على هذا المتصفح.</p></div><button class="text-link" id="clearFavorites">مسح المفضلة ×</button></div>
+ <div id="favoritesGrid" class="games-grid favorites-grid"></div><div class="favorites-empty" id="favoritesEmpty"><span>♡</span><b>قائمتك ما زالت فارغة</b><p>اضغط على رمز القلب في أي بطاقة لحفظ اللعبة هنا.</p></div>
+</section>
+
+<section class="faq-section" id="faq"><div class="section-head"><div><div class="kicker">GOOD TO KNOW</div><h2>أسئلة <em>شائعة</em></h2><p>إجابات سريعة عن المكتبة واستخدامها.</p></div></div>
+ <div class="faq-list">
+  <details><summary>هل REIGN موقع رسمي تابع لـ PlayStation؟ <span>＋</span></summary><p>لا. REIGN مشروع مستقل وغير تابع لشركة Sony أو PlayStation، ولا يستخدم الموقع أي ادعاء بالصفة الرسمية.</p></details>
+  <details><summary>هل صور الألعاب والأحجام دقيقة؟ <span>＋</span></summary><p>الصور في هذه النسخة توضيحية عامة وليست أغلفة رسمية، كما لم نضع أحجامًا أو أرقام إصدارات غير مؤكدة. ينبغي التحقق من بيانات النسخة المحددة من مصدر موثوق.</p></details>
+  <details><summary>هل يمكنني إضافة ألعاب أخرى؟ <span>＋</span></summary><p>نعم. افتح script.js وأضف عنصرًا جديدًا إلى مصفوفة games مع الاسم والتصنيف والوصف وسنة الإصدار ورابط الصورة. راعِ استخدام صور تملك حق استخدامها.</p></details>
+  <details><summary>هل تعمل المفضلة بعد إغلاق الصفحة؟ <span>＋</span></summary><p>نعم، تحفظ المفضلة محليًا في المتصفح باستخدام localStorage. قد تختفي إذا حذفت بيانات الموقع أو استخدمت متصفحًا أو جهازًا آخر.</p></details>
+  <details><summary>هل يوفّر الموقع تنزيل ألعاب مقرصنة؟ <span>＋</span></summary><p>لا يتضمن هذا القالب روابط تنزيل ألعاب محمية بحقوق النشر. يمكن استخدامه لعرض معلومات الألعاب وأدلة التوافق ومصادر قانونية أو محتوى تملك حق توزيعه.</p></details>
+ </div>
+</section>
+
+<section class="closing-cta"><div class="closing-mark">R</div><div class="kicker">YOUR GAME. YOUR RULES.</div><h2>ابدأ رحلتك مع <em>REIGN</em></h2><p>مكتبة واحدة. عوالم كثيرة. اكتشف اللعبة التالية التي تستحق وقتك.</p><a class="btn btn-primary" href="#games">العودة إلى المكتبة <span>↙</span></a></section>
+</main>
+
+<footer class="footer"><a class="logo footer-logo" href="#home"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a><p>مشروع مستقل لعشاق الألعاب — لا توجد صلة رسمية بشركة Sony أو PlayStation.</p><div class="footer-links"><a href="#games">الألعاب</a><a href="#playtime">حاسبة الوقت</a><a href="#guides">الأدلة</a><a href="#faq">الأسئلة</a><a href="#home">الأعلى ↑</a></div><small class="copyright">© <span id="year"></span> REIGN. جميع الحقوق محفوظة لأصحابها.</small></footer>
+
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+ <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="إغلاق">×</button><div class="modal-cover" id="modalCover"></div><div class="modal-body"><div class="kicker" id="modalKicker">GAME FILE</div><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-facts" id="modalFacts"></div><div class="modal-actions"><button class="btn btn-primary" id="modalFavorite">♡ أضف إلى المفضلة</button><button class="btn btn-outline" id="modalClose2">إغلاق</button></div><p class="modal-disclaimer">تحقّق من معلومات النسخة المحددة ومصدرها قبل التثبيت. لا يوفر REIGN ملفات ألعاب محمية بحقوق النشر.</p></div></section>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body></html>
