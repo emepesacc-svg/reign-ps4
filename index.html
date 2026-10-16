@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#10151d">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="reign-icon.svg" type="image/svg+xml">
 <meta name="description" content="REIGN — مكتبة عربية لألعاب PlayStation 4، تفاصيل الألعاب، قوائم المفضلة، وأدلة الاستخدام والتوافق.">
 <title>REIGN — عالم ألعاب PS4</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,7 @@
   <a class="logo" href="#home" aria-label="REIGN"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a>
   <button class="mobile-menu" id="mobileMenu" aria-label="القائمة">☰</button>
   <nav id="mainNav">
-    <a href="#games">الألعاب</a><a href="#reignId">REIGN ID</a><a href="#discover">اكتشف</a><a href="#compare">مقارنة</a><a href="#collections">المجموعات</a><a href="#guides">الأدلة</a><a href="#faq">الأسئلة</a>
+    <a href="#games">الألعاب</a><a href="#reignId">REIGN ID</a><a href="#discover">اكتشف</a><a href="#compare">مقارنة</a><a href="#collections">المجموعات</a><a href="#ultra">ULTRA</a><a href="#guides">الأدلة</a><a href="#faq">الأسئلة</a>
   </nav>
   <div class="header-actions"><label class="language-picker" for="languageSelect" aria-label="Language">🌐 <select id="languageSelect"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select></label><button class="icon-button" id="favoritesShortcut" title="المفضلة" aria-label="المفضلة">♡ <span id="favoriteCount">0</span></button><a class="header-cta" href="#games">اكتشف المكتبة <span>↙</span></a></div>
 </header>
@@ -91,6 +93,24 @@
  </div>
 </section>
 
+
+<section class="reign-plus-section ultra-section" id="ultra">
+ <div class="section-head"><div><div class="kicker">REIGN ULTRA / PLAYER OPERATING SYSTEM</div><h2>مركز القيادة <em>ULTRA</em></h2><p>رتبك وتحدياتك ومكتبتك الشخصية في مكان واحد. جميع البيانات محلية على هذا المتصفح.</p></div><div class="profile-level" id="ultraRank">ROOKIE</div></div>
+ <div class="ultra-grid">
+  <article class="reign-panel ultra-hero-panel"><div class="ultra-hero-top"><div><span class="kicker">PLAYER XP</span><h3 id="ultraPlayerName">لاعب REIGN</h3><p id="ultraPlayerTag">EXPLORER</p></div><div class="ultra-avatar" id="ultraAvatar">R</div></div><div class="xp-line"><div><span>XP</span><b id="ultraXP">0 XP</b></div><span id="ultraNextLevel">0 / 100</span></div><div class="progress-track"><span id="ultraXPBar"></span></div><div class="ultra-stats"><div><b id="ultraGamesTracked">0</b><small>ألعاب متتبعة</small></div><div><b id="ultraHours">0h</b><small>ساعات مسجلة</small></div><div><b id="ultraBadges">0</b><small>شارات مكتسبة</small></div></div><button class="btn btn-outline" id="sharePlayerCard">إنشاء بطاقة اللاعب ↗</button></article>
+  <article class="reign-panel daily-pick-panel"><div class="panel-title-row"><div><span class="kicker">DAILY DROP</span><h3>اختيار اليوم</h3></div><span class="daily-mark">R / PICK</span></div><div id="dailyPick" class="daily-pick-content"></div><button class="btn btn-primary" id="openDailyPick">افتح تفاصيل اللعبة ↗</button><p class="micro-note">الاختيار يتغير حسب اليوم، وهو اقتراح تحريري وليس تقييمًا رسميًا.</p></article>
+ </div>
+ <div class="ultra-grid ultra-grid-lower">
+  <article class="reign-panel"><div class="panel-title-row"><div><span class="kicker">PLAYER QUESTS</span><h3>تحديات REIGN</h3></div><span class="quest-icon">✦</span></div><p class="micro-note">أكمل المهام وسجّل تقدمك للحصول على شارات محلية.</p><div id="challengeList" class="challenge-list"></div></article>
+  <article class="reign-panel"><div class="panel-title-row"><div><span class="kicker">TROPHY CABINET</span><h3>خزانة الشارات</h3></div><span class="quest-icon">♛</span></div><div id="badgeCabinet" class="badge-cabinet"></div></article>
+ </div>
+ <div class="ultra-grid ultra-grid-lower">
+  <article class="reign-panel"><div class="panel-title-row"><div><span class="kicker">MY COLLECTIONS</span><h3>مجموعاتي الخاصة</h3></div></div><form id="collectionForm" class="collection-form"><input id="collectionName" maxlength="32" placeholder="اسم المجموعة، مثل: ألعاب العطلة" required><select id="collectionGame" aria-label="اختر لعبة"></select><button class="btn btn-primary" type="submit">إنشاء مجموعة +</button></form><div id="customCollections" class="custom-collections"></div></article>
+  <article class="reign-panel"><div class="panel-title-row"><div><span class="kicker">SAVE / RESTORE</span><h3>بياناتك تحت سيطرتك</h3></div><span class="quest-icon">⬡</span></div><p class="micro-note">صدّر ملفًا احتياطيًا للمفضلة والتقدم والملف الشخصي والمجموعات، أو استعده لاحقًا على هذا المتصفح.</p><div class="backup-actions"><button class="btn btn-primary" id="exportBackup">تصدير النسخة الاحتياطية ↓</button><label class="btn btn-outline import-label" for="importBackup">استيراد نسخة احتياطية ↑</label><input id="importBackup" type="file" accept="application/json,.json" hidden></div><div class="ultra-log-form"><label for="loggedHours">تسجيل ساعات لعب يدويًا</label><div><input id="loggedHours" type="number" min="0.5" max="5000" step="0.5" placeholder="مثال: 2"><button class="btn btn-outline" id="addLoggedHours" type="button">إضافة</button></div><small class="micro-note">لا توجد قراءة تلقائية من جهاز PlayStation؛ أدخل الوقت بنفسك.</small></div></article>
+ </div>
+ <div class="ultra-bottom-note"><span>◈</span><p>REIGN ULTRA لا يتصل بحساب PlayStation ولا يقرأ التروفيات الفعلية من الجهاز. XP والساعات والشارات ميزات تنظيمية داخل الموقع فقط.</p></div>
+</section>
+
 <section class="guides-section" id="guides">
  <div class="section-head"><div><div class="kicker">PLAYER KNOWLEDGE</div><h2>دليل اللاعب <em>الذكي</em></h2><p>معلومات أساسية قبل التعديل أو تثبيت محتوى على جهازك.</p></div></div>
  <div class="guide-layout">
@@ -139,4 +159,6 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="script.js"></script>
 <script src="reign-plus.js"></script>
+<script src="reign-ultra.js"></script>
+<script>if("serviceWorker" in navigator && location.protocol.startsWith("http")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
 </body></html>

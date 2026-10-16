@@ -51,7 +51,7 @@
     nodes.forEach(node=>{if(!node.__reignOriginal)node.__reignOriginal=node.nodeValue;const original=node.__reignOriginal.trim();if(!original)return;let key=replacements[original];if(key&&dict[key])node.nodeValue=node.__reignOriginal.replace(original,dict[key]);else node.nodeValue=node.__reignOriginal;});
     const search=$('#searchInput');if(search){search.placeholder=language==='en'?'e.g. God of War, football, open world...':language==='fr'?'ex. God of War, football, monde ouvert...':'مثال: God of War، كرة قدم، عالم مفتوح...';}
     // Existing page is Arabic-first; all new tools, navigation and core controls are translated. Game names remain in their original form.
-    const nav=$$('#mainNav a');const navMap=language==='en'?['Games','REIGN ID','Discover','Compare','Collections','Guides','FAQ']:language==='fr'?['Jeux','REIGN ID','Découvrir','Comparer','Collections','Guides','FAQ']:['الألعاب','REIGN ID','اكتشف','مقارنة','المجموعات','الأدلة','الأسئلة'];nav.forEach((a,i)=>{if(navMap[i])a.textContent=navMap[i]});
+    const nav=$$('#mainNav a');const navMap=language==='en'?['Games','REIGN ID','Discover','Compare','Collections','ULTRA','Guides','FAQ']:language==='fr'?['Jeux','REIGN ID','Découvrir','Comparer','Collections','ULTRA','Guides','FAQ']:['الألعاب','REIGN ID','اكتشف','مقارنة','المجموعات','ULTRA','الأدلة','الأسئلة'];nav.forEach((a,i)=>{if(navMap[i])a.textContent=navMap[i]});
   }
   function refreshDynamic(){
     $('#playerName').placeholder=language==='en'?'Enter your REIGN name':language==='fr'?'Votre nom REIGN':'اكتب اسمك داخل REIGN';
