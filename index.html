@@ -154,13 +154,14 @@
 </section>
 
 <section class="world-guide-section" id="worldGuides">
- <div class="section-head"><div><div class="kicker">REIGN WALKTHROUGH & WORLD ATLAS</div><h2>مركز المساعدة <em>والخرائط</em></h2><p>اختر أي لعبة من مكتبة REIGN للحصول على خطة إرشادية حسب مراحل اللعب وروابط أدلة متخصصة. الألعاب المفتوحة تعرض أيضًا خيارات خرائط تفاعلية.</p></div><div class="profile-level">GUIDE HUB</div></div>
+ <div class="section-head"><div><div class="kicker">REIGN WALKTHROUGH & WORLD ATLAS</div><h2>مركز المساعدة <em>والخرائط</em></h2><p>مركز مساعدة داخلي بالكامل: أدلة تقدم ونصائح وأهداف قابلة للحفظ، مع خرائط استكشاف مرسومة داخل REIGN دون فتح مواقع أو متصفحات خارجية.</p></div><div class="profile-level">GUIDE HUB</div></div>
  <div class="world-guide-layout">
   <div class="reign-panel world-guide-picker">
    <label for="worldGuideGame">اختر اللعبة من المكتبة كاملة</label><select id="worldGuideGame"></select>
-   <div class="world-guide-game-card" id="worldGuideGameCard"><span class="world-guide-icon">🧭</span><div><b>دليل كل لعبة</b><p>اختر عنوانًا لعرض خطة التقدم وروابط المساعدة.</p></div></div>
-   <div class="world-guide-links" id="worldGuideLinks"></div>
-   <p class="micro-note">الروابط تفتح مواقع خارجية. REIGN لا يستضيف محتوى الأدلة ولا يضمن توفر كل خريطة أو تحديثها.</p>
+   <div class="world-guide-game-card" id="worldGuideGameCard"><span class="world-guide-icon">🧭</span><div><b>دليل كل لعبة</b><p>اختر لعبة لعرض إرشاداتها وأهدافها داخل الموقع.</p></div></div>
+   <div class="guide-tabs" role="tablist" aria-label="أقسام الدليل"><button type="button" class="guide-tab active" data-guide-tab="steps">خطة المراحل</button><button type="button" class="guide-tab" data-guide-tab="tips">نصائح</button><button type="button" class="guide-tab" data-guide-tab="goals">أهداف 100%</button></div>
+   <div id="worldGuideLinks" class="world-guide-links internal-guide-content"></div>
+   <p class="micro-note">كل المحتوى المعروض هنا داخل REIGN. الخرائط رسوم إرشادية أصلية لتسهيل تنظيم الاستكشاف وليست نسخًا دقيقة من خرائط الألعاب الرسمية.</p>
   </div>
   <div class="reign-panel stage-guide-panel"><div class="panel-title-row"><div><span class="kicker">YOUR PROGRESS CHECKLIST</span><h3>خطة التقدم مرحلة بمرحلة</h3></div><span class="quest-icon">✦</span></div>
    <p id="stageGuideIntro">خطة عامة تساعدك على تنظيم التقدم دون حرق أحداث القصة.</p>
@@ -169,9 +170,10 @@
    <button class="btn btn-outline" id="resetStageGuide" type="button">إعادة تعيين مراحل هذه اللعبة</button>
   </div>
  </div>
- <div class="map-atlas-heading"><div><span class="kicker">OPEN WORLD ATLAS</span><h3>أطلس خرائط العالم المفتوح</h3><p>ابحث عن المواقع والمهام الجانبية والمقتنيات والأسرار. إذا لم تتوفر خريطة مباشرة، يوفر REIGN بحثًا موجّهًا عن خريطة اللعبة المحددة.</p></div><label for="mapFilter">فلترة الخرائط<select id="mapFilter"><option value="all">كل العوالم المفتوحة</option><option value="direct">خرائط تفاعلية مباشرة</option><option value="search">البحث عن خريطة</option></select></label></div>
- <div class="world-map-grid" id="worldMapGrid"></div>
- <p class="micro-note world-map-note">ملاحظة: الخرائط التفصيلية مملوكة لناشريها ومجتمعاتها. بعض الخدمات قد تتطلب تسجيلًا أو تقيّد عدد العلامات المجانية؛ تحقق من شروطها بنفسك.</p>
+ <div class="map-atlas-heading"><div><span class="kicker">REIGN IN-SITE EXPLORER</span><h3>خريطة الاستكشاف الداخلية</h3><p>اختر لعبة عالم مفتوح، وابحث عن نوع الموقع، ثم اضغط أي علامة لمعرفة هدفها ونصيحة الوصول إليها — دون مغادرة الموقع.</p></div><label for="mapGameSelect">اللعبة<select id="mapGameSelect"></select></label></div>
+ <div class="map-toolbar"><label for="mapSearch">ابحث داخل الخريطة<input id="mapSearch" type="search" placeholder="مثال: كنز، مهمة، ترقية، مخيم…"></label><label for="mapCategory">نوع العلامة<select id="mapCategory"><option value="all">كل العلامات</option><option value="story">القصة</option><option value="side">مهام جانبية</option><option value="collectible">مقتنيات وأسرار</option><option value="upgrade">ترقيات وموارد</option><option value="safe">مواقع آمنة / سفر</option></select></label><button class="btn btn-outline" id="resetMapView" type="button">إعادة ضبط الخريطة</button></div>
+ <div class="in-site-map-layout"><div class="reign-panel in-site-map-panel"><div class="in-site-map-heading"><div><span class="kicker">SCHEMATIC DISCOVERY MAP</span><h4 id="inSiteMapTitle">خريطة اللعبة</h4><p id="inSiteMapSubtitle">اختر علامة لعرض تفاصيلها.</p></div><span class="map-live-pill"><i></i> داخل REIGN</span></div><div id="inSiteMapCanvas" class="in-site-map-canvas" aria-label="خريطة استكشاف تفاعلية"></div><div class="map-legend"><span><i class="legend-story"></i>القصة</span><span><i class="legend-side"></i>جانبي</span><span><i class="legend-collectible"></i>مقتنيات</span><span><i class="legend-upgrade"></i>ترقيات</span><span><i class="legend-safe"></i>آمن</span></div></div><aside class="reign-panel map-detail-panel"><span class="kicker">LOCATION INTEL</span><h4 id="mapDetailTitle">اختر علامة على الخريطة</h4><p id="mapDetailText">ستظهر هنا فائدة الموقع، وما الذي يستحسن فعله، ونصيحة لتسهيل الاستكشاف.</p><div id="mapDetailMeta" class="map-detail-meta"></div><button class="btn btn-primary" id="markMapVisited" type="button" disabled>✓ علّم الموقع كمكتشف</button><div class="map-discovery-progress"><div><span>المواقع المكتشفة</span><b id="mapVisitedCount">0 / 0</b></div><div class="progress-track"><span id="mapVisitedBar"></span></div></div><div id="mapLocationList" class="map-location-list"></div></aside></div>
+ <p class="micro-note world-map-note">شفافية: هذه خرائط إرشادية أصلية داخل REIGN وليست الخرائط الرسمية أو تمثيلًا جغرافيًا دقيقًا للعالم داخل اللعبة. أسماء العلامات والإرشادات العامة تساعد على التخطيط، أما المواقع الدقيقة للمهمات والمقتنيات فقد تختلف أو تحتاج دليلًا خاصًا باللعبة.</p>
 </section>
 
 <section class="updates-section" id="news">

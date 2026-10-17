@@ -1,4 +1,4 @@
-const CACHE_NAME = 'reign-luxe-world-guides-v8-google-cloud';
+const CACHE_NAME = 'reign-luxe-in-site-atlas-v9-google-cloud';
 const SHELL = ['./', './index.html', './style.css', './script.js', './reign-plus.js', './reign-ultra.js', './reign-arcade.js', './reign-experience.js', './reign-world-guides.js', './manifest.webmanifest', './reign-icon.svg', './firebase-config.js', './cloud-auth.js'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
