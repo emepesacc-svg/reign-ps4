@@ -113,3 +113,177 @@ input,select,textarea{color:#55464D!important;accent-color:#D58BA6!important}inp
 footer,.site-footer,.footer{background:#F8FCFD!important;color:#84757C!important;border-color:#E7EFF1!important}.footer-links a:hover{color:#C77996!important}
 :focus-visible{outline:3px solid #8BD5EB!important;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* REIGN MOBILE EXPERIENCE — touch-first layout, safe-area dock and compact cards */
+html{scroll-padding-top:84px;scroll-padding-bottom:92px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{min-width:320px;overflow-x:clip;padding-bottom:0}
+img{max-width:100%}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+button,a,select{touch-action:manipulation}
+:where(button,a,input,select,textarea){scroll-margin-top:90px}
+.site-header{gap:10px;padding-inline:clamp(12px,4vw,30px)}
+.site-header .logo{flex-shrink:0;gap:8px}
+.site-header .logo-icon{width:34px;height:34px;font-size:21px}
+.site-header .logo-word{font-size:21px;letter-spacing:2px}
+.header-actions{gap:7px;min-width:0}
+.language-picker{white-space:nowrap;max-width:145px}
+.language-picker select{min-width:0}
+.mobile-menu{min-width:44px;min-height:44px;border-radius:12px;display:none;align-items:center;justify-content:center}
+.btn,.filter-pill,.icon-button,.favorite-btn,.modal-close{min-height:42px}
+input,select,textarea{font-size:16px!important}
+.game-card{border-radius:15px}
+.cover-wrap{isolation:isolate}
+.cover-wrap img{filter:none}
+.game-card:hover{transform:translateY(-2px)}
+.modal-backdrop{overscroll-behavior:contain}
+
+.mobile-dock{display:none}
+@media(max-width:760px){
+  html{scroll-padding-top:78px;scroll-padding-bottom:100px}
+  body{padding-bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+  .site-header{height:64px;padding-inline:14px;gap:8px}
+  .site-header .logo-icon{width:32px;height:32px;font-size:20px}
+  .site-header .logo-word{font-size:19px;letter-spacing:1.7px}
+  .site-header .logo-word small{font-size:7px;letter-spacing:1.3px;margin-top:3px}
+  .mobile-menu{display:inline-flex;order:3;flex-shrink:0}
+  .header-actions{order:2;margin-inline-start:auto}
+  .language-picker{padding:5px 7px;font-size:11px;border-radius:10px}
+  .language-picker select{max-width:70px;font-size:12px!important}
+  .header-actions .icon-button{min-width:42px;min-height:42px;padding:5px 8px;border-radius:10px}
+  .site-header nav{top:63px;max-height:calc(100dvh - 145px);overflow-y:auto;padding:14px;background:rgba(255,252,248,.98)!important;backdrop-filter:blur(18px);box-shadow:0 15px 35px rgba(98,70,83,.13);border-radius:0 0 18px 18px;gap:4px}
+  .site-header nav a{font-size:14px!important;padding:10px 12px;border-radius:10px;min-height:44px;display:flex;align-items:center}
+  .site-header nav a:active{background:#FCEAF0}
+  .hero{padding:32px 18px 22px;min-height:0;gap:0}
+  .hero h1{font-size:clamp(37px,10vw,49px);letter-spacing:-1px;line-height:1.25;margin:12px 0}
+  .hero-copy>p{font-size:13px;line-height:1.9}
+  .hero-buttons{gap:9px;margin-top:18px}
+  .hero-buttons .btn{flex:1;min-width:130px;padding:11px 12px}
+  .hero-proof{margin-top:24px;gap:13px;justify-content:space-between}
+  .hero-proof b{font-size:18px}
+  .hero-proof small{font-size:10px}
+  .hero-visual{height:270px;margin-top:5px;overflow:hidden}
+  .hero-art-card{width:min(72%,300px);height:220px;border-radius:17px}
+  .hero-orbit.orbit-a{width:280px;height:195px}
+  .hero-orbit.orbit-b{width:310px;height:220px}
+  .hero-chip{padding:8px 10px;font-size:9px;border-radius:10px}
+  .hero-chip.chip-top{top:17px;right:0}
+  .hero-chip.chip-bottom{bottom:18px;left:0}
+  .hero-stamp{transform:scale(.82);transform-origin:bottom right}
+  .quick-search{margin:0 14px 8px;padding:14px;gap:9px;border-radius:16px}
+  .search-input-wrap{min-height:46px}
+  .search-input-wrap input{font-size:16px!important;min-width:0}
+  .search-submit{min-height:46px;border-radius:11px}
+  .section,.collections-section,.guides-section,.updates-section,.favorites-section,.faq-section{padding:44px 16px}
+  .reign-plus-section{padding:42px 16px}
+  .section-head{gap:10px;margin-bottom:20px;flex-wrap:wrap}
+  .section-head h2{font-size:clamp(25px,7vw,31px);line-height:1.35;margin:6px 0}
+  .section-head p{font-size:12px;line-height:1.8}
+  .result-counter{margin-inline-start:auto}
+  .library-toolbar{gap:12px;margin-bottom:16px}
+  .filter-row{display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding:3px 1px 8px;scrollbar-width:thin;overscroll-behavior-x:contain}
+  .filter-pill{flex:0 0 auto;white-space:nowrap;border-radius:999px;font-size:11px;padding:8px 12px}
+  .sort-wrap{font-size:12px;gap:8px}
+  .sort-wrap select{max-width:65vw;min-height:42px;border-radius:10px;font-size:13px!important}
+  .active-filters{gap:8px;line-height:1.6;flex-wrap:wrap;margin:0 0 14px}
+  .games-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .game-card{min-width:0;border-radius:13px}
+  .cover-wrap{height:clamp(132px,43vw,190px)}
+  .cover-label{top:7px;right:7px;font-size:8px;padding:3px 6px;border-radius:7px;max-width:80%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .favorite-btn{top:7px;left:7px;width:36px;height:36px;min-height:36px;border-radius:50%;font-size:20px}
+  .game-info{padding:10px}
+  .game-info h3{font-size:clamp(11px,3.2vw,13px);line-height:1.55;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:40px}
+  .game-info p{font-size:10px;line-height:1.65;min-height:50px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .game-meta{font-size:9px;gap:5px;flex-wrap:wrap;margin-top:9px;padding-top:8px}
+  .game-time-line{font-size:9px;gap:5px}
+  .game-time-line span{padding:3px 5px}
+  .load-more-wrap .btn{width:100%;border-radius:12px}
+  .playtime-section{padding:42px 16px}
+  .playtime-panel{grid-template-columns:1fr;padding:15px;gap:13px;border-radius:16px}
+  .playtime-control{gap:6px}
+  .playtime-control label{font-size:13px}
+  .playtime-control select,.playtime-control input{min-height:46px;border-radius:11px;padding:10px}
+  .playtime-control input{min-height:24px}
+  .playtime-result{border-radius:13px}
+  .reign-profile-layout{grid-template-columns:minmax(0,1fr);gap:13px}
+  .reign-panel{padding:14px;border-radius:16px;min-width:0}
+  .profile-form{gap:9px}
+  .profile-form input,.profile-form select,.discovery-controls select,.compare-selects select,.trophy-search select,.collection-form input,.collection-form select,.ultra-log-form input{width:100%;min-height:46px;border-radius:11px;padding:10px 12px}
+  .profile-form .btn,.discovery-controls .btn,.trophy-search .btn{width:100%;min-height:46px;border-radius:11px}
+  .progress-stats{gap:8px}
+  .progress-stats div{min-width:0;padding:11px 7px;border-radius:12px}
+  .progress-stats b{font-size:21px}
+  .progress-stats small{font-size:10px;line-height:1.5}
+  .tracked-row{gap:8px;padding:9px;border-radius:11px}
+  .tracked-row button{min-width:36px;min-height:36px}
+  .discovery-controls,.compare-selects,.trophy-search{grid-template-columns:minmax(0,1fr);gap:12px}
+  .recommend-results{grid-template-columns:minmax(0,1fr)}
+  .compare-result{overflow-x:auto;max-width:100%}
+  .compare-table{min-width:440px}
+  .trophy-checklist{grid-template-columns:1fr;gap:8px}
+  .trophy-checklist label{padding:12px;border-radius:11px;line-height:1.6}
+  .gallery-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .collection-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .collection-card{min-height:205px;padding:13px;border-radius:14px}
+  .collection-card b{font-size:14px}
+  .collection-card small{font-size:10px;line-height:1.6}
+  .guide-layout,.updates-grid{grid-template-columns:minmax(0,1fr)}
+  .guide-feature,.update-card{border-radius:14px;overflow:hidden}
+  .faq-list summary{font-size:13px;line-height:1.7;min-height:48px;align-items:center}
+  .closing-cta{margin:0 16px 38px;padding:34px 16px;border-radius:18px}
+  .closing-cta h2{font-size:26px;line-height:1.4}
+  .footer{padding:26px 18px 18px;gap:15px}
+  .footer-links{gap:10px 14px}
+  .footer-links a{padding:6px}
+  .modal-backdrop{padding:0;align-items:end}
+  .modal{width:100%;max-height:92dvh;border-radius:22px 22px 0 0;grid-template-columns:minmax(0,1fr);overflow:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+  .modal-cover{height:190px;min-height:190px;max-height:190px;border-radius:22px 22px 0 0}
+  .modal-close{position:sticky;top:10px;float:left;margin:10px 10px -47px 0;border-radius:50%;background:#fff;color:#55464D;border-color:#EADDE5;min-width:42px;min-height:42px}
+  .modal-body{padding:20px 17px 26px}
+  .modal-body h2{font-size:23px}
+  .modal-actions{display:grid;grid-template-columns:1fr;gap:9px}
+  .modal-actions .btn{width:100%;min-height:46px;border-radius:11px}
+  .toast{left:12px;right:12px;bottom:calc(88px + env(safe-area-inset-bottom,0px));text-align:center;border-radius:12px}
+  .mobile-dock{position:fixed;z-index:45;left:10px;right:10px;bottom:calc(8px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px;padding:7px 5px;background:rgba(255,252,248,.94);border:1px solid rgba(231,207,218,.9);border-radius:19px;box-shadow:0 10px 35px rgba(112,83,97,.18);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+  .mobile-dock a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:0;min-height:51px;border-radius:13px;color:#84757C;font-size:10px;line-height:1.3;transition:background .18s,color .18s}
+  .mobile-dock .dock-icon{font-size:20px;line-height:1.2;color:#C77996}
+  .mobile-dock a.active{background:linear-gradient(135deg,#FCEAF0,#EFFAFF);color:#55464D;font-weight:800}
+  .mobile-dock a.active .dock-icon{color:#65B8D6}
+}
+@media(max-width:370px){
+  .site-header{padding-inline:9px;gap:5px}
+  .site-header .logo-word{font-size:17px;letter-spacing:1px}
+  .site-header .logo-icon{width:29px;height:29px}
+  .language-picker{max-width:94px;padding-inline:5px}
+  .language-picker select{max-width:55px}
+  .header-actions .icon-button{min-width:38px;padding-inline:5px}
+  .hero{padding-inline:13px}
+  .hero h1{font-size:36px}
+  .hero-proof{gap:8px}
+  .games-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .cover-wrap{height:130px}
+  .game-info{padding:8px}
+  .game-info p{font-size:9px;min-height:44px}
+  .collection-grid{gap:8px}
+  .collection-card{padding:10px;min-height:190px}
+  .mobile-dock{left:6px;right:6px;padding-inline:3px}
+  .mobile-dock a{font-size:9px}
+}
+@media(max-width:330px){.games-grid{grid-template-columns:1fr}.cover-wrap{height:220px}}
+@media(hover:none){.game-card:hover{transform:none}.btn-primary:hover{transform:none}}
+
+
+/* REIGN PLAYROOM — journal, roulette and personal dashboard */
+.reign-arcade-section{padding:76px clamp(18px,5vw,76px);background:linear-gradient(135deg,#fffaf7 0%,#fff 48%,#f2fbff 100%);border-block:1px solid #f0e4e9}
+.arcade-stats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:25px 0}
+.arcade-stat{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:7px;padding:21px;border:1px solid #f0e2e9;border-radius:19px;background:rgba(255,255,255,.86);box-shadow:0 10px 30px #8c6e7a0b}
+.arcade-stat>span{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#fceaf0,#eaf9ff);font-size:22px;color:#bd7793}
+.arcade-stat small{color:#8c7a83;font-size:12px}.arcade-stat b{font-family:Rajdhani,Cairo,sans-serif;font-size:35px;line-height:1.1;color:#55464d;overflow-wrap:anywhere}.arcade-stat em{font-size:11px;font-style:normal;color:#a58d98}
+.arcade-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;margin-top:18px;align-items:stretch}.arcade-lower-grid{margin-top:18px}.arcade-grid>.reign-panel{min-width:0;padding:clamp(16px,2.2vw,26px);border-radius:20px}
+.arcade-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:15px;background:linear-gradient(135deg,#fceaf0,#eefaff);font-size:23px;color:#bf7793}
+.arcade-form{display:grid;gap:12px;margin-top:17px}.arcade-form label,.arcade-goal-form label{display:grid;gap:7px;font-size:12px;font-weight:800;color:#78666f}.arcade-form input,.arcade-form select,.arcade-form textarea,.arcade-goal-form input{width:100%;min-width:0;border:1px solid #eadde4;border-radius:11px;background:#fffdfa;padding:11px 12px;color:#55464d;font:inherit;font-size:13px;outline:none}.arcade-form input:focus,.arcade-form select:focus,.arcade-form textarea:focus,.arcade-goal-form input:focus{border-color:#d58ba6;box-shadow:0 0 0 3px #fceaf0}.arcade-form textarea{resize:vertical}.arcade-form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.arcade-form .btn{width:100%;min-height:46px}.arcade-privacy-note{margin-top:14px;padding:11px 13px;border-radius:12px;background:#f5fbf7;color:#6c8a78;font-size:11px;line-height:1.7}
+.arcade-wheel-panel>p{font-size:13px;color:#8b7b83;line-height:1.8}.arcade-check{display:flex;align-items:center;gap:8px;margin:14px 0;color:#796972;font-size:12px}.arcade-check input{accent-color:#d58ba6;width:17px;height:17px}.arcade-wheel{position:relative;display:grid;place-items:center;width:min(250px,75%);aspect-ratio:1;margin:18px auto;border:9px solid #fff;border-radius:50%;background:conic-gradient(#fceaf0 0deg 45deg,#e9f8ff 45deg 90deg,#f7f0ff 90deg 135deg,#fff1e6 135deg 180deg,#fceaf0 180deg 225deg,#e9f8ff 225deg 270deg,#f7f0ff 270deg 315deg,#fff1e6 315deg 360deg);box-shadow:0 0 0 1px #ecdde5,0 14px 34px #8f6d7a20;transition:transform 3.1s cubic-bezier(.12,.72,.14,1)}.arcade-wheel:before{content:"";position:absolute;inset:13%;border:1px dashed #d8b6c4;border-radius:50%}.wheel-center{z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:35%;aspect-ratio:1;border-radius:50%;background:#fff;box-shadow:0 4px 18px #8c6e7a22;color:#bd7793;font-family:Rajdhani,sans-serif;font-weight:800;font-size:20px}.wheel-center small{font:700 9px Cairo,sans-serif;letter-spacing:2px}.wheel-pointer{position:absolute;z-index:2;top:-15px;left:calc(50% - 14px);font-size:29px;color:#d58ba6;text-shadow:0 2px #fff}.arcade-wheel-panel>.btn{width:100%;min-height:46px}.arcade-wheel-result{margin:12px 0;padding:13px;border:1px solid #f1e2e9;border-radius:12px;background:#fffafc;text-align:center;font-weight:800;color:#7b5b6a;line-height:1.7;min-height:50px}.arcade-wheel-panel .micro-note{display:block;margin-top:10px;line-height:1.7}
+.arcade-goal-form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:end;margin:17px 0}.arcade-goal-form .btn{min-height:44px}.arcade-goal-progress{padding:14px;border-radius:13px;background:#fff8fb;border:1px solid #f2e2e9}.arcade-goal-progress>div:first-child{display:flex;justify-content:space-between;gap:8px;margin-bottom:10px;font-size:12px;color:#806d77}.arcade-goal-progress b{color:#bd7793}.arcade-goal-progress .progress-track{height:9px;overflow:hidden;border-radius:99px;background:#f0e4ea}.arcade-goal-progress .progress-track span{display:block;width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,#d58ba6,#a9e2f4);transition:width .3s}.arcade-achievement{display:flex;align-items:center;gap:12px;margin-top:14px;padding:13px;border:1px solid #eee3e9;border-radius:13px;background:#fff}.arcade-achievement>span{display:grid;place-items:center;width:43px;height:43px;border-radius:13px;background:#fceaf0;font-size:23px}.arcade-achievement div{display:grid;gap:4px}.arcade-achievement b{font-size:13px;color:#6d5360}.arcade-achievement small{font-size:11px;color:#998690;line-height:1.6}
+.arcade-session-list{display:grid;gap:9px;margin-top:15px}.arcade-session{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px;border:1px solid #f0e4e9;border-radius:13px;background:#fff}.arcade-session-mood{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#f9eff4;font-size:21px}.arcade-session-info{min-width:0;display:grid;gap:4px}.arcade-session-info b{font-size:12px;color:#65515b;overflow-wrap:anywhere}.arcade-session-info small{font-size:10px;color:#a18c97}.arcade-session-hours{font-family:Rajdhani,sans-serif;font-size:19px;font-weight:700;color:#bd7793;white-space:nowrap}.arcade-session-note{grid-column:2/-1;font-size:11px;color:#8e7c85;line-height:1.7;overflow-wrap:anywhere}.arcade-session-delete{grid-column:1/-1;justify-self:end;border:0;background:transparent;color:#b18b9c;font-size:11px;padding:5px 8px;cursor:pointer}.arcade-list-actions{display:flex;justify-content:flex-end;margin-top:12px}.arcade-list-actions .btn{min-height:38px;font-size:11px}.arcade-footer-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.arcade-footer-actions .btn{min-height:43px}.arcade-import-label{display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+@media(max-width:900px){.arcade-stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.arcade-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.reign-arcade-section{padding:42px 16px}.arcade-stats-grid{gap:9px;margin:18px 0}.arcade-stat{padding:13px;border-radius:15px;gap:5px}.arcade-stat>span{width:34px;height:34px;font-size:19px;border-radius:11px}.arcade-stat small{font-size:10px;line-height:1.5}.arcade-stat b{font-size:28px}.arcade-stat em{font-size:10px}.arcade-grid{gap:12px;margin-top:12px}.arcade-grid>.reign-panel{padding:15px;border-radius:16px}.arcade-form-row{grid-template-columns:minmax(0,1fr)}.arcade-form input,.arcade-form select,.arcade-form textarea,.arcade-goal-form input{font-size:16px;min-height:45px}.arcade-form textarea{min-height:85px}.arcade-goal-form{grid-template-columns:minmax(0,1fr)}.arcade-goal-form .btn{width:100%}.arcade-wheel{width:min(220px,78%)}.arcade-session{grid-template-columns:36px minmax(0,1fr) auto;padding:9px;gap:8px}.arcade-session-mood{width:36px;height:36px}.arcade-session-hours{font-size:17px}.arcade-footer-actions{display:grid;grid-template-columns:1fr}.arcade-footer-actions .btn{width:100%;min-height:46px}.arcade-list-actions .btn{min-height:42px}}
