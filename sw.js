@@ -1,5 +1,5 @@
-const CACHE_NAME = 'reign-luxe-playroom-v6-google-cloud';
-const SHELL = ['./', './index.html', './style.css', './script.js', './reign-plus.js', './reign-ultra.js', './reign-arcade.js', './manifest.webmanifest', './reign-icon.svg', './firebase-config.js', './cloud-auth.js'];
+const CACHE_NAME = 'reign-luxe-experience-v7-google-cloud';
+const SHELL = ['./', './index.html', './style.css', './script.js', './reign-plus.js', './reign-ultra.js', './reign-arcade.js', './reign-experience.js', './manifest.webmanifest', './reign-icon.svg', './firebase-config.js', './cloud-auth.js'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
 });

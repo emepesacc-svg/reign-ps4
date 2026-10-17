@@ -5,7 +5,7 @@ import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from 'https://www.
 
 (() => {
   const $ = id => document.getElementById(id);
-  const keys = ['reignProfileV1','reignProgressV1','reignLanguageV1','reignTrophyChecklistV1','reignFavorites','reignUltraV1','reignCustomCollectionsV1'];
+  const keys = ['reignProfileV1','reignProgressV1','reignLanguageV1','reignTrophyChecklistV1','reignFavorites','reignUltraV1','reignCustomCollectionsV1','reignIdentityV1','reignMemoriesV1','reignQuestForgeV1'];
   const signIn = $('googleSignIn');
   const signOutBtn = $('googleSignOut');
   const status = $('cloudStatus');
