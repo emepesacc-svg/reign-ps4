@@ -17,7 +17,7 @@
   <a class="logo" href="#home" aria-label="REIGN"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a>
   <button class="mobile-menu" id="mobileMenu" aria-label="القائمة">☰</button>
   <nav id="mainNav">
-    <a href="#games">الألعاب</a><a href="#reignId">REIGN ID</a><a href="#discover">اكتشف</a><a href="#compare">مقارنة</a><a href="#collections">المجموعات</a><a href="#ultra">ULTRA</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">مقارنة</a><a href="#moodmatch">اختيار ذكي</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#faq">الأسئلة</a>
+    <a href="#games">الألعاب</a><a href="#reignId">REIGN ID</a><a href="#discover">اكتشف</a><a href="#compare">مقارنة</a><a href="#collections">المجموعات</a><a href="#ultra">ULTRA</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">مقارنة</a><a href="#moodmatch">اختيار ذكي</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#worldGuides">الأدلة والخرائط</a><a href="#faq">الأسئلة</a>
   </nav>
   <div class="header-actions"><label class="language-picker" for="languageSelect" aria-label="Language">🌐 <select id="languageSelect"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select></label><button class="icon-button" id="favoritesShortcut" title="المفضلة" aria-label="المفضلة">♡ <span id="favoriteCount">0</span></button><a class="header-cta" href="#games">اكتشف المكتبة <span>↙</span></a></div>
 </header>
@@ -153,6 +153,27 @@
  </div>
 </section>
 
+<section class="world-guide-section" id="worldGuides">
+ <div class="section-head"><div><div class="kicker">REIGN WALKTHROUGH & WORLD ATLAS</div><h2>مركز المساعدة <em>والخرائط</em></h2><p>اختر أي لعبة من مكتبة REIGN للحصول على خطة إرشادية حسب مراحل اللعب وروابط أدلة متخصصة. الألعاب المفتوحة تعرض أيضًا خيارات خرائط تفاعلية.</p></div><div class="profile-level">GUIDE HUB</div></div>
+ <div class="world-guide-layout">
+  <div class="reign-panel world-guide-picker">
+   <label for="worldGuideGame">اختر اللعبة من المكتبة كاملة</label><select id="worldGuideGame"></select>
+   <div class="world-guide-game-card" id="worldGuideGameCard"><span class="world-guide-icon">🧭</span><div><b>دليل كل لعبة</b><p>اختر عنوانًا لعرض خطة التقدم وروابط المساعدة.</p></div></div>
+   <div class="world-guide-links" id="worldGuideLinks"></div>
+   <p class="micro-note">الروابط تفتح مواقع خارجية. REIGN لا يستضيف محتوى الأدلة ولا يضمن توفر كل خريطة أو تحديثها.</p>
+  </div>
+  <div class="reign-panel stage-guide-panel"><div class="panel-title-row"><div><span class="kicker">YOUR PROGRESS CHECKLIST</span><h3>خطة التقدم مرحلة بمرحلة</h3></div><span class="quest-icon">✦</span></div>
+   <p id="stageGuideIntro">خطة عامة تساعدك على تنظيم التقدم دون حرق أحداث القصة.</p>
+   <div id="stageGuideList" class="stage-guide-list"></div>
+   <div class="stage-guide-progress"><div><span id="stageGuideProgressText">0 من 6 مراحل</span><b id="stageGuideProgressPct">0%</b></div><div class="progress-track"><span id="stageGuideProgressBar"></span></div></div>
+   <button class="btn btn-outline" id="resetStageGuide" type="button">إعادة تعيين مراحل هذه اللعبة</button>
+  </div>
+ </div>
+ <div class="map-atlas-heading"><div><span class="kicker">OPEN WORLD ATLAS</span><h3>أطلس خرائط العالم المفتوح</h3><p>ابحث عن المواقع والمهام الجانبية والمقتنيات والأسرار. إذا لم تتوفر خريطة مباشرة، يوفر REIGN بحثًا موجّهًا عن خريطة اللعبة المحددة.</p></div><label for="mapFilter">فلترة الخرائط<select id="mapFilter"><option value="all">كل العوالم المفتوحة</option><option value="direct">خرائط تفاعلية مباشرة</option><option value="search">البحث عن خريطة</option></select></label></div>
+ <div class="world-map-grid" id="worldMapGrid"></div>
+ <p class="micro-note world-map-note">ملاحظة: الخرائط التفصيلية مملوكة لناشريها ومجتمعاتها. بعض الخدمات قد تتطلب تسجيلًا أو تقيّد عدد العلامات المجانية؛ تحقق من شروطها بنفسك.</p>
+</section>
+
 <section class="updates-section" id="news">
  <div class="section-head"><div><div class="kicker">FRESH FROM THE ARCHIVE</div><h2>محطات <em>مهمة</em></h2><p>ملاحظات مختصرة تساعدك على استخدام المكتبة بشكل أفضل.</p></div></div>
  <div class="updates-grid">
@@ -215,7 +236,7 @@
 <section class="closing-cta"><div class="closing-mark">R</div><div class="kicker">YOUR GAME. YOUR RULES.</div><h2>ابدأ رحلتك مع <em>REIGN</em></h2><p>مكتبة واحدة. عوالم كثيرة. اكتشف اللعبة التالية التي تستحق وقتك.</p><a class="btn btn-primary" href="#games">العودة إلى المكتبة <span>↙</span></a></section>
 </main>
 
-<footer class="footer"><a class="logo footer-logo" href="#home"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a><p>مشروع مستقل لعشاق الألعاب — لا توجد صلة رسمية بشركة Sony أو PlayStation.</p><div class="footer-links"><a href="#games">الألعاب</a><a href="#playtime">حاسبة الوقت</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">مقارنة</a><a href="#moodmatch">اختيار ذكي</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#faq">الأسئلة</a><a href="#home">الأعلى ↑</a></div><small class="copyright">© <span id="year"></span> REIGN. جميع الحقوق محفوظة لأصحابها.</small></footer>
+<footer class="footer"><a class="logo footer-logo" href="#home"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a><p>مشروع مستقل لعشاق الألعاب — لا توجد صلة رسمية بشركة Sony أو PlayStation.</p><div class="footer-links"><a href="#games">الألعاب</a><a href="#playtime">حاسبة الوقت</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">مقارنة</a><a href="#moodmatch">اختيار ذكي</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#worldGuides">الأدلة والخرائط</a><a href="#faq">الأسئلة</a><a href="#home">الأعلى ↑</a></div><small class="copyright">© <span id="year"></span> REIGN. جميع الحقوق محفوظة لأصحابها.</small></footer>
 
 <div class="modal-backdrop" id="modalBackdrop" hidden>
  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="إغلاق">×</button><div class="modal-cover" id="modalCover"></div><div class="modal-body"><div class="kicker" id="modalKicker">GAME FILE</div><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-facts" id="modalFacts"></div><div class="modal-actions"><button class="btn btn-primary" id="modalFavorite">♡ أضف إلى المفضلة</button><button class="btn btn-outline" id="modalClose2">إغلاق</button></div><p class="modal-disclaimer">تحقّق من معلومات النسخة المحددة ومصدرها قبل التثبيت. لا يوفر REIGN ملفات ألعاب محمية بحقوق النشر.</p></div></section>
@@ -234,6 +255,7 @@
 <script src="reign-ultra.js"></script>
 <script src="reign-arcade.js"></script>
 <script src="reign-experience.js"></script>
+<script src="reign-world-guides.js"></script>
 <script type="module" src="./cloud-auth.js"></script>
 <script>if("serviceWorker" in navigator && location.protocol.startsWith("http")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
 

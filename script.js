@@ -2988,6 +2988,627 @@ const games = [
     },
     "featured": 130,
     "ps4": true
+  },
+  {
+    "id": 131,
+    "title": "Horizon Zero Dawn",
+    "year": 2017,
+    "category": "عالم مفتوح",
+    "genres": [
+      "عالم مفتوح"
+    ],
+    "developer": "Guerrilla Games",
+    "publisher": "Sony Interactive Entertainment",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "استكشف عالمًا بريًا تحكمه آلات ضخمة واكتشف أسرار ألوي.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/header.jpg",
+    "times": {
+      "main": 22,
+      "extra": 45,
+      "complete": 60
+    },
+    "featured": 131,
+    "ps4": true
+  },
+  {
+    "id": 132,
+    "title": "Far Cry 4",
+    "year": 2014,
+    "category": "عالم مفتوح",
+    "genres": [
+      "عالم مفتوح"
+    ],
+    "developer": "Ubisoft Montreal",
+    "publisher": "Ubisoft",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "استكشف كيرات الجبلية وحرر المواقع واكتشف المهام المخفية.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/298110/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/298110/header.jpg",
+    "times": {
+      "main": 17,
+      "extra": 30,
+      "complete": 45
+    },
+    "featured": 132,
+    "ps4": true
+  },
+  {
+    "id": 133,
+    "title": "Far Cry Primal",
+    "year": 2016,
+    "category": "عالم مفتوح",
+    "genres": [
+      "عالم مفتوح"
+    ],
+    "developer": "Ubisoft Montreal",
+    "publisher": "Ubisoft",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "بقاء في العصر الحجري مع صيد وترويض الحيوانات والسيطرة على الأراضي.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/371660/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/371660/header.jpg",
+    "times": {
+      "main": 15,
+      "extra": 25,
+      "complete": 40
+    },
+    "featured": 133,
+    "ps4": true
+  },
+  {
+    "id": 134,
+    "title": "Metal Gear Solid V: The Phantom Pain",
+    "year": 2015,
+    "category": "عالم مفتوح",
+    "genres": [
+      "عالم مفتوح"
+    ],
+    "developer": "Kojima Productions",
+    "publisher": "Konami",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "تخطيط تسلل حر في مناطق واسعة مع خيارات متعددة لتنفيذ المهمات.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/287700/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/287700/header.jpg",
+    "times": {
+      "main": 45,
+      "extra": 80,
+      "complete": 160
+    },
+    "featured": 134,
+    "ps4": true
+  },
+  {
+    "id": 135,
+    "title": "Mafia III",
+    "year": 2016,
+    "category": "عالم مفتوح",
+    "genres": [
+      "عالم مفتوح"
+    ],
+    "developer": "Hangar 13",
+    "publisher": "2K",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "قصة انتقام في مدينة مستوحاة من نيو أورلينز خلال أواخر الستينيات.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/360430/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/360430/header.jpg",
+    "times": {
+      "main": 25,
+      "extra": 45,
+      "complete": 80
+    },
+    "featured": 135,
+    "ps4": true
+  },
+  {
+    "id": 136,
+    "title": "Sleeping Dogs: Definitive Edition",
+    "year": 2014,
+    "category": "عالم مفتوح",
+    "genres": [
+      "عالم مفتوح"
+    ],
+    "developer": "United Front Games",
+    "publisher": "Square Enix",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "عالم هونغ كونغ المفتوح يمزج القتال اليدوي والقيادة والتحقيق.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/307690/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/307690/header.jpg",
+    "times": {
+      "main": 16,
+      "extra": 25,
+      "complete": 40
+    },
+    "featured": 136,
+    "ps4": true
+  },
+  {
+    "id": 137,
+    "title": "Dragon’s Dogma: Dark Arisen",
+    "year": 2013,
+    "category": "RPG",
+    "genres": [
+      "RPG"
+    ],
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "قتال وحوش ضخم ورفاق قابلون للتخصيص وعالم فانتازي للاستكشاف.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/367500/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/367500/header.jpg",
+    "times": {
+      "main": 35,
+      "extra": 55,
+      "complete": 100
+    },
+    "featured": 137,
+    "ps4": true
+  },
+  {
+    "id": 138,
+    "title": "Saints Row IV: Re-Elected",
+    "year": 2015,
+    "category": "عالم مفتوح",
+    "genres": [
+      "عالم مفتوح"
+    ],
+    "developer": "Volition",
+    "publisher": "Deep Silver",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "حركة خارقة ومهام ساخرة داخل مدينة افتراضية واسعة.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/206420/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/206420/header.jpg",
+    "times": {
+      "main": 12,
+      "extra": 25,
+      "complete": 40
+    },
+    "featured": 138,
+    "ps4": true
+  },
+  {
+    "id": 139,
+    "title": "Bloodborne",
+    "year": 2015,
+    "category": "أكشن",
+    "genres": [
+      "أكشن"
+    ],
+    "developer": "FromSoftware",
+    "publisher": "Sony Interactive Entertainment",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "رحلة قوطية مرعبة في يارنام مع قتال سريع وأسرار مخفية.",
+    "image": "https://en.wikipedia.org/wiki/Special:FilePath/Bloodborne_cover_art.jpg",
+    "header": "https://en.wikipedia.org/wiki/Special:FilePath/Bloodborne_cover_art.jpg",
+    "times": {
+      "main": 35,
+      "extra": 50,
+      "complete": 90
+    },
+    "featured": 139,
+    "ps4": true
+  },
+  {
+    "id": 140,
+    "title": "Nioh",
+    "year": 2017,
+    "category": "أكشن",
+    "genres": [
+      "أكشن"
+    ],
+    "developer": "Team Ninja",
+    "publisher": "Koei Tecmo",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "قتال ساموراي صعب ونظام غنائم وتخصيص أسلحة عميق.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/485510/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/485510/header.jpg",
+    "times": {
+      "main": 45,
+      "extra": 75,
+      "complete": 120
+    },
+    "featured": 140,
+    "ps4": true
+  },
+  {
+    "id": 141,
+    "title": "Nioh 2",
+    "year": 2020,
+    "category": "أكشن",
+    "genres": [
+      "أكشن"
+    ],
+    "developer": "Team Ninja",
+    "publisher": "Koei Tecmo",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "تحديات يوكاي وقتال ساموراي متقدم مع بناء شخصية مرن.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1325200/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/1325200/header.jpg",
+    "times": {
+      "main": 45,
+      "extra": 80,
+      "complete": 140
+    },
+    "featured": 141,
+    "ps4": true
+  },
+  {
+    "id": 142,
+    "title": "NieR:Automata",
+    "year": 2017,
+    "category": "RPG",
+    "genres": [
+      "RPG"
+    ],
+    "developer": "PlatinumGames",
+    "publisher": "Square Enix",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "أكشن سريع وقصة متعددة المسارات تمزج الفلسفة والخيال العلمي.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/524220/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/524220/header.jpg",
+    "times": {
+      "main": 21,
+      "extra": 37,
+      "complete": 65
+    },
+    "featured": 142,
+    "ps4": true
+  },
+  {
+    "id": 143,
+    "title": "Tales of Arise",
+    "year": 2021,
+    "category": "RPG",
+    "genres": [
+      "RPG"
+    ],
+    "developer": "Bandai Namco Studios",
+    "publisher": "Bandai Namco Entertainment",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "مغامرة تقمص أدوار بقصة سينمائية وقتال جماعي سريع.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/740130/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/740130/header.jpg",
+    "times": {
+      "main": 40,
+      "extra": 55,
+      "complete": 75
+    },
+    "featured": 143,
+    "ps4": true
+  },
+  {
+    "id": 144,
+    "title": "GreedFall",
+    "year": 2019,
+    "category": "RPG",
+    "genres": [
+      "RPG"
+    ],
+    "developer": "Spiders",
+    "publisher": "Focus Entertainment",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "استكشف جزيرة غامضة واتخذ قرارات تؤثر في الفصائل والقصة.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/606880/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/606880/header.jpg",
+    "times": {
+      "main": 25,
+      "extra": 45,
+      "complete": 65
+    },
+    "featured": 144,
+    "ps4": true
+  },
+  {
+    "id": 145,
+    "title": "Biomutant",
+    "year": 2021,
+    "category": "RPG",
+    "genres": [
+      "RPG"
+    ],
+    "developer": "Experiment 101",
+    "publisher": "THQ Nordic",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "عالم مفتوح ملون وقتال مرن وتخصيص واسع للشخصية.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/597820/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/597820/header.jpg",
+    "times": {
+      "main": 12,
+      "extra": 25,
+      "complete": 40
+    },
+    "featured": 145,
+    "ps4": true
+  },
+  {
+    "id": 146,
+    "title": "Immortals Fenyx Rising",
+    "year": 2020,
+    "category": "عالم مفتوح",
+    "genres": [
+      "عالم مفتوح"
+    ],
+    "developer": "Ubisoft Quebec",
+    "publisher": "Ubisoft",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "ألغاز ومعابد وقتال أسطوري في عالم مستوحى من الميثولوجيا اليونانية.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/2221920/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/2221920/header.jpg",
+    "times": {
+      "main": 25,
+      "extra": 45,
+      "complete": 65
+    },
+    "featured": 146,
+    "ps4": true
+  },
+  {
+    "id": 147,
+    "title": "Outward Definitive Edition",
+    "year": 2022,
+    "category": "RPG",
+    "genres": [
+      "RPG"
+    ],
+    "developer": "Nine Dots Studio",
+    "publisher": "Prime Matter",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "مغامرة بقاء وتقمص أدوار تتطلب الاستعداد للرحلات والمخاطر.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/794260/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/794260/header.jpg",
+    "times": {
+      "main": 30,
+      "extra": 55,
+      "complete": 100
+    },
+    "featured": 147,
+    "ps4": true
+  },
+  {
+    "id": 148,
+    "title": "The Surge 2",
+    "year": 2019,
+    "category": "أكشن",
+    "genres": [
+      "أكشن"
+    ],
+    "developer": "Deck13",
+    "publisher": "Focus Entertainment",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "قتال خيال علمي يعتمد على استهداف أجزاء الأعداء وتطوير المعدات.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/644830/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/644830/header.jpg",
+    "times": {
+      "main": 25,
+      "extra": 40,
+      "complete": 65
+    },
+    "featured": 148,
+    "ps4": true
+  },
+  {
+    "id": 149,
+    "title": "Remnant: From the Ashes",
+    "year": 2019,
+    "category": "أكشن",
+    "genres": [
+      "أكشن"
+    ],
+    "developer": "Gunfire Games",
+    "publisher": "Gearbox Publishing",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "تصويب وتحديات زعماء في عوالم متغيرة مع تعاون اختياري.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/617290/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/617290/header.jpg",
+    "times": {
+      "main": 13,
+      "extra": 25,
+      "complete": 50
+    },
+    "featured": 149,
+    "ps4": true
+  },
+  {
+    "id": 150,
+    "title": "Yakuza: Like a Dragon",
+    "year": 2020,
+    "category": "RPG",
+    "genres": [
+      "RPG"
+    ],
+    "developer": "Ryu Ga Gotoku Studio",
+    "publisher": "Sega",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "مغامرة جريمة بشخصيات محبوبة ونظام قتال قائم على الأدوار.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1235140/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/1235140/header.jpg",
+    "times": {
+      "main": 45,
+      "extra": 70,
+      "complete": 100
+    },
+    "featured": 150,
+    "ps4": true
+  },
+  {
+    "id": 151,
+    "title": "Dragon Ball Z: Kakarot",
+    "year": 2020,
+    "category": "RPG",
+    "genres": [
+      "RPG"
+    ],
+    "developer": "CyberConnect2",
+    "publisher": "Bandai Namco Entertainment",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "أعد عيش أحداث دراغون بول مع قتال واستكشاف ومهام جانبية.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/851850/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/851850/header.jpg",
+    "times": {
+      "main": 30,
+      "extra": 50,
+      "complete": 80
+    },
+    "featured": 151,
+    "ps4": true
+  },
+  {
+    "id": 152,
+    "title": "Shadow of the Colossus",
+    "year": 2018,
+    "category": "مغامرات",
+    "genres": [
+      "مغامرات"
+    ],
+    "developer": "Bluepoint Games",
+    "publisher": "Sony Interactive Entertainment",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "رحلة غامضة تعتمد على اكتشاف العمالقة وتسلقهم لحل الألغاز.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/336240/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/336240/header.jpg",
+    "times": {
+      "main": 7,
+      "extra": 10,
+      "complete": 20
+    },
+    "featured": 152,
+    "ps4": true
+  },
+  {
+    "id": 153,
+    "title": "Kingdoms of Amalur: Re-Reckoning",
+    "year": 2020,
+    "category": "RPG",
+    "genres": [
+      "RPG"
+    ],
+    "developer": "Kaiko",
+    "publisher": "THQ Nordic",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "عالم فانتازي واسع ومهام كثيرة مع تخصيص أسلوب القتال.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1041720/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/1041720/header.jpg",
+    "times": {
+      "main": 30,
+      "extra": 60,
+      "complete": 100
+    },
+    "featured": 153,
+    "ps4": true
+  },
+  {
+    "id": 154,
+    "title": "The Amazing Spider-Man 2",
+    "year": 2014,
+    "category": "أكشن",
+    "genres": [
+      "أكشن"
+    ],
+    "developer": "Beenox",
+    "publisher": "Activision",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "مغامرة أبطال خارقين في نيويورك مع مهام إنقاذ وقتال.",
+    "image": "https://en.wikipedia.org/wiki/Special:FilePath/The_Amazing_Spider-Man_2_cover.jpg",
+    "header": "https://en.wikipedia.org/wiki/Special:FilePath/The_Amazing_Spider-Man_2_cover.jpg",
+    "times": {
+      "main": 12,
+      "extra": 20,
+      "complete": 35
+    },
+    "featured": 154,
+    "ps4": true
+  },
+  {
+    "id": 155,
+    "title": "L.A. Noire",
+    "year": 2011,
+    "category": "مغامرات",
+    "genres": [
+      "مغامرات"
+    ],
+    "developer": "Team Bondi",
+    "publisher": "Rockstar Games",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "تحقيقات بوليسية تعتمد على الأدلة والاستجواب في لوس أنجلوس.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/110800/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/110800/header.jpg",
+    "times": {
+      "main": 25,
+      "extra": 40,
+      "complete": 60
+    },
+    "featured": 155,
+    "ps4": true
+  },
+  {
+    "id": 156,
+    "title": "The Saboteur",
+    "year": 2009,
+    "category": "عالم مفتوح",
+    "genres": [
+      "عالم مفتوح"
+    ],
+    "developer": "Pandemic Studios",
+    "publisher": "Electronic Arts",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "مقاومة سرية في باريس المحتلة مع تسلل وتخريب ومركبات.",
+    "image": "https://en.wikipedia.org/wiki/Special:FilePath/The_Saboteur_video_game_cover.jpg",
+    "header": "https://en.wikipedia.org/wiki/Special:FilePath/The_Saboteur_video_game_cover.jpg",
+    "times": {
+      "main": 18,
+      "extra": 30,
+      "complete": 50
+    },
+    "featured": 156,
+    "ps4": true
+  },
+  {
+    "id": 157,
+    "title": "Bully: Scholarship Edition",
+    "year": 2008,
+    "category": "مغامرات",
+    "genres": [
+      "مغامرات"
+    ],
+    "developer": "Rockstar New England",
+    "publisher": "Rockstar Games",
+    "mode": "فردي/متعدد بحسب اللعبة والوضع",
+    "rating": "PS4 — تحقق من توفر النسخة المحددة قبل الشراء",
+    "desc": "حياة مدرسية مفتوحة ومهمات وشخصيات وأنشطة جانبية.",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/12200/library_600x900.jpg",
+    "header": "https://cdn.akamai.steamstatic.com/steam/apps/12200/header.jpg",
+    "times": {
+      "main": 15,
+      "extra": 25,
+      "complete": 40
+    },
+    "featured": 157,
+    "ps4": true
   }
 ];
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
