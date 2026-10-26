@@ -20,7 +20,6 @@
   'Fallout 4':'https://staticdelivery.nexusmods.com/images/1151/2656542-1614870577.jpg',
   'The Elder Scrolls V: Skyrim Special Edition':'https://blog-imgs-61-origin.fc2.com/s/k/y/skyrim360/Tamriel_WorldMap.jpg',
   'Far Cry 5':'https://www.psu.com/wp/wp-content/uploads/2018/03/far-cry-5-map-faiths-region.jpg',
-  'Dying Light 2 Stay Human':'https://steamuserimages-a.akamaihd.net/ugc/2471989872546366321/B9A1DA837F1C156FA82EF78A0A8175AE0B065789/'
  };
  const data={
   'Grand Theft Auto V':{
@@ -61,6 +60,74 @@
    secrets:{intro:'أنشطة ومقتنيات لاكتشافها في Skyrim.',items:['Word Walls وكلمات القوة','Daedric quests','الكهوف والأطلال النوردية','Standing Stones','المهام المخفية والعناصر الفريدة'],spoiler:'بعض العناصر مرتبطة بمهام أو مستويات محددة.'},
    timeline:{intro:'تسلسل مرن للأحداث الرئيسية.',items:['Helgen وRiverwood','Whiterun وDragon Rising','High Hrothgar','المهام الرئيسية والتنانين','الخاتمة'],spoiler:'يمكنك تأجيل القصة الرئيسية والتركيز على الاستكشاف.'}}
  };
+ const mediaData={
+  'Red Dead Redemption 2':[
+   {src:'https://cdn.staticneo.com/ew/0/0a/RDR2_0081.jpg',title:'مدخل Mule في دليل الحيوانات داخل اللعبة',kind:'دليل الحيوانات'},
+   {src:'https://www.gtabase.com/igallery/3801-3900/RDR2_Online_WildAnimalKillsChallenge_Bear-3882-1080.jpg',title:'Grizzly Bear — مواجهة دب رمادي',kind:'الحياة البرية'},
+   {src:'https://images7.alphacoders.com/950/thumb-1920-950038.jpg',title:'قطيع البيسون في البراري',kind:'حيوانات السهول'}
+  ],
+  'The Witcher 3: Wild Hunt':[
+   {src:'https://images.pushsquare.com/3cf9d1e02c151/leshens-the-witcher-3-wild-hunt-ps4-playstation-4-guide.large.jpg',title:'Leshens — مدخل دليل الوحوش',kind:'Bestiary'},
+   {src:'https://www.gtogg.com/att/Games/RPG/The_Witcher/The_Witcher_3_Wild_Hunt/Screenshots/4/04.jpg',title:'مواجهة Royal Griffin',kind:'وحوش اللعبة'}
+  ],
+  'Horizon Zero Dawn':[
+   {src:'https://cdn.80.lv/api/upload/content/9b/images/5d2cfebfbb616/widen_1840x0.jpg',title:'مواجهة آلة Sawtooth',kind:'دليل الآلات'},
+   {src:'https://images.everyeye.it/img-articoli/horizon-zero-dawn-dinosauri-meccanici-trovarli-speciale-v6-33110-1280x16.jpg',title:'آلة ضخمة في بيئة اللعبة',kind:'آلات اللعبة'}
+  ],
+  'Horizon Zero Dawn Complete Edition':[
+   {src:'https://cdn.80.lv/api/upload/content/9b/images/5d2cfebfbb616/widen_1840x0.jpg',title:'مواجهة آلة Sawtooth',kind:'دليل الآلات'},
+   {src:'https://images.everyeye.it/img-articoli/horizon-zero-dawn-dinosauri-meccanici-trovarli-speciale-v6-33110-1280x16.jpg',title:'آلة ضخمة في بيئة اللعبة',kind:'آلات اللعبة'}
+  ],
+  'Assassin’s Creed Odyssey':[
+   {src:'https://cdn.mos.cms.futurecdn.net/gAP9ZsvpLCDXoXDwzJQqG7.jpg',title:'Kalydonian Boar — الخنزير الأسطوري',kind:'الحيوانات الأسطورية'},
+   {src:'https://cdn.mos.cms.futurecdn.net/RsGL5hCrLXmiFY5Wcu6797-1024-80.jpg',title:'موقع الخنزير الأسطوري في Phokis',kind:'لقطة خريطة داخل اللعبة'}
+  ],
+  'Assassin’s Creed Origins':[
+   {src:'https://www.gamereactor.eu/media/71/assassinscreedorigins_2117113b.jpg',title:'الحياة البرية في مصر القديمة',kind:'الحيوانات والبيئة'},
+   {src:'https://www.gamersdecide.com/sites/default/files/authors/u158268/ac_origin_tahira_near_giant_crocodile_by_ladyrosearasaka_dcuyaep-pre.jpg',title:'تمساح في مياه النيل',kind:'الحياة البرية'}
+  ],
+  'Ghost of Tsushima Director’s Cut':[
+   {src:'https://www.play3.de/wp-content/uploads/2020/07/Ghost-of-Tsushima-Jin-und-ein-Fuchs.jpg',title:'Jin والثعلب المرشد',kind:'حيوانات الاستكشاف'}
+  ],
+  'The Elder Scrolls V: Skyrim Special Edition':[
+   {src:'https://www.krinein.com/img_galerie/big/63508.jpg',title:'الماموث في Skyrim',kind:'كائنات العالم'}
+  ],
+  'Fallout 4':[
+   {src:'https://cdn.mos.cms.futurecdn.net/d72c6f1f274f646a7a59043cbb59d067-1734-80.jpg',title:'مواجهة Deathclaw',kind:'الأعداء والمخلوقات'}
+  ],
+  'Cyberpunk 2077':[
+   {src:'https://img.game8.co/3313481/c2da5b6d7207d9c1edb5d8910c939fe3.png/original',title:'مواجهة Cyberpsycho في Night City',kind:'الأعداء والمهام'}
+  ],
+  'Watch Dogs 2':[
+   {src:'https://m.media-amazon.com/images/M/MV5BMjEwNmQ5ZmEtZTdkYS00NzZmLThiNjYtYjBkZWYzMTBjYjUwXkEyXkFqcGc%40._V1_.jpg',title:'Marcus مع كلب في Watch Dogs 2',kind:'شخصيات وبيئة اللعبة'},
+   {src:'https://i0.wp.com/gamingph.com/wp-content/uploads/2017/03/watch-dogs-2-san-francisco.jpg?ssl=1',title:'واجهة ساحلية داخل Watch Dogs 2',kind:'الاستكشاف والبيئة'}
+  ],
+  'Marvel’s Spider-Man':[
+   {src:'https://images.cgames.de/images/gsgp/226/spider-man_6042386.jpg',title:'Spider-Man يتنقل بين شوارع Manhattan',kind:'مشهد من اللعبة'},
+   {src:'https://i.blogs.es/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/analisis/spiderman_ps4__nombre_provisional_-4655325.jpg',title:'دورية في شوارع نيويورك',kind:'بيئة اللعبة'}
+  ],
+  'Days Gone':[
+   {src:'https://www.thepixelempire.net/uploads/1/2/1/1/12119064/days-gone-playstation-4-11_orig.png',title:'هجوم حشد Freakers',kind:'الأعداء والمواجهات'},
+   {src:'https://i0.wp.com/gideonsgaming.com/wp-content/uploads/2020/09/Days-Gone-horde-attack.jpg?resize=1024%2C576&ssl=1',title:'Deacon محاصر بالحشد',kind:'مشهد قتال'}
+  ],
+  'Far Cry 5':[
+   {src:'https://images.everyeye.it/img-notizie/come-trovare-reclutare-orso-cheeseburger-far-cry-5-v7-325919.jpg',title:'Cheeseburger — الدب المرافق',kind:'حيوان وشخصية مساعدة'}
+  ],
+  'Assassin’s Creed Origins':[
+   {src:'https://miro.medium.com/v2/resize%3Afit%3A1400/1%2A8T-5i13uP3PhvFpiCYDdiw.jpeg',title:'Bayek يطل على Memphis',kind:'شخصية وبيئة اللعبة'},
+   {src:'https://gamefabrique.com/storage/screenshots/xbox-one/assassins-creed-origins-01.png',title:'رحلة Bayek عبر الصحراء',kind:'مشهد استكشاف'}
+  ],
+  'Grand Theft Auto V':[
+   {src:'https://cdn.mos.cms.futurecdn.net/094136e09401ba6ce8a083d82c9590cd.png',title:'الحياة البرية في San Andreas',kind:'حيوانات داخل اللعبة'}
+  ]
+ };
+ function renderMedia(title,tab){
+  const all=mediaData[title]||[];
+  const filtered=all.filter(x=>x.title && x.kind!=='محتوى غير مطابق');
+  if(!filtered.length)return '';
+  const heading=tab==='bestiary'?'صور الكائنات والحيوانات والأعداء':tab==='gallery'?'معرض صور اللعبة':tab==='secrets'?'صور مرجعية للاستكشاف':tab==='timeline'?'مشاهد من عالم اللعبة':'صور مرتبطة بهذه اللعبة';
+  return `<section class="six-media-section"><h4>${heading}</h4><div class="six-media-grid">${filtered.map(x=>`<figure class="six-media-card"><img src="${x.src}" alt="${escapeHtml(x.title)} — ${escapeHtml(title)}" loading="lazy" onerror="this.closest('figure').classList.add('media-unavailable');this.remove();"><figcaption><b>${escapeHtml(x.title)}</b><span>${escapeHtml(x.kind)}</span></figcaption></figure>`).join('')}</div><p class="six-media-disclaimer">الصور تظهر داخل REIGN دون فتح صفحة أخرى. يعتمد تحميلها على إتاحة مصدر الصورة عبر الإنترنت.</p></section>`;
+ }
  const generic={
   worlds:{title:'خريطة عالم اللعبة',text:'اختيرت اللعبة من مكتبة REIGN. إذا كانت لها خريطة موثقة ضمن قاعدة الخرائط فستظهر في قسم REIGN Worlds أعلاه. لا نستبدل الخرائط غير المتاحة برسوم مختلقة.',items:['خريطة العالم إذا كانت اللعبة مفتوحة العالم','مناطق ومراحل منفصلة إذا كانت اللعبة خطية','توسيع تغطية الخرائط يجري عند توفر صورة موثوقة']},
   story:{title:'أرشيف القصة',text:'صفحة فهرسة للقصة دون اختلاق أسماء فصول أو أحداث غير موثقة لهذه اللعبة.',items:['ملخص البداية: راجع وصف اللعبة الرسمي داخل المكتبة','المهام الرئيسية: استخدم مركز الأدلة الموجود في REIGN','المهام الجانبية: سجلها بحسب تقدمك الشخصي']},
@@ -73,9 +140,14 @@
  gameList.forEach(g=>{const o=document.createElement('option');o.value=g.title;o.textContent=g.title;select.appendChild(o);});
  function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
  function currentTab(){return document.querySelector('[data-six-tab].active')?.dataset.sixTab||'worlds';}
- function render(){const title=select.value,tab=currentTab(),entry=(data[title]||{})[tab]||generic[tab];let html=`<article class="reign-panel six-feature-card"><div class="six-feature-card-head"><span class="six-feature-symbol">${({worlds:'🗺️',story:'📜',bestiary:'🐾',secrets:'🔎',timeline:'⌛',gallery:'🖼️'})[tab]}</span><div><span class="kicker">${featureNames[tab]}</span><h3>${escapeHtml(entry.title||featureNames[tab])}</h3><p>${escapeHtml(entry.intro||entry.text||'')}</p></div></div>`;
+ function syncGameOptions(tab){
+  Array.from(select.options).forEach(o=>{const unsupported=tab==='worlds'&&!mapImgs[o.value];o.disabled=unsupported;o.hidden=unsupported;});
+  if(tab==='worlds'&&select.selectedOptions[0]?.disabled){const first=Array.from(select.options).find(o=>!o.disabled);if(first)select.value=first.value;}
+ }
+ function render(){const tab=currentTab();syncGameOptions(tab);const title=select.value,entry=(data[title]||{})[tab]||generic[tab];let html=`<article class="reign-panel six-feature-card"><div class="six-feature-card-head"><span class="six-feature-symbol">${({worlds:'🗺️',story:'📜',bestiary:'🐾',secrets:'🔎',timeline:'⌛',gallery:'🖼️'})[tab]}</span><div><span class="kicker">${featureNames[tab]}</span><h3>${escapeHtml(entry.title||featureNames[tab])}</h3><p>${escapeHtml(entry.intro||entry.text||'')}</p></div></div>`;
+ if(tab!=='worlds')html+=renderMedia(title,tab);
  if(tab==='worlds'){const src=mapImgs[title];html+=src?`<div class="six-inline-map"><img src="${src}" alt="خريطة ${escapeHtml(title)}" loading="lazy"><p>الخريطة مضمّنة داخل الصفحة وليست رابطًا قابلًا للنقر.</p></div>`:`<div class="six-empty-state"><b>لا توجد خريطة موثقة مضافة بعد</b><p>لن نعرض خريطة واقعية أو خريطة مصطنعة بدل خريطة اللعبة.</p></div>`;}
- if(tab==='gallery'){const src=mapImgs[title];html+=src?`<div class="six-gallery-grid"><figure><img src="${src}" alt="خريطة / صورة مرجعية لعالم ${escapeHtml(title)}" loading="lazy"><figcaption>العالم داخل اللعبة — ${escapeHtml(title)}</figcaption></figure><div class="six-gallery-note"><b>معرض REIGN</b><p>هذه صورة مرجعية واحدة متاحة لهذا العنوان. لا يتم فتحها في موقع آخر.</p><label for="galleryNote">ملاحظة على الصورة</label><textarea id="galleryNote" rows="3" placeholder="اكتب ملاحظتك أو اسم المكان الذي تريد تذكره"></textarea><button class="btn btn-outline" id="saveGalleryNote" type="button">حفظ الملاحظة</button><small id="galleryNoteStatus" role="status"></small></div></div>`:`<div class="six-empty-state"><b>لا توجد صور موثقة لهذا العنوان بعد</b><p>يمكنك تدوين وصف للّقطة التي تريد إضافتها لاحقًا.</p><textarea id="galleryNote" rows="3" placeholder="وصف اللقطة"></textarea><button class="btn btn-outline" id="saveGalleryNote" type="button">حفظ الملاحظة</button><small id="galleryNoteStatus" role="status"></small></div>`;}
+ if(tab==='gallery'){html+=`<div class="six-gallery-note"><b>معرض REIGN</b><p>تُعرض الصور المتاحة أعلاه. أضف ملاحظتك إلى ألبومك الشخصي؛ الحفظ محلي على هذا الجهاز.</p><label for="galleryNote">ملاحظة على الصور</label><textarea id="galleryNote" rows="3" placeholder="اكتب اسم الشخصية أو الحيوان أو المكان الذي تريد تذكره"></textarea><button class="btn btn-outline" id="saveGalleryNote" type="button">حفظ الملاحظة</button><small id="galleryNoteStatus" role="status"></small></div>`;}
  if(tab!=='worlds'&&tab!=='gallery'){const items=entry.items||[];html+=`<ul class="six-item-list">${items.map((it,i)=>`<li><label><input type="checkbox" data-six-check="${tab}:${i}"> <span>${escapeHtml(it)}</span></label></li>`).join('')}</ul>`;if(entry.spoiler)html+=`<details class="six-spoiler"><summary>ملاحظة عن الحرق / التفاصيل</summary><p>${escapeHtml(entry.spoiler)}</p></details>`;html+=`<label class="six-notes-label" for="sixPlayerNotes">ملاحظاتي لهذه اللعبة</label><textarea id="sixPlayerNotes" rows="3" placeholder="اكتب تقدمك أو الملاحظات التي تريد تذكرها"></textarea><button class="btn btn-primary" id="saveSixNotes" type="button">حفظ تقدمي وملاحظاتي</button><small id="sixSaveStatus" role="status"></small>`;}
  html+='</article>';content.innerHTML=html;restoreChecks(title,tab);restoreNotes(title,tab);}
  function keyFor(title,tab,suffix){return `reign-six:${title}:${tab}:${suffix}`;}
