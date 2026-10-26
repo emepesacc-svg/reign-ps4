@@ -535,3 +535,12 @@ section[id]{scroll-margin-top:100px}.small-note{font-size:11px!important;max-wid
   .nav-menu-group>b{font-size:12px!important;font-weight:900!important}
   .nav-menu-group>a{font-size:14px!important;font-weight:700!important;color:#294936!important;padding:9px 10px!important}
 }
+
+/* REIGN: make every item inside "Explore REIGN" visibly styled even before hover */
+.nav-more-menu{background:#FFFEFA!important;opacity:1!important;visibility:visible!important}
+.nav-menu-group{gap:7px!important}
+.nav-menu-group>b{display:block!important;color:#8B563D!important;font-size:12px!important;font-weight:900!important;letter-spacing:.01em!important;border-bottom:1px solid #DDE6D8!important;padding:0 2px 10px!important;margin:0 0 3px!important}
+.nav-menu-group>a,.nav-more-menu .nav-menu-group a{display:flex!important;align-items:center!important;min-height:38px!important;padding:9px 11px!important;border:1px solid #E0E8DC!important;border-radius:9px!important;background:#F1F6EE!important;color:#294936!important;font-size:13px!important;font-weight:800!important;line-height:1.5!important;text-decoration:none!important;opacity:1!important;visibility:visible!important;box-shadow:0 1px 2px rgba(41,73,54,.04)!important;transition:background .15s,border-color .15s,transform .15s!important}
+.nav-menu-group>a:hover,.nav-menu-group>a:focus-visible,.nav-more-menu .nav-menu-group a:hover{background:#E1EDE0!important;border-color:#9FBE9F!important;color:#1F5D42!important;transform:translateX(-2px)!important}
+.nav-more[open]>.nav-more-menu{display:grid!important}
+@media(max-width:760px){.nav-menu-group>a,.nav-more-menu .nav-menu-group a{min-height:42px!important;font-size:14px!important;padding:10px 12px!important}.nav-menu-group>b{font-size:13px!important}.nav-more-menu{background:#FFFEFA!important}}
