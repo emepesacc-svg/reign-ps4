@@ -509,3 +509,29 @@ section[id]{scroll-margin-top:100px}.small-note{font-size:11px!important;max-wid
  .playtime-panel,.reign-profile-layout,.ultra-grid,.ultra-grid-lower,.experience-grid,.reign-six-toolbar,.atlas-single-grid{grid-template-columns:1fr!important}.reign-profile-layout{display:grid}.playtime-panel{padding:16px}.progress-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.discovery-controls{grid-template-columns:1fr!important}.collection-grid{grid-template-columns:1fr 1fr!important;gap:10px}.collection-card{min-height:190px}.compare-selects,.faceoff-pickers{grid-template-columns:1fr!important}.versus,.faceoff-vs{text-align:center}.trophy-search{grid-template-columns:1fr}.trophy-details{align-items:flex-start}.trophy-checklist{grid-template-columns:1fr}.player-tools-tabs,.six-feature-tabs{display:flex;overflow-x:auto;flex-wrap:nowrap!important;padding-bottom:7px}.player-tools-tabs button,.six-feature-tabs button{flex:0 0 auto;white-space:nowrap}.player-tool-intro{padding:17px!important;gap:12px!important}.player-tool-list{padding:12px!important}.player-tool-task{padding:13px!important}.player-tool-task-copy{font-size:11px!important}.player-tool-foot{margin:0 12px 14px!important;padding:13px!important}.player-tool-progress{margin:0 12px 13px!important}.nav-more-menu{max-height:65vh;overflow:auto}
 }
 @media(max-width:390px){.games-grid{grid-template-columns:1fr}.cover-wrap{height:230px}.header-actions .language-picker{max-width:116px}.collection-grid{grid-template-columns:1fr!important}}
+
+/* REIGN Atelier navigation visibility fix: visible without hover */
+@media (min-width:761px){
+  .site-header{gap:clamp(12px,1.4vw,24px)!important}
+  .site-header nav{gap:clamp(7px,.8vw,13px)!important;font-size:14px!important;color:#294936!important}
+  .site-header nav>a{display:inline-flex!important;align-items:center;justify-content:center;padding:10px 12px!important;min-height:42px;border:1px solid #D4E0D1!important;border-radius:11px!important;background:#F0F5EC!important;color:#294936!important;font-size:14px!important;font-weight:800!important;line-height:1.25!important;text-decoration:none!important;box-shadow:0 2px 0 rgba(41,73,54,.04)!important;transition:background .18s,border-color .18s,transform .18s!important}
+  .site-header nav>a:hover,.site-header nav>a:focus-visible{background:#E1EDE0!important;border-color:#9DBCA0!important;color:#1F5D42!important;transform:translateY(-1px)}
+  .nav-more summary{display:inline-flex!important;align-items:center;min-height:42px;padding:10px 14px!important;background:#E5EFE2!important;border:1px solid #AFC8AD!important;color:#214F39!important;font-size:14px!important;font-weight:900!important;box-shadow:0 2px 0 rgba(41,73,54,.05)!important}
+  .nav-more summary span{font-size:16px!important;color:#A65D40!important}
+  .nav-more-menu{border:1px solid #CADBC7!important;box-shadow:0 22px 60px rgba(36,66,45,.2)!important}
+  .nav-menu-group>b{font-size:12px!important;font-weight:900!important}
+  .nav-menu-group>a{font-size:13px!important;font-weight:700!important;color:#294936!important;padding:9px 10px!important}
+  .header-actions .language-picker{font-size:13px!important;font-weight:800!important;color:#294936!important}
+  .header-actions .language-picker select{font-size:13px!important;font-weight:800!important;border:1px solid #BDCEB9!important;background:#FFFEFA!important;color:#254A35!important}
+  .header-actions .icon-button{font-weight:800!important;border:1px solid #BDCEB9!important;background:#F0F5EC!important;color:#A65D40!important}
+}
+@media (min-width:761px) and (max-width:1180px){
+  .site-header nav{gap:8px!important}
+  .site-header nav>a{font-size:13px!important;padding:9px 10px!important}
+}
+@media (max-width:760px){
+  .site-header nav>a{font-size:15px!important;font-weight:800!important;color:#294936!important;background:#F0F5EC!important;border:1px solid #D4E0D1!important}
+  .nav-more summary{font-size:15px!important;font-weight:900!important;color:#214F39!important;background:#E5EFE2!important;border:1px solid #AFC8AD!important}
+  .nav-menu-group>b{font-size:12px!important;font-weight:900!important}
+  .nav-menu-group>a{font-size:14px!important;font-weight:700!important;color:#294936!important;padding:9px 10px!important}
+}
