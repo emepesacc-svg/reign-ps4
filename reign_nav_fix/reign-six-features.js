@@ -128,15 +128,16 @@
   const add=(src,caption,kind)=>{if(!src||seen.has(src))return;seen.add(src);cards.push({src,title:caption,kind});};
   // Keep specific third-party screenshots/maps when present, but never use the repeated decorative SVGs.
   custom.forEach(x=>add(x.src,x.title,x.kind));
-  // Every one of the 157 catalog entries receives its own real title-specific cover and landscape capsule.
+  // Each catalog entry uses its title-specific store artwork URL where available; availability depends on the image host.
   if(game){
-   add(game.image,`الغلاف الأصلي المتداول للعبة ${game.title}`,'غلاف اللعبة');
+   add(game.image,`غلاف مرتبط بلعبة ${game.title}`,'غلاف اللعبة');
    add(game.header,`الصورة الأفقية الخاصة بلعبة ${game.title}`,'صورة تعريفية أفقية');
+   (Array.isArray(game.screenshots)?game.screenshots:[]).slice(0,2).forEach((src,i)=>add(src,`لقطة لعب ${i+1} من ${game.title}`,'لقطة من اللعبة'));
   }
   const filtered=cards.slice(0,4);
   if(!filtered.length)return `<section class="six-media-section"><h4>معرض اللعبة</h4><p>لم نعثر على صورة موثوقة متاحة لهذا العنوان حتى الآن.</p></section>`;
   const heading=tab==='bestiary'?'صور مرجعية خاصة باللعبة':tab==='gallery'?'معرض صور اللعبة':tab==='secrets'?'صور مرجعية للاستكشاف':tab==='timeline'?'صور من مواد اللعبة':'مواد مرئية للأرشيف';
-  return `<section class="six-media-section"><h4>${heading}</h4><div class="six-media-grid">${filtered.map(x=>`<figure class="six-media-card"><img src="${escapeHtml(x.src)}" alt="${escapeHtml(x.title)}" loading="lazy" onerror="this.closest('figure').classList.add('media-unavailable');this.remove();"><figcaption><b>${escapeHtml(x.title)}</b><span>${escapeHtml(x.kind)}</span></figcaption></figure>`).join('')}</div><p class="six-media-disclaimer">الصور هنا أغلفة وصور تعريفية خاصة بكل لعبة، وقد تضاف إليها لقطات شاشة من مصادر خارجية عند توفرها. الصور الخارجية تحتاج إلى اتصال بالإنترنت وقد يمنع بعض المضيفين عرضها. لا تُعرض الرسوم التوضيحية البديلة على أنها صور حقيقية.</p></section>`;
+  return `<section class="six-media-section"><h4>${heading}</h4><div class="six-media-grid">${filtered.map(x=>`<figure class="six-media-card"><img src="${escapeHtml(x.src)}" alt="${escapeHtml(x.title)}" loading="lazy" onerror="this.closest('figure').classList.add('media-unavailable');this.remove();"><figcaption><b>${escapeHtml(x.title)}</b><span>${escapeHtml(x.kind)}</span></figcaption></figure>`).join('')}</div><p class="six-media-disclaimer">تستخدم هذه البطاقات روابط صور متجر مرتبطة بمعرّف اللعبة، وليست ملفات صور محلية. إذا حجب المتصفح أو المضيف الصور فقد لا تظهر؛ عندها يجب مراجعة رابط اللعبة بدل عرض صورة بديلة مضللة.</p></section>`;
  }
  const generic={
   worlds:{title:'خريطة عالم اللعبة',text:'اختيرت اللعبة من مكتبة REIGN. إذا كانت لها خريطة موثقة ضمن قاعدة الخرائط فستظهر في قسم REIGN Worlds أعلاه. لا نستبدل الخرائط غير المتاحة برسوم مختلقة.',items:['خريطة العالم إذا كانت اللعبة مفتوحة العالم','مناطق ومراحل منفصلة إذا كانت اللعبة خطية','توسيع تغطية الخرائط يجري عند توفر صورة موثوقة']},

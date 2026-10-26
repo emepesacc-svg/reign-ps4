@@ -1,4 +1,4 @@
-const CACHE_NAME = 'reign-player-edition-v17-real-images';
+const CACHE_NAME = 'reign-local-game-artwork-builder-v19';
 const SHELL = ['./', './index.html', './style.css', './script.js', './reign-plus.js', './reign-ultra.js', './reign-arcade.js', './reign-experience.js', './reign-world-guides.js', './reign-world-atlas.js', './reign-six-features.js', './reign-player-tools.js', './reign-build-lab.js', './reign-player-edition.js', './manifest.webmanifest', './reign-icon.svg', './firebase-config.js', './cloud-auth.js'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
