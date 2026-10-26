@@ -17,7 +17,7 @@
   <a class="logo" href="#home" aria-label="REIGN"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a>
   <button class="mobile-menu" id="mobileMenu" aria-label="القائمة">☰</button>
   <nav id="mainNav">
-    <a href="#games">الألعاب</a><a href="#reignId">REIGN ID</a><a href="#discover">اكتشف</a><a href="#collections">المجموعات</a><a href="#ultra">ULTRA</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">Face-Off</a><a href="#moodmatch">اختيار ذكي</a><a href="#buildlab">Build Lab</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#worldGuides">مركز الأدلة</a><a href="#faq">الأسئلة</a>
+    <a href="#games">الألعاب</a><a href="#reignId">REIGN ID</a><a href="#discover">اكتشف</a><a href="#collections">المجموعات</a><a href="#ultra">ULTRA</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">Face-Off</a><a href="#moodmatch">اختيار ذكي</a><a href="#buildlab">Build Lab</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#worldGuides">مركز الأدلة</a><a href="#worldAtlas">REIGN Worlds</a><a href="#reignSix">أرشيف REIGN+</a><a href="#faq">الأسئلة</a>
   </nav>
   <div class="header-actions"><label class="language-picker" for="languageSelect" aria-label="Language">🌐 <select id="languageSelect"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select></label><button class="icon-button" id="favoritesShortcut" title="المفضلة" aria-label="المفضلة">♡ <span id="favoriteCount">0</span></button><a class="header-cta" href="#games">اكتشف المكتبة <span>↙</span></a></div>
 </header>
@@ -168,6 +168,20 @@
  </div>
 </section>
 
+<section class="world-atlas-section" id="worldAtlas">
+ <div class="section-head"><div><div class="kicker">REIGN WORLDS / IN-GAME MAPS ONLY</div><h2>عوالم الألعاب <em>REIGN Worlds</em></h2><p>خرائط العوالم كما تظهر داخل الألعاب فقط. لا خرائط واقعية، ولا روابط تنقلك إلى مواقع أخرى. الصور المعروضة داخل الصفحة قد تحتاج اتصالًا بالإنترنت إذا كان مصدر الصورة الأصلي خارجيًا.</p></div><div class="profile-level">IN-GAME MAPS</div></div>
+ <div class="atlas-toolbar reign-panel"><label for="atlasGameSelect">اختر لعبة من مكتبة REIGN</label><select id="atlasGameSelect"></select><div class="atlas-game-summary"><b id="atlasSelectedTitle">اختر لعبة</b><p id="atlasSelectedDesc">اعرض خريطة عالم اللعبة إن كانت متاحة.</p></div><button class="btn btn-outline" id="atlasReloadMap" type="button">إعادة تحميل الخريطة ↻</button></div>
+ <div class="atlas-single-grid"><article class="reign-panel atlas-map-panel"><div class="atlas-panel-head"><div><span class="kicker">IN-GAME WORLD MAP</span><h3>خريطة اللعبة</h3></div><span class="atlas-badge">GAME MAP</span></div><div class="atlas-image-wrap"><img id="atlasVirtualMap" alt="خريطة عالم اللعبة" loading="lazy" hidden><div class="atlas-placeholder" id="atlasVirtualPlaceholder"><span>▧</span><b id="atlasVirtualPlaceholderTitle">اختر لعبة</b><p id="atlasVirtualPlaceholderText">ستظهر هنا خريطة اللعبة عندما تتوفر صورة موثقة لها.</p></div></div><p class="atlas-source" id="atlasVirtualSource">لا توجد روابط خارجية للتنقل من هذه الصفحة.</p></article></div>
+ <p class="atlas-disclaimer" id="atlasSourceNote">هذه خرائط من داخل الألعاب أو خرائط مرجعية لعالم اللعبة وليست خرائط واقعية. بعض الألعاب لا تمتلك خريطة عالم مفتوح، وبعض مصادر الصور قد لا تسمح بعرضها داخل مواقع أخرى.</p>
+</section>
+
+<section class="reign-six-section" id="reignSix">
+ <div class="section-head"><div><div class="kicker">THE REIGN ARCHIVE / SIX NEW FEATURES</div><h2>أرشيف REIGN <em>PLUS</em></h2><p>ست أدوات جديدة للاستكشاف والتوثيق، داخل الموقع نفسه.</p></div><div class="profile-level">SIX FEATURES</div></div>
+ <div class="reign-six-toolbar reign-panel"><label for="sixGameSelect">اللعبة</label><select id="sixGameSelect"></select><div class="six-feature-tabs" role="tablist" aria-label="ميزات الأرشيف"><button type="button" class="active" data-six-tab="worlds">العوالم والخرائط</button><button type="button" data-six-tab="story">أرشيف القصة</button><button type="button" data-six-tab="bestiary">دليل الكائنات</button><button type="button" data-six-tab="secrets">الأسرار</button><button type="button" data-six-tab="timeline">الخط الزمني</button><button type="button" data-six-tab="gallery">معرض الصور</button></div></div>
+ <div id="sixFeatureContent" class="six-feature-content" aria-live="polite"></div>
+ <p class="micro-note">المحتوى التفصيلي يختلف حسب اللعبة. عندما لا تتوفر معلومة موثقة لعنوان محدد، يوضح REIGN ذلك بدل اختراع تفاصيل أو أحداث.</p>
+</section>
+
 <section class="updates-section" id="news">
  <div class="section-head"><div><div class="kicker">FRESH FROM THE ARCHIVE</div><h2>محطات <em>مهمة</em></h2><p>ملاحظات مختصرة تساعدك على استخدام المكتبة بشكل أفضل.</p></div></div>
  <div class="updates-grid">
@@ -271,6 +285,8 @@
 <script src="reign-arcade.js"></script>
 <script src="reign-experience.js"></script>
 <script src="reign-world-guides.js"></script>
+<script src="reign-world-atlas.js"></script>
+<script src="reign-six-features.js"></script>
 <script src="reign-build-lab.js"></script>
 <script type="module" src="./cloud-auth.js"></script>
 <script>if("serviceWorker" in navigator && location.protocol.startsWith("http")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
