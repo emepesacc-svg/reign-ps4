@@ -2,11 +2,11 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#39233F">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="reign-icon.svg" type="image/svg+xml">
-<meta name="description" content="REIGN — مكتبة عربية لألعاب PlayStation 4، تفاصيل الألعاب، قوائم المفضلة، وأدلة الاستخدام والتوافق.">
-<title>REIGN — عالم ألعاب PS4</title>
+<meta name="description" content="REIGN — مكتبة ألعاب PS4 بتجربة غنية، أدوات اللاعب، خطط البناء وأدلة التقدم.">
+<title>REIGN — Player Archive</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -17,7 +17,7 @@
   <a class="logo" href="#home" aria-label="REIGN"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a>
   <button class="mobile-menu" id="mobileMenu" aria-label="القائمة">☰</button>
   <nav id="mainNav">
-    <a href="#games">الألعاب</a><a href="#reignId">REIGN ID</a><a href="#discover">اكتشف</a><a href="#compare">مقارنة</a><a href="#collections">المجموعات</a><a href="#ultra">ULTRA</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">مقارنة</a><a href="#moodmatch">اختيار ذكي</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#worldGuides">الأدلة والخرائط</a><a href="#faq">الأسئلة</a>
+    <a href="#games">الألعاب</a><a href="#reignId">REIGN ID</a><a href="#discover">اكتشف</a><a href="#collections">المجموعات</a><a href="#ultra">ULTRA</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">Face-Off</a><a href="#moodmatch">اختيار ذكي</a><a href="#buildlab">Build Lab</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#worldGuides">مركز الأدلة</a><a href="#faq">الأسئلة</a>
   </nav>
   <div class="header-actions"><label class="language-picker" for="languageSelect" aria-label="Language">🌐 <select id="languageSelect"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select></label><button class="icon-button" id="favoritesShortcut" title="المفضلة" aria-label="المفضلة">♡ <span id="favoriteCount">0</span></button><a class="header-cta" href="#games">اكتشف المكتبة <span>↙</span></a></div>
 </header>
@@ -29,7 +29,7 @@
     <h1>اللعب له<br><span>مستوى آخر.</span></h1>
     <p>اكتشف عوالم PlayStation 4 من مكان واحد. معلومات واضحة، تصنيفات ذكية، قوائم مفضلة، وأدلة تساعدك على فهم الإصدارات والتوافق قبل اتخاذ أي خطوة.</p>
     <div class="hero-buttons"><a class="btn btn-primary" href="#games">استكشف الألعاب <span>←</span></a><a class="btn btn-outline" href="#guides">دليل اللاعب <span>↗</span></a></div>
-    <div class="hero-proof"><div><b>130+</b><small>لعبة في المكتبة</small></div><i></i><div><b>06</b><small>تصنيفات رئيسية</small></div><i></i><div><b>100%</b><small>واجهة عربية</small></div></div>
+    <div class="hero-proof"><div><b>157+</b><small>لعبة في المكتبة</small></div><i></i><div><b>06</b><small>تصنيفات رئيسية</small></div><i></i><div><b>100%</b><small>واجهة عربية</small></div></div>
   </div>
   <div class="hero-visual">
     <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
@@ -80,10 +80,6 @@
 <section class="reign-plus-section" id="discover">
  <div class="section-head"><div><div class="kicker">YOUR TASTE, YOUR NEXT GAME</div><h2>اكتشف لعبتك <em>التالية</em></h2><p>حدد نوع التجربة والوقت المتاح، وسيقترح REIGN ألعابًا من المكتبة تناسب اختياراتك.</p></div></div>
  <div class="reign-panel discovery-panel"><div class="discovery-controls"><label>ما النوع الذي تفضله؟<select id="prefGenre"><option value="الكل">أي نوع</option><option>أكشن</option><option>مغامرات</option><option>عالم مفتوح</option><option>رياضة</option><option>قتال</option><option>سباقات</option><option>رعب</option><option>RPG</option><option>تصويب</option><option>محاكاة</option><option>ألغاز</option></select></label><label>كم لديك من الوقت؟<select id="prefTime"><option value="any">بلا حد</option><option value="5">أقل من 5 ساعات</option><option value="10">أقل من 10 ساعات</option><option value="20">أقل من 20 ساعة</option><option value="40">أقل من 40 ساعة</option></select></label><label>طريقة اللعب<select id="prefMode"><option value="any">أي تجربة</option><option value="short">قصة قصيرة</option><option value="long">مغامرة طويلة</option><option value="completion">إكمال وتحديات</option></select></label><button class="btn btn-primary" id="recommendButton">اقترح لي ألعابًا <span>✦</span></button></div><div class="recommend-results" id="recommendResults"><div class="recommend-placeholder"><span>✦</span><b>اكتشف مغامرتك التالية</b><small>اختر تفضيلاتك ثم اضغط على زر الاقتراح.</small></div></div></div>
-</section>
-<section class="reign-plus-section" id="compare">
- <div class="section-head"><div><div class="kicker">HEAD-TO-HEAD</div><h2>قارن <em>لعبتين</em></h2><p>ضع لعبتين جنبًا إلى جنب وقارن النوع، وسنة الإصدار، ووقت القصة والإكمال.</p></div></div>
- <div class="reign-panel compare-panel"><div class="compare-selects"><label>اللعبة الأولى<select id="compareA"></select></label><span class="versus">VS</span><label>اللعبة الثانية<select id="compareB"></select></label></div><div class="compare-result" id="compareResult"><p class="empty-note">اختر لعبتين لعرض المقارنة.</p></div></div>
 </section>
 <section class="reign-plus-section" id="trophies">
  <div class="section-head"><div><div class="kicker">TROPHY HUNTER / PLATINUM ROADMAP</div><h2>دليل التروفي و<em>البلاتينيوم</em></h2><p>ابدأ بخطة منظمة للإنجازات. لا نعرض عددًا أو صعوبة غير موثّقين؛ استخدم رابط البحث عن دليل خاص باللعبة للتحقق من المتطلبات.</p></div></div>
@@ -154,14 +150,14 @@
 </section>
 
 <section class="world-guide-section" id="worldGuides">
- <div class="section-head"><div><div class="kicker">REIGN WALKTHROUGH & WORLD ATLAS</div><h2>مركز المساعدة <em>والخرائط</em></h2><p>مركز مساعدة داخلي بالكامل: أدلة تقدم ونصائح وأهداف قابلة للحفظ، مع خرائط استكشاف مرسومة داخل REIGN دون فتح مواقع أو متصفحات خارجية.</p></div><div class="profile-level">GUIDE HUB</div></div>
+ <div class="section-head"><div><div class="kicker">REIGN WALKTHROUGH / PLAYER INTEL</div><h2>مركز المساعدة <em>PLAYER INTEL</em></h2><p>مركز مساعدة داخل REIGN: خطط تقدم ونصائح وأهداف قابلة للحفظ، مع إرشادات عملية حسب نوع اللعبة.</p></div><div class="profile-level">GUIDE HUB</div></div>
  <div class="world-guide-layout">
   <div class="reign-panel world-guide-picker">
    <label for="worldGuideGame">اختر اللعبة من المكتبة كاملة</label><select id="worldGuideGame"></select>
    <div class="world-guide-game-card" id="worldGuideGameCard"><span class="world-guide-icon">🧭</span><div><b>دليل كل لعبة</b><p>اختر لعبة لعرض إرشاداتها وأهدافها داخل الموقع.</p></div></div>
    <div class="guide-tabs" role="tablist" aria-label="أقسام الدليل"><button type="button" class="guide-tab active" data-guide-tab="steps">خطة المراحل</button><button type="button" class="guide-tab" data-guide-tab="tips">نصائح</button><button type="button" class="guide-tab" data-guide-tab="goals">أهداف 100%</button></div>
    <div id="worldGuideLinks" class="world-guide-links internal-guide-content"></div>
-   <p class="micro-note">كل المحتوى المعروض هنا داخل REIGN. الخرائط رسوم إرشادية أصلية لتسهيل تنظيم الاستكشاف وليست نسخًا دقيقة من خرائط الألعاب الرسمية.</p>
+   <p class="micro-note">الأدلة هنا إرشادية وليست walkthrough رسميًا كاملًا لكل مهمة. تقدّمك يُحفظ محليًا على هذا المتصفح.</p>
   </div>
   <div class="reign-panel stage-guide-panel"><div class="panel-title-row"><div><span class="kicker">YOUR PROGRESS CHECKLIST</span><h3>خطة التقدم مرحلة بمرحلة</h3></div><span class="quest-icon">✦</span></div>
    <p id="stageGuideIntro">خطة عامة تساعدك على تنظيم التقدم دون حرق أحداث القصة.</p>
@@ -170,10 +166,6 @@
    <button class="btn btn-outline" id="resetStageGuide" type="button">إعادة تعيين مراحل هذه اللعبة</button>
   </div>
  </div>
- <div class="map-atlas-heading"><div><span class="kicker">REIGN IN-SITE EXPLORER</span><h3>خريطة الاستكشاف الداخلية</h3><p>اختر لعبة عالم مفتوح، وابحث عن نوع الموقع، ثم اضغط أي علامة لمعرفة هدفها ونصيحة الوصول إليها — دون مغادرة الموقع.</p></div><label for="mapGameSelect">اللعبة<select id="mapGameSelect"></select></label></div>
- <div class="map-toolbar"><label for="mapSearch">ابحث داخل الخريطة<input id="mapSearch" type="search" placeholder="مثال: كنز، مهمة، ترقية، مخيم…"></label><label for="mapCategory">نوع العلامة<select id="mapCategory"><option value="all">كل العلامات</option><option value="story">القصة</option><option value="side">مهام جانبية</option><option value="collectible">مقتنيات وأسرار</option><option value="upgrade">ترقيات وموارد</option><option value="safe">مواقع آمنة / سفر</option></select></label><button class="btn btn-outline" id="resetMapView" type="button">إعادة ضبط الخريطة</button></div>
- <div class="in-site-map-layout"><div class="reign-panel in-site-map-panel"><div class="in-site-map-heading"><div><span class="kicker">SCHEMATIC DISCOVERY MAP</span><h4 id="inSiteMapTitle">خريطة اللعبة</h4><p id="inSiteMapSubtitle">اختر علامة لعرض تفاصيلها.</p></div><span class="map-live-pill"><i></i> داخل REIGN</span></div><div id="inSiteMapCanvas" class="in-site-map-canvas" aria-label="خريطة استكشاف تفاعلية"></div><div class="map-legend"><span><i class="legend-story"></i>القصة</span><span><i class="legend-side"></i>جانبي</span><span><i class="legend-collectible"></i>مقتنيات</span><span><i class="legend-upgrade"></i>ترقيات</span><span><i class="legend-safe"></i>آمن</span></div></div><aside class="reign-panel map-detail-panel"><span class="kicker">LOCATION INTEL</span><h4 id="mapDetailTitle">اختر علامة على الخريطة</h4><p id="mapDetailText">ستظهر هنا فائدة الموقع، وما الذي يستحسن فعله، ونصيحة لتسهيل الاستكشاف.</p><div id="mapDetailMeta" class="map-detail-meta"></div><button class="btn btn-primary" id="markMapVisited" type="button" disabled>✓ علّم الموقع كمكتشف</button><div class="map-discovery-progress"><div><span>المواقع المكتشفة</span><b id="mapVisitedCount">0 / 0</b></div><div class="progress-track"><span id="mapVisitedBar"></span></div></div><div id="mapLocationList" class="map-location-list"></div></aside></div>
- <p class="micro-note world-map-note">شفافية: هذه خرائط إرشادية أصلية داخل REIGN وليست الخرائط الرسمية أو تمثيلًا جغرافيًا دقيقًا للعالم داخل اللعبة. أسماء العلامات والإرشادات العامة تساعد على التخطيط، أما المواقع الدقيقة للمهمات والمقتنيات فقد تختلف أو تحتاج دليلًا خاصًا باللعبة.</p>
 </section>
 
 <section class="updates-section" id="news">
@@ -215,6 +207,27 @@
  <div class="reign-panel quest-forge-panel"><div><span class="kicker">ORIGINAL FEATURE / DAILY QUEST</span><h3>REIGN Quest Forge <em>اصنع تحديًا</em></h3><p>تحدٍّ صغير تختاره عشوائيًا لتجعل جلسة اللعب أكثر متعة. هذه تحديات شخصية وليست إنجازات رسمية داخل اللعبة.</p></div><div class="quest-forge-controls"><label>المدة<select id="questDuration"><option value="15">15 دقيقة</option><option value="30" selected>30 دقيقة</option><option value="60">60 دقيقة</option><option value="120">120 دقيقة</option></select></label><button class="btn btn-primary" id="generateQuest" type="button">اصنع تحديًا ✦</button></div><div id="questForgeResult" class="quest-forge-result"><span>✧</span><p>اضغط الزر لتوليد تحدٍ مناسب لجلستك.</p></div><button class="btn btn-outline" id="completeQuest" type="button" disabled>أنهيت التحدي ✓</button><p class="micro-note" id="questForgeStats">التحديات المكتملة: 0</p></div>
 </section>
 
+<section class="reign-experience-section" id="buildlab">
+ <div class="section-head"><div><div class="kicker">REIGN BUILD LAB / STRATEGY WORKBENCH</div><h2>مختبر البناء <em>BUILD LAB</em></h2><p>أنشئ خطط عتاد ومهارات لكل لعبة، واحتفظ بأكثر من بناء، ثم عدّلها حسب الزعيم أو أسلوب اللعب.</p></div><div class="profile-level">LOADOUT STUDIO</div></div>
+ <div class="buildlab-grid">
+  <article class="reign-panel"><div class="panel-title-row"><div><span class="kicker">NEW LOADOUT</span><h3>صمّم خطة لعب</h3></div><span class="experience-icon">⚙</span></div>
+   <form id="buildLabForm" class="experience-form">
+    <label>اللعبة<select id="buildGame" required></select></label>
+    <label>اسم البناء<input id="buildName" maxlength="48" placeholder="مثال: ضرر سريع / دفاع متوازن" required></label>
+    <label>نوع الخطة<select id="buildRole"><option value="balanced">متوازن</option><option value="damage">ضرر مرتفع</option><option value="defense">دفاع وبقاء</option><option value="stealth">تخفٍ</option><option value="ranged">قتال بعيد</option><option value="support">دعم / فريق</option><option value="speed">سرعة وإنهاء سريع</option></select></label>
+    <label>العتاد / الأسلحة<textarea id="buildGear" rows="2" maxlength="500" placeholder="اكتب الأسلحة أو الدروع أو الأدوات المهمة"></textarea></label>
+    <label>المهارات / القدرات<textarea id="buildSkills" rows="2" maxlength="500" placeholder="المهارات الأساسية وترتيب تطويرها"></textarea></label>
+    <label>ملاحظات الخطة<textarea id="buildNotes" rows="3" maxlength="800" placeholder="نقاط ضعف البناء، استراتيجية الزعيم، بدائل... "></textarea></label>
+    <button class="btn btn-primary" type="submit">حفظ البناء +</button>
+   </form><p class="micro-note">خطط شخصية يكتبها اللاعب؛ لا تمثل توصيات رسمية ولا تتم مزامنتها سحابيًا في هذا الإصدار.</p>
+  </article>
+  <article class="reign-panel build-archive-panel"><div class="panel-title-row"><div><span class="kicker">YOUR STRATEGY VAULT</span><h3>خططك المحفوظة</h3></div><div class="buildlab-actions"><button class="text-link" id="exportBuilds" type="button">تصدير JSON ↓</button><label class="text-link import-build-label">استيراد JSON ↑<input id="importBuilds" type="file" accept="application/json" hidden></label></div></div>
+   <div class="buildlab-filter"><label>تصفية حسب اللعبة<select id="buildFilter"><option value="all">كل الألعاب</option></select></label><label>بحث<input id="buildSearch" type="search" placeholder="اسم البناء أو المهارة..."></label></div>
+   <div id="buildArchive" class="build-archive"><p class="empty-note">احفظ أول خطة بناء لتظهر هنا.</p></div>
+  </article>
+ </div>
+</section>
+
 <section class="reign-experience-section" id="memories">
  <div class="section-head"><div><div class="kicker">REIGN MEMORIES / YOUR GAMING ARCHIVE</div><h2>ذكريات الألعاب <em>MEMORIES</em></h2><p>احتفظ بلحظاتك المميزة: نهاية مؤثرة، فوز صعب، جلسة مع الأصدقاء أو لعبة لا تنساها.</p></div><div class="profile-level" id="memoryCount">0 ذكريات</div></div>
  <div class="experience-grid memories-grid"><article class="reign-panel"><div class="panel-title-row"><div><span class="kicker">CAPTURE A MOMENT</span><h3>أضف ذكرى جديدة</h3></div><span class="experience-icon">◈</span></div><form id="memoryForm" class="experience-form"><label>اللعبة<select id="memoryGame"></select></label><label>عنوان الذكرى<input id="memoryTitle" maxlength="70" placeholder="أول مرة أنهيت اللعبة" required></label><label>التاريخ<input id="memoryDate" type="date" required></label><label>ماذا حدث؟<textarea id="memoryNote" rows="3" maxlength="500" placeholder="اكتب ما تريد تذكره لاحقًا..."></textarea></label><label>رابط صورة (اختياري)<input id="memoryImage" type="url" placeholder="https://..."></label><label>وسوم<input id="memoryTags" maxlength="80" placeholder="بلاتينيوم، أصدقاء، قصة"></label><button class="btn btn-primary" type="submit">حفظ الذكرى +</button></form><p class="micro-note">تُحفظ النصوص وروابط الصور محليًا. استخدم روابط صور تملك حق استخدامها؛ لا يتم رفع الصور إلى خادم.</p></article><article class="reign-panel memory-archive-panel"><div class="panel-title-row"><div><span class="kicker">THE ARCHIVE</span><h3>أرشيفك الشخصي</h3></div><button class="text-link" id="exportMemories" type="button">تصدير JSON ↓</button></div><div id="memoryArchive" class="memory-archive"><p class="empty-note">لا توجد ذكريات بعد. أضف أول لحظة تريد الاحتفاظ بها.</p></div></article></div>
@@ -238,7 +251,7 @@
 <section class="closing-cta"><div class="closing-mark">R</div><div class="kicker">YOUR GAME. YOUR RULES.</div><h2>ابدأ رحلتك مع <em>REIGN</em></h2><p>مكتبة واحدة. عوالم كثيرة. اكتشف اللعبة التالية التي تستحق وقتك.</p><a class="btn btn-primary" href="#games">العودة إلى المكتبة <span>↙</span></a></section>
 </main>
 
-<footer class="footer"><a class="logo footer-logo" href="#home"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a><p>مشروع مستقل لعشاق الألعاب — لا توجد صلة رسمية بشركة Sony أو PlayStation.</p><div class="footer-links"><a href="#games">الألعاب</a><a href="#playtime">حاسبة الوقت</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">مقارنة</a><a href="#moodmatch">اختيار ذكي</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#worldGuides">الأدلة والخرائط</a><a href="#faq">الأسئلة</a><a href="#home">الأعلى ↑</a></div><small class="copyright">© <span id="year"></span> REIGN. جميع الحقوق محفوظة لأصحابها.</small></footer>
+<footer class="footer"><a class="logo footer-logo" href="#home"><span class="logo-icon">R</span><span class="logo-word">REIGN<small>RULE YOUR GAME</small></span></a><p>مشروع مستقل لعشاق الألعاب — لا توجد صلة رسمية بشركة Sony أو PlayStation.</p><div class="footer-links"><a href="#games">الألعاب</a><a href="#playtime">حاسبة الوقت</a><a href="#playroom">PLAYROOM</a><a href="#identity">هوية اللاعب</a><a href="#faceoff">Face-Off</a><a href="#moodmatch">اختيار ذكي</a><a href="#buildlab">Build Lab</a><a href="#memories">ذكرياتي</a><a href="#guides">الأدلة</a><a href="#worldGuides">مركز المساعدة</a><a href="#faq">الأسئلة</a><a href="#home">الأعلى ↑</a></div><small class="copyright">© <span id="year"></span> REIGN. جميع الحقوق محفوظة لأصحابها.</small></footer>
 
 <div class="modal-backdrop" id="modalBackdrop" hidden>
  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="إغلاق">×</button><div class="modal-cover" id="modalCover"></div><div class="modal-body"><div class="kicker" id="modalKicker">GAME FILE</div><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-facts" id="modalFacts"></div><div class="modal-actions"><button class="btn btn-primary" id="modalFavorite">♡ أضف إلى المفضلة</button><button class="btn btn-outline" id="modalClose2">إغلاق</button></div><p class="modal-disclaimer">تحقّق من معلومات النسخة المحددة ومصدرها قبل التثبيت. لا يوفر REIGN ملفات ألعاب محمية بحقوق النشر.</p></div></section>
@@ -258,6 +271,7 @@
 <script src="reign-arcade.js"></script>
 <script src="reign-experience.js"></script>
 <script src="reign-world-guides.js"></script>
+<script src="reign-build-lab.js"></script>
 <script type="module" src="./cloud-auth.js"></script>
 <script>if("serviceWorker" in navigator && location.protocol.startsWith("http")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
 
