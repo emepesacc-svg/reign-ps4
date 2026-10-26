@@ -62,71 +62,82 @@
  };
  const mediaData={
   'Red Dead Redemption 2':[
-   {src:"assets/game-gallery/rdr2.svg",title:'مدخل Mule في دليل الحيوانات داخل اللعبة',kind:'دليل الحيوانات'},
-   {src:"assets/game-gallery/rdr2.svg",title:'Grizzly Bear — مواجهة دب رمادي',kind:'الحياة البرية'},
-   {src:"assets/game-gallery/rdr2.svg",title:'قطيع البيسون في البراري',kind:'حيوانات السهول'}
+   {src:"",title:'مدخل Mule في دليل الحيوانات داخل اللعبة',kind:'دليل الحيوانات'},
+   {src:"",title:'Grizzly Bear — مواجهة دب رمادي',kind:'الحياة البرية'},
+   {src:"",title:'قطيع البيسون في البراري',kind:'حيوانات السهول'}
   ],
   'The Witcher 3: Wild Hunt':[
-   {src:"assets/game-gallery/witcher3.svg",title:'Leshens — مدخل دليل الوحوش',kind:'Bestiary'},
-   {src:"assets/game-gallery/witcher3.svg",title:'مواجهة Royal Griffin',kind:'وحوش اللعبة'}
+   {src:"",title:'Leshens — مدخل دليل الوحوش',kind:'Bestiary'},
+   {src:"",title:'مواجهة Royal Griffin',kind:'وحوش اللعبة'}
   ],
   'Horizon Zero Dawn':[
-   {src:"assets/game-gallery/horizon.svg",title:'مواجهة آلة Sawtooth',kind:'دليل الآلات'},
-   {src:"assets/game-gallery/horizon.svg",title:'آلة ضخمة في بيئة اللعبة',kind:'آلات اللعبة'}
+   {src:"",title:'مواجهة آلة Sawtooth',kind:'دليل الآلات'},
+   {src:"",title:'آلة ضخمة في بيئة اللعبة',kind:'آلات اللعبة'}
   ],
   'Horizon Zero Dawn Complete Edition':[
-   {src:"assets/game-gallery/horizon.svg",title:'مواجهة آلة Sawtooth',kind:'دليل الآلات'},
-   {src:"assets/game-gallery/horizon.svg",title:'آلة ضخمة في بيئة اللعبة',kind:'آلات اللعبة'}
+   {src:"",title:'مواجهة آلة Sawtooth',kind:'دليل الآلات'},
+   {src:"",title:'آلة ضخمة في بيئة اللعبة',kind:'آلات اللعبة'}
   ],
   'Assassin’s Creed Odyssey':[
-   {src:"assets/game-gallery/odyssey.svg",title:'Kalydonian Boar — الخنزير الأسطوري',kind:'الحيوانات الأسطورية'},
-   {src:"assets/game-gallery/odyssey.svg",title:'موقع الخنزير الأسطوري في Phokis',kind:'لقطة خريطة داخل اللعبة'}
+   {src:"",title:'Kalydonian Boar — الخنزير الأسطوري',kind:'الحيوانات الأسطورية'},
+   {src:"",title:'موقع الخنزير الأسطوري في Phokis',kind:'لقطة خريطة داخل اللعبة'}
   ],
   'Assassin’s Creed Origins':[
-   {src:"assets/game-gallery/origins.svg",title:'الحياة البرية في مصر القديمة',kind:'الحيوانات والبيئة'},
-   {src:"assets/game-gallery/origins.svg",title:'تمساح في مياه النيل',kind:'الحياة البرية'}
+   {src:"",title:'الحياة البرية في مصر القديمة',kind:'الحيوانات والبيئة'},
+   {src:"",title:'تمساح في مياه النيل',kind:'الحياة البرية'}
   ],
   'Ghost of Tsushima Director’s Cut':[
-   {src:"assets/game-gallery/ghost.svg",title:'Jin والثعلب المرشد',kind:'حيوانات الاستكشاف'}
+   {src:"",title:'Jin والثعلب المرشد',kind:'حيوانات الاستكشاف'}
   ],
   'The Elder Scrolls V: Skyrim Special Edition':[
-   {src:"assets/game-gallery/skyrim.svg",title:'الماموث في Skyrim',kind:'كائنات العالم'}
+   {src:"",title:'الماموث في Skyrim',kind:'كائنات العالم'}
   ],
   'Fallout 4':[
-   {src:"assets/game-gallery/fallout4.svg",title:'مواجهة Deathclaw',kind:'الأعداء والمخلوقات'}
+   {src:"",title:'مواجهة Deathclaw',kind:'الأعداء والمخلوقات'}
   ],
   'Cyberpunk 2077':[
-   {src:"assets/game-gallery/cyberpunk.svg",title:'مواجهة Cyberpsycho في Night City',kind:'الأعداء والمهام'}
+   {src:"",title:'مواجهة Cyberpsycho في Night City',kind:'الأعداء والمهام'}
   ],
   'Watch Dogs 2':[
-   {src:"assets/game-gallery/watchdogs2.svg",title:'Marcus مع كلب في Watch Dogs 2',kind:'شخصيات وبيئة اللعبة'},
-   {src:"assets/game-gallery/watchdogs2.svg",title:'واجهة ساحلية داخل Watch Dogs 2',kind:'الاستكشاف والبيئة'}
+   {src:"",title:'Marcus مع كلب في Watch Dogs 2',kind:'شخصيات وبيئة اللعبة'},
+   {src:"",title:'واجهة ساحلية داخل Watch Dogs 2',kind:'الاستكشاف والبيئة'}
   ],
   'Marvel’s Spider-Man':[
-   {src:"assets/game-gallery/spiderman.svg",title:'Spider-Man يتنقل بين شوارع Manhattan',kind:'مشهد من اللعبة'},
-   {src:"assets/game-gallery/spiderman.svg",title:'دورية في شوارع نيويورك',kind:'بيئة اللعبة'}
+   {src:"",title:'Spider-Man يتنقل بين شوارع Manhattan',kind:'مشهد من اللعبة'},
+   {src:"",title:'دورية في شوارع نيويورك',kind:'بيئة اللعبة'}
   ],
   'Days Gone':[
-   {src:"assets/game-gallery/daysgone.svg",title:'هجوم حشد Freakers',kind:'الأعداء والمواجهات'},
-   {src:"assets/game-gallery/daysgone.svg",title:'Deacon محاصر بالحشد',kind:'مشهد قتال'}
+   {src:"",title:'هجوم حشد Freakers',kind:'الأعداء والمواجهات'},
+   {src:"",title:'Deacon محاصر بالحشد',kind:'مشهد قتال'}
   ],
   'Far Cry 5':[
-   {src:"assets/game-gallery/farcry5.svg",title:'Cheeseburger — الدب المرافق',kind:'حيوان وشخصية مساعدة'}
+   {src:"",title:'Cheeseburger — الدب المرافق',kind:'حيوان وشخصية مساعدة'}
   ],
   'Assassin’s Creed Origins':[
    {src:'https://miro.medium.com/v2/resize%3Afit%3A1400/1%2A8T-5i13uP3PhvFpiCYDdiw.jpeg',title:'Bayek يطل على Memphis',kind:'شخصية وبيئة اللعبة'},
    {src:'https://gamefabrique.com/storage/screenshots/xbox-one/assassins-creed-origins-01.png',title:'رحلة Bayek عبر الصحراء',kind:'مشهد استكشاف'}
   ],
   'Grand Theft Auto V':[
-   {src:"assets/game-gallery/gtav.svg",title:'الحياة البرية في San Andreas',kind:'حيوانات داخل اللعبة'}
+   {src:"",title:'الحياة البرية في San Andreas',kind:'حيوانات داخل اللعبة'}
   ]
  };
  function renderMedia(title,tab){
-  const all=mediaData[title]||[];
-  const filtered=all.filter(x=>x.title && x.kind!=='محتوى غير مطابق');
-  if(!filtered.length)return '';
-  const heading=tab==='bestiary'?'لوحات مرئية لدليل الكائنات والأعداء':tab==='gallery'?'معرض REIGN المحلي':tab==='secrets'?'لوحات مرجعية للاستكشاف':tab==='timeline'?'لوحات عالم اللعبة':'مواد مرئية للأرشيف';
-  return `<section class="six-media-section"><h4>${heading}</h4><div class="six-media-grid">${filtered.map(x=>`<figure class="six-media-card"><img src="${x.src}" alt="${escapeHtml(x.title)} — ${escapeHtml(title)}" loading="lazy" onerror="this.closest('figure').classList.add('media-unavailable');this.remove();"><figcaption><b>${escapeHtml(x.title)}</b><span>${escapeHtml(x.kind)}</span></figcaption></figure>`).join('')}</div><p class="six-media-disclaimer">الرسوم التوضيحية الأصلية مضمّنة محليًا داخل ملفات REIGN لتعمل دون روابط صور خارجية؛ وهي ليست لقطات شاشة رسمية من اللعبة.</p></section>`;
+  const game=gameList.find(g=>g.title===title);
+  const custom=(mediaData[title]||[]).filter(x=>x.title && x.kind!=='محتوى غير مطابق' && !/\.svg(?:\?|$)/i.test(x.src));
+  const cards=[]; const seen=new Set();
+  const add=(src,caption,kind)=>{if(!src||seen.has(src))return;seen.add(src);cards.push({src,title:caption,kind});};
+  // Keep specific third-party screenshots/maps when present, but never use the repeated decorative SVGs.
+  custom.forEach(x=>add(x.src,x.title,x.kind));
+  // Each catalog entry uses its title-specific store artwork URL where available; availability depends on the image host.
+  if(game){
+   add(game.image,`غلاف مرتبط بلعبة ${game.title}`,'غلاف اللعبة');
+   add(game.header,`الصورة الأفقية الخاصة بلعبة ${game.title}`,'صورة تعريفية أفقية');
+   (Array.isArray(game.screenshots)?game.screenshots:[]).slice(0,2).forEach((src,i)=>add(src,`لقطة لعب ${i+1} من ${game.title}`,'لقطة من اللعبة'));
+  }
+  const filtered=cards.slice(0,4);
+  if(!filtered.length)return `<section class="six-media-section"><h4>معرض اللعبة</h4><p>لم نعثر على صورة موثوقة متاحة لهذا العنوان حتى الآن.</p></section>`;
+  const heading=tab==='bestiary'?'صور مرجعية خاصة باللعبة':tab==='gallery'?'معرض صور اللعبة':tab==='secrets'?'صور مرجعية للاستكشاف':tab==='timeline'?'صور من مواد اللعبة':'مواد مرئية للأرشيف';
+  return `<section class="six-media-section"><h4>${heading}</h4><div class="six-media-grid">${filtered.map(x=>`<figure class="six-media-card"><img src="${escapeHtml(x.src)}" alt="${escapeHtml(x.title)}" loading="lazy" onerror="this.closest('figure').classList.add('media-unavailable');this.remove();"><figcaption><b>${escapeHtml(x.title)}</b><span>${escapeHtml(x.kind)}</span></figcaption></figure>`).join('')}</div><p class="six-media-disclaimer">تستخدم هذه البطاقات روابط صور متجر مرتبطة بمعرّف اللعبة، وليست ملفات صور محلية. إذا حجب المتصفح أو المضيف الصور فقد لا تظهر؛ عندها يجب مراجعة رابط اللعبة بدل عرض صورة بديلة مضللة.</p></section>`;
  }
  const generic={
   worlds:{title:'خريطة عالم اللعبة',text:'اختيرت اللعبة من مكتبة REIGN. إذا كانت لها خريطة موثقة ضمن قاعدة الخرائط فستظهر في قسم REIGN Worlds أعلاه. لا نستبدل الخرائط غير المتاحة برسوم مختلقة.',items:['خريطة العالم إذا كانت اللعبة مفتوحة العالم','مناطق ومراحل منفصلة إذا كانت اللعبة خطية','توسيع تغطية الخرائط يجري عند توفر صورة موثوقة']},
