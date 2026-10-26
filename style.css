@@ -544,3 +544,6 @@ section[id]{scroll-margin-top:100px}.small-note{font-size:11px!important;max-wid
 .nav-menu-group>a:hover,.nav-menu-group>a:focus-visible,.nav-more-menu .nav-menu-group a:hover{background:#E1EDE0!important;border-color:#9FBE9F!important;color:#1F5D42!important;transform:translateX(-2px)!important}
 .nav-more[open]>.nav-more-menu{display:grid!important}
 @media(max-width:760px){.nav-menu-group>a,.nav-more-menu .nav-menu-group a{min-height:42px!important;font-size:14px!important;padding:10px 12px!important}.nav-menu-group>b{font-size:13px!important}.nav-more-menu{background:#FFFEFA!important}}
+
+/* REIGN PLUS archive: checklist progress and bundled artwork */
+.six-check-progress{display:grid;grid-template-columns:1fr auto;gap:8px 14px;align-items:center;margin:18px 0 8px;padding:13px 15px;border:1px solid #DEE5D9;border-radius:13px;background:#F5F6EF;color:#304A38;font-weight:750}.six-check-progress-track{grid-column:1/-1;height:8px;border-radius:99px;background:#DFE6D9;overflow:hidden}.six-check-progress-track i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#34765D,#B79A58);transition:width .2s ease}.six-media-card img{object-fit:cover}.six-media-disclaimer{padding:9px 12px;border-radius:10px;background:#F5F6EF;color:#536B58}
