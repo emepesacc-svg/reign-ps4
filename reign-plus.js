@@ -50,6 +50,31 @@
   document.addEventListener('click',e=>{const btn=e.target.closest('[data-open-game]');if(btn&&typeof window.openGame==='function'){window.openGame(Number(btn.dataset.openGame));}});
   // Expose existing modal function for feature links if it was declared as a top-level function.
   try{window.openGame=openGame;}catch{}
+  // Helpers referenced by V21 but missing from the file.
+  function trophyInfo(){
+    const box=$('#trophyDetails'),g=findGame($('#trophyGame')&&$('#trophyGame').value);if(!box||!g)return;
+    const tm=g.times||{},fmt=v=>Number(v)?`${Number(v)} ساعة`:'غير متوفر';
+    box.innerHTML=`<div class="trophy-emblem">♛</div><div><h3>${safe(g.title)}</h3><p>القصة الأساسية: ${fmt(tm.main)} · مع الإضافات: ${fmt(tm.extra)} · إكمال 100%: ${fmt(tm.complete)}</p><p class="micro-note">أوقات الإكمال تقديرية من بيانات REIGN وليست وقت بلاتينيوم مؤكدًا. تحقق من دليل متخصص للتروفيات القابلة للفوات والصعوبة.</p></div>`;
+  }
+  function setLanguage(lang){
+    language=['ar','fr','en'].includes(lang)?lang:'ar';write(STORE.lang,language);
+    document.documentElement.lang=language;document.documentElement.dir=language==='ar'?'rtl':'ltr';
+    const sel=$('#languageSelect');if(sel)sel.value=language;refreshDynamic();
+  }
+  // Recommender (was referenced but never defined in V21, which aborted the rest of this script).
+  function recommend(){
+    const genre=$('#prefGenre').value,limit=$('#prefTime').value,mode=$('#prefMode').value,box=$('#recommendResults');
+    const main=g=>Number(g.times&&g.times.main)||0, full=g=>Number(g.times&&g.times.complete)||0;
+    let list=games.filter(g=>{
+      if(genre!=='الكل'&&!(`${g.category||''} ${(g.genres||[]).join(' ')}`).includes(genre))return false;
+      if(limit!=='any'&&!(main(g)&&main(g)<=Number(limit)))return false;
+      if(mode==='short'&&!(main(g)&&main(g)<=12))return false;
+      if(mode==='long'&&!(main(g)>=30))return false;
+      if(mode==='completion'&&!(full(g)>=60))return false;
+      return true;
+    }).sort((a,b)=>(Number(b.featured||0)-Number(a.featured||0))||(b.year||0)-(a.year||0)).slice(0,6);
+    box.innerHTML=list.length?list.map(g=>`<article class="recommend-card"><img src="${safe(g.image||g.header||'')}" alt="" loading="lazy" onerror="this.style.visibility='hidden'"><div><b>${safe(g.title)}</b><small>${safe(g.category||'')} · ${safe(g.year||'')}${main(g)?` · نحو ${main(g)} ساعة للقصة`:''}</small><button class="btn btn-outline" type="button" data-open-game="${safe(g.id)}">التفاصيل</button></div></article>`).join(''):'<div class="recommend-placeholder"><b>لا توجد نتائج</b><small>جرّب توسيع الوقت أو تغيير النوع.</small></div>';
+  }
   $('#recommendButton').addEventListener('click',recommend);
   buildSelect($('#trophyGame'),games[0]?.id);$('#trophyGame').addEventListener('change',trophyInfo);$('#trophyLookup').addEventListener('click',()=>{const g=findGame($('#trophyGame').value);if(g)window.open(`https://www.google.com/search?q=${encodeURIComponent(g.title+' PS4 trophy guide platinum missable trophies')}`,'_blank','noopener,noreferrer');});
   const checks=read(STORE.checklist,[]);$$('#trophyChecklist input').forEach((el,i)=>{el.checked=checks.includes(i);el.addEventListener('change',()=>{const list=$$('#trophyChecklist input').map((x,j)=>x.checked?j:null).filter(x=>x!==null);write(STORE.checklist,list);});});

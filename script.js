@@ -3611,6 +3611,7 @@ const games = [
     "ps4": true
   }
 ];
+if(Array.isArray(window.REIGN_EXTRA_GAMES))games.push(...window.REIGN_EXTRA_GAMES);
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
 let category="الكل",query="",sort="featured",showAll=false,currentModal=null,favorites=new Set();
 try{favorites=new Set(JSON.parse(localStorage.getItem("reignFavorites")||"[]").map(Number))}catch(e){favorites=new Set()}

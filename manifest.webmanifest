@@ -5,8 +5,8 @@
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#F6F3EA",
-  "theme_color": "#F6F3EA",
+  "background_color": "#0A0E1F",
+  "theme_color": "#0A0E1F",
   "icons": [
     { "src": "reign-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
