@@ -3618,10 +3618,13 @@ try{favorites=new Set(JSON.parse(localStorage.getItem("reignFavorites")||"[]").m
 const categoryCounts=()=>games.reduce((o,g)=>(o[g.category]=(o[g.category]||0)+1,o),{});
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function getFiltered(){
+ if(window.REIGN_FILTER)window.REIGN_FILTER.prepare();
  let arr=games.filter(g=>(category==="الكل"||g.genres.includes(category)||g.category===category)&&[g.title,g.category,g.year,...g.genres,g.developer,g.publisher].join(" ").toLowerCase().includes(query.toLowerCase()));
+ if(window.REIGN_FILTER)arr=arr.filter(window.REIGN_FILTER.test);
  if(sort==="az")arr.sort((a,b)=>a.title.localeCompare(b.title));
  if(sort==="year-desc")arr.sort((a,b)=>b.year-a.year);
  if(sort==="year-asc")arr.sort((a,b)=>a.year-b.year); if(sort==="shortest")arr.sort((a,b)=>(a.times?.main||9999)-(b.times?.main||9999)); if(sort==="longest")arr.sort((a,b)=>(b.times?.main||0)-(a.times?.main||0));
+ if(sort==="myrating"){let _R={};try{_R=JSON.parse(localStorage.getItem("reignRatingsV1")||"{}")}catch(e){}arr.sort((a,b)=>((_R[b.id]&&_R[b.id].s)||0)-((_R[a.id]&&_R[a.id].s)||0))}
  if(sort==="featured")arr.sort((a,b)=>a.featured-b.featured);
  return arr;
 }

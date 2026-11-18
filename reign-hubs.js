@@ -3,8 +3,8 @@
   'use strict';
   const $ = s => document.querySelector(s);
   const HUBS = [
-    { id: 'library', label: 'المكتبة', icon: '▦', tabs: [['games', 'الألعاب'], ['discover', 'اكتشف'], ['collections', 'مجموعات'], ['favorites', 'المفضلة'], ['franchises', 'السلاسل'], ['faceoff', 'Face-Off'], ['upcoming', 'قادم قريبًا']] },
-    { id: 'player', label: 'لاعبي', icon: '♙', tabs: [['reignId', 'ملفي'], ['dashboard', 'لوحتي'], ['ultra', 'ULTRA'], ['playroom', 'PLAYROOM'], ['essentials', 'الإنجاز'], ['myratings', 'تقييماتي'], ['mylists', 'قوائمي']] },
+    { id: 'library', label: 'المكتبة', icon: '▦', tabs: [['games', 'الألعاب'], ['discover', 'اكتشف'], ['collections', 'مجموعات'], ['favorites', 'المفضلة'], ['franchises', 'السلاسل'], ['faceoff', 'Face-Off'], ['wishlist', 'أمنياتي'], ['upcoming', 'قادم قريبًا']] },
+    { id: 'player', label: 'لاعبي', icon: '♙', tabs: [['reignId', 'ملفي'], ['dashboard', 'لوحتي'], ['ultra', 'ULTRA'], ['playroom', 'PLAYROOM'], ['essentials', 'الإنجاز'], ['myratings', 'تقييماتي'], ['mylists', 'قوائمي'], ['notebook', 'دفتري'], ['coop', 'مع الأصدقاء'], ['export', 'تصدير وطباعة']] },
     { id: 'guides', label: 'الأدلة', icon: '✦', tabs: [['trophies', 'التروفيات'], ['mytrophies', 'قوائم تروفيات'], ['reignPlayerTools', 'أدوات اللاعب'], ['worldGuides', 'مركز المساعدة'], ['guides', 'دليل المبتدئ'], ['playtime', 'حاسبة الوقت'], ['faq', 'أسئلة شائعة']] }
   ];
   const main = $('main'); if (!main) return;
@@ -27,6 +27,11 @@
   const cta = $('.closing-cta'); HUBS.forEach(h => main.insertBefore(wraps[h.id], cta || null));
   if (cta) home.appendChild(cta);
 
+  let gl = false;
+  function loadGuides() {
+    if (gl) return; gl = true;
+    ['reign-world-guides.js', 'reign-player-tools.js'].reduce((p, src) => p.then(() => new Promise(r => { const s = document.createElement('script'); s.src = src; s.onload = s.onerror = r; document.body.appendChild(s); })), Promise.resolve());
+  }
   let cur = { hub: 'library', tab: 'games' };
   function show(tab, opts = {}) {
     const hub = tabHub[tab]; if (!hub) return false;
@@ -35,6 +40,7 @@
     wraps[hub].querySelectorAll('.hub-tabs button').forEach(b => { const on = b.dataset.tab === tab; b.classList.toggle('active', on); b.setAttribute('aria-selected', on); if (on && opts.scrollTab !== false) b.scrollIntoViewIfNeededSafe?.(); });
     home.hidden = !(hub === 'library' && tab === 'games');
     last[hub] = tab; cur = { hub, tab };
+    if (hub === 'guides') loadGuides();
     document.querySelectorAll('[data-hubnav]').forEach(a => a.classList.toggle('active', a.dataset.hubnav === hub));
     document.documentElement.dataset.hub = hub;
     document.dispatchEvent(new CustomEvent('reign:tab', { detail: { tab, hub } }));
@@ -43,6 +49,7 @@
   function go(id, opts = {}) {
     if (!id) return;
     id = String(id).replace(/^#/, '');
+    if (/^game-\d+$/.test(id)) return; // handled by reign-more.js (opens the game modal)
     if (id === 'home') id = 'games';
     if (id.startsWith('hub-')) id = last[id.slice(4)] || id;
     let tab = id;
@@ -78,5 +85,5 @@
 
   window.REIGN_NAV = { go, show, HUBS, tabLabel, tabHub, current: () => cur };
   const start = (location.hash || '').slice(1);
-  if (start && (tabHub[start] || document.getElementById(start))) go(start, { history: false, scroll: false }); else show('games');
+  if (/^game-\d+$/.test(start)) show('games'); else if (start && (tabHub[start] || document.getElementById(start))) go(start, { history: false, scroll: false }); else show('games');
 })();

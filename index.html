@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0A0E1F">
+<meta property="og:type" content="website"><meta property="og:title" content="REIGN ULTRA — دليل اللاعب ومكتبة الألعاب"><meta property="og:description" content="مكتبة أكثر من 300 لعبة PS4 مع أدوات التتبع والتقييم والتخطيط — محلية على جهازك."><meta property="og:image" content="assets/reign-hero-mystic.jpg"><meta name="twitter:card" content="summary_large_image">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="reign-icon.svg" type="image/svg+xml">
 <meta name="description" content="REIGN — مكتبة ألعاب PS4 بتجربة غنية، أدوات اللاعب، خطط البناء وأدلة التقدم.">
@@ -204,6 +205,26 @@
 <div class="reign-panel"><label for="troGame">اللعبة<select id="troGame"></select></label><form id="troForm" class="arcade-form"><div class="arcade-form-row"><label for="troText">بند جديد<input id="troText" type="text" maxlength="100" placeholder="مثال: أنهِ القصة على صعوبة عالية"></label><div class="backup-actions"><button class="btn btn-primary" type="submit">إضافة</button></div></div></form><div class="progress-track"><span id="troBar" style="width:0"></span></div><p class="micro-note" id="troStat"></p><ul id="troItems" class="tro-items"></ul></div>
 </section>
 
+<section class="reign-arcade-section" id="notebook">
+ <div class="section-head"><div><div class="kicker">GAME NOTEBOOK</div><h2>دفتر <em>ملاحظاتي</em></h2><p>اكتب ملاحظات تقدمك وأضف لقطات شاشة لكل لعبة. تُحفظ على جهازك فقط (IndexedDB) ولا تدخل في رمز النقل بسبب حجم الصور؛ استخدم تصدير الدفتر.</p></div></div>
+<div class="reign-panel"><div class="arcade-form"><label for="nbGame">اللعبة<select id="nbGame"></select></label><label for="nbText">ملاحظتك<textarea id="nbText" rows="3" maxlength="1500" placeholder="أين وصلت؟ ما الذي تريد تذكره؟"></textarea></label><label for="nbFiles">لقطات شاشة (حتى 4 صور)<input id="nbFiles" type="file" accept="image/*" multiple></label></div><div class="backup-actions"><button class="btn btn-primary" id="nbSave" type="button">حفظ في الدفتر</button><button class="btn btn-outline" id="nbExport" type="button">تصدير الدفتر JSON</button><label class="btn btn-outline import-label" for="nbImport">استيراد دفتر</label><input id="nbImport" type="file" accept="application/json,.json" hidden></div></div><div class="reign-panel"><label for="nbFilter">عرض ملاحظات<select id="nbFilter"></select></label><ul id="nbList" class="nb-list"></ul></div>
+</section>
+
+<section class="reign-arcade-section" id="export">
+ <div class="section-head"><div><div class="kicker">EXPORT & PRINT</div><h2>تصدير <em>وطباعة</em></h2><p>نزّل مكتبتك وتقييماتك كجدول CSV (يفتح في Excel)، أو اطبع قائمة نظيفة.</p></div></div>
+<div class="reign-panel"><div class="backup-actions"><button class="btn btn-primary" id="expLibrary" type="button">تنزيل المكتبة كاملة CSV</button><button class="btn btn-outline" id="expRatings" type="button">تنزيل تقييماتي CSV</button></div></div><div class="reign-panel"><label for="printKind">اطبع قائمة<select id="printKind"></select></label><div class="backup-actions"><button class="btn btn-primary" id="printBtn" type="button">طباعة / حفظ PDF</button></div><p class="micro-note">تفتح نافذة الطباعة في متصفحك؛ اختر «حفظ كـ PDF» إن أردت ملفًا.</p></div>
+</section>
+
+<section class="reign-arcade-section" id="wishlist">
+ <div class="section-head"><div><div class="kicker">PRICE WISHLIST</div><h2>أمنياتي <em>والأسعار</em></h2><p>أضف لعبة تنتظر خصمها مع السعر الذي تريده. الأسعار تكتبها وتحدّثها أنت؛ الموقع لا يجلب أسعارًا من المتاجر.</p></div></div>
+<div class="reign-panel"><form id="wishForm" class="arcade-form"><div class="arcade-form-row"><label for="wGameSel">لعبة من المكتبة<select id="wGameSel"></select></label><label for="wTitle">أو اكتب الاسم<input id="wTitle" type="text" maxlength="60"></label></div><div class="arcade-form-row"><label for="wCurrent">السعر الحالي<input id="wCurrent" type="number" min="0" step="0.01"></label><label for="wTarget">السعر المستهدف<input id="wTarget" type="number" min="0.01" step="0.01" required></label><label for="wCurrency">العملة<select id="wCurrency"><option>TND</option><option>USD</option><option>EUR</option></select></label></div><label for="wNote">ملاحظة<input id="wNote" type="text" maxlength="80" placeholder="مثال: أنتظر تخفيضات نهاية العام"></label><div class="backup-actions"><button class="btn btn-primary" type="submit">إضافة للأمنيات</button></div></form><p class="micro-note" id="wishSummary"></p><ul id="wishList" class="wish-list"></ul></div>
+</section>
+
+<section class="reign-arcade-section" id="coop">
+ <div class="section-head"><div><div class="kicker">CO-OP PLANNER</div><h2>اللعب مع <em>الأصدقاء</em></h2><p>سجّل أصدقاءك وخطّط لجلسات لعب مشتركة، وتابع كم لعبتم معًا.</p></div></div>
+<div class="arcade-grid"><article class="reign-panel"><div class="panel-title-row"><div><span class="kicker">FRIENDS</span><h3>أصدقائي</h3></div><span class="arcade-icon">☺</span></div><form id="coopFriendForm" class="arcade-form-row"><label for="coopFriend">اسم صديق<input id="coopFriend" type="text" maxlength="24"></label><div class="backup-actions"><button class="btn btn-primary" type="submit">إضافة</button></div></form><ul id="coopFriends" class="chip-list"></ul><ul id="coopStats" class="legend-list"></ul></article><article class="reign-panel"><div class="panel-title-row"><div><span class="kicker">PLAN A SESSION</span><h3>خطة جلسة</h3></div><span class="arcade-icon">◷</span></div><form id="coopPlanForm" class="arcade-form"><label for="coopGame">اللعبة<select id="coopGame"></select></label><div class="arcade-form-row"><label for="coopDate">التاريخ<input id="coopDate" type="date" required></label><label for="coopTime">الوقت<input id="coopTime" type="time"></label></div><div id="coopPick" class="coop-pick"></div><label for="coopNote">ملاحظة<input id="coopNote" type="text" maxlength="80"></label><div class="backup-actions"><button class="btn btn-primary" id="coopAdd" type="submit">إضافة الخطة</button></div></form></article></div><div class="reign-panel"><h3>خطط الجلسات</h3><ul id="coopPlans" class="coop-list"></ul></div>
+</section>
+
 <section class="guides-section" id="guides">
  <div class="section-head"><div><div class="kicker">PLAYER KNOWLEDGE</div><h2>دليل اللاعب <em>الذكي</em></h2><p>معلومات أساسية قبل التعديل أو تثبيت محتوى على جهازك.</p></div></div>
  <div class="guide-layout">
@@ -296,16 +317,16 @@
   <a href="#favorites" data-dock="favorites" aria-label="المفضلة"><span class="dock-icon">♡</span><span class="dock-label">المفضلة</span></a>
 </nav>
 
+<script src="reign-covers.js"></script>
 <script src="reign-games-extra.js"></script>
 <script src="script.js"></script>
 <script src="reign-plus.js"></script>
 <script src="reign-ultra.js"></script>
 <script src="reign-arcade.js"></script>
 <script src="reign-experience.js"></script>
-<script src="reign-world-guides.js"></script>
-<script src="reign-player-tools.js"></script>
 <script src="reign-essentials.js"></script>
 <script src="reign-power.js"></script>
+<script src="reign-more.js"></script>
 <script src="reign-hubs.js"></script>
 <script type="module" src="./cloud-auth.js"></script>
 <script>if("serviceWorker" in navigator && location.protocol.startsWith("http")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>

@@ -15,10 +15,10 @@
     var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+W+'" height="'+H+'" viewBox="0 0 '+W+' '+H+'"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl('+h+',55%,22%)"/><stop offset="1" stop-color="hsl('+((h+50)%360)+',60%,10%)"/></linearGradient></defs><rect width="'+W+'" height="'+H+'" fill="url(#g)"/><circle cx="'+W*0.85+'" cy="'+H*0.15+'" r="'+W*0.28+'" fill="hsl('+h+',70%,60%)" opacity=".13"/>'+tx+'<text x="'+W/2+'" y="'+(H-(wide?16:56))+'" text-anchor="middle" font-family="Arial,sans-serif" font-size="'+(wide?14:24)+'" fill="#A5AEDB" letter-spacing="3">PS4 \u00b7 '+y+'</text></svg>';
     return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
   }
-  window.REIGN_EXTRA_GAMES=ROWS.map(function(r,i){var id=START+i,k=r[2];
+  window.REIGN_EXTRA_GAMES=ROWS.map(function(r,i){var id=START+i,k=r[2],C=(window.REIGN_COVERS||{})[id];
     return {id:id,title:r[0],year:r[1],category:CAT[k],genres:[CAT[k]],developer:r[3],publisher:r[4],
       mode:'فردي/متعدد بحسب اللعبة والوضع',rating:'PS4 — تحقق من توفر النسخة المحددة قبل الشراء',desc:r[8],
-      image:cover(r[0],r[1],k,false),header:cover(r[0],r[1],k,true),
+      image:(C&&C.image)||cover(r[0],r[1],k,false),header:(C&&C.header)||cover(r[0],r[1],k,true),
       times:{main:r[5],extra:r[6],complete:r[7]},featured:id,ps4:true,generatedCover:true};
   });
 })();

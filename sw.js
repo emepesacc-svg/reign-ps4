@@ -1,5 +1,5 @@
-const CACHE_NAME = 'reign-midnight-v23';
-const SHELL = ['./', './index.html', './style.css', './script.js', './reign-plus.js', './reign-ultra.js', './reign-arcade.js', './reign-experience.js', './reign-world-guides.js', './reign-player-tools.js', './reign-essentials.js', './reign-power.js', './reign-hubs.js', './reign-games-extra.js', './manifest.webmanifest', './reign-icon.svg', './firebase-config.js', './cloud-auth.js', './assets/reign-hero-mystic.jpg'];
+const CACHE_NAME = 'reign-midnight-v24';
+const SHELL = ['./', './index.html', './style.css', './script.js', './reign-plus.js', './reign-ultra.js', './reign-arcade.js', './reign-experience.js', './reign-world-guides.js', './reign-player-tools.js', './reign-essentials.js', './reign-power.js', './reign-more.js', './reign-covers.js', './reign-hubs.js', './reign-games-extra.js', './manifest.webmanifest', './reign-icon.svg', './firebase-config.js', './cloud-auth.js', './assets/reign-hero-mystic.jpg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
 });
